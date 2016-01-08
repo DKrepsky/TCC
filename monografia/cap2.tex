@@ -1,0 +1,230 @@
+\chapter{Energia elétrica no Brasil}\label{chp:brasil}
+
+   
+   \subsection{Matriz energética}
+   
+   
+   - crise hidrica
+   - Sistema de Bandeiras Tarifárias
+   - desenvolvimento energia solar e eolica
+   
+   
+   - evolução da demanda.
+   - crescimento do consumo e população
+   
+   - consumo por região
+   - 
+   
+   \subsection{Perdas do sistema}
+   - Historico de perdas
+   - Perdas agosto 2015
+   - Perdas por regiao
+   - Custo tarifa por regiao
+   
+   - Perdas tecnicas x perdas não técnicas.
+   
+   \subsection{Ferramentas computacionais para melhoria dos sistemas de distribuição}
+   
+   - fluxo de potencia
+   - fluxo otimo
+   - smart grid
+
+\[
+    \left[ \begin{matrix}
+    V_{sa} \\
+    V_{sb} \\
+    V_{sc} \\
+    \end{matrix} \right] -
+    \left[ \begin{matrix}
+    V_{ra} \\
+    V_{rb} \\
+    V_{rc} \\
+    \end{matrix} \right] =
+    \left[ \begin{matrix}
+    I_{a} \\
+    I_{b} \\
+    I_{c} \\
+    \end{matrix} \right]
+    \left[ \begin{matrix}
+    Z_{aa} & Z_{ab} & Z_{ac} \\
+    Z_{ba} & Z_{bb} & Z_{bc} \\
+    Z_{ca} & Z_{cb} & Z_{cc} \\
+    \end{matrix} \right]
+\]
+
+\[
+    I = \frac{S^*}{V^*}
+\]
+
+\[
+\left[ \begin{matrix}
+V_{sa} \\
+V_{sb} \\
+V_{sc} \\
+\end{matrix} \right] -
+\left[ \begin{matrix}
+V_{ra} \\
+V_{rb} \\
+V_{rc} \\
+\end{matrix} \right] = \frac{
+\left[ \begin{matrix}
+S_{a} \\
+S_{b} \\
+S_{c} \\
+\end{matrix} \right]^*}
+{\left[ \begin{matrix}
+    V_{ra} \\
+    V_{rb} \\
+    V_{rc} \\
+    \end{matrix} \right]^*}
+\left[ \begin{matrix}
+Z_{aa} & Z_{ab} & Z_{ac} \\
+Z_{ba} & Z_{bb} & Z_{bc} \\
+Z_{ca} & Z_{cb} & Z_{cc} \\
+\end{matrix} \right]
+\]
+
+Multiplicando ambos os lados por $\left[V_{ra} \, V_{rb} \, V_{rc} \right]^*$ temos:
+
+\[
+\left[ \begin{matrix}
+V_{sa} \\
+V_{sb} \\
+V_{sc} \\
+\end{matrix} \right] \left[V_{ra} \, V_{rb} \, V_{rc} \right]^* -
+\left[ \begin{matrix}
+V_{ra} \\
+V_{rb} \\
+V_{rc} \\
+\end{matrix} \right] \left[V_{ra} \, V_{rb} \, V_{rc} \right]^* =
+    \left[ \begin{matrix}
+    S_{a} \\
+    S_{b} \\
+    S_{c} \\
+    \end{matrix} \right]^*
+\left[ \begin{matrix}
+Z_{aa} & Z_{ab} & Z_{ac} \\
+Z_{ba} & Z_{bb} & Z_{bc} \\
+Z_{ca} & Z_{cb} & Z_{cc} \\
+\end{matrix} \right]
+\]
+
+Como $C \cdot C^* = |C|^2$:
+
+\[
+\left[ \begin{matrix}
+V_{sa}V_{ra}^* \\
+V_{sb}V_{rb}^* \\
+V_{sc}V_{rc}^* \\
+\end{matrix} \right] -
+\left[ \begin{matrix}
+|V_{ra}|^2 \\
+|V_{rb}|^2 \\
+|V_{rc}|^2 \\
+\end{matrix} \right] =
+\left[ \begin{matrix}
+S_{a} \\
+S_{b} \\
+S_{c} \\
+\end{matrix} \right]^*
+\left[ \begin{matrix}
+Z_{aa} & Z_{ab} & Z_{ac} \\
+Z_{ba} & Z_{bb} & Z_{bc} \\
+Z_{ca} & Z_{cb} & Z_{cc} \\
+\end{matrix} \right]
+\]
+
+\[
+    C = |C|(cos(\theta) + jsen(\theta))
+\]
+
+\[
+\left[ \begin{matrix}
+|V_{sa}||V_{ra}|(cos\theta_{sra} + jsen\theta_{sra}) \\
+|V_{sb}||V_{rb}|(cos\theta_{srb} + jsen\theta_{srb}) \\
+|V_{sc}||V_{rc}|(cos\theta_{src} + jsen\theta_{src}) \\
+\end{matrix} \right] -
+\left[ \begin{matrix}
+|V_{ra}|^2 \\
+|V_{rb}|^2 \\
+|V_{rc}|^2 \\
+\end{matrix} \right] =
+\left[ \begin{matrix}
+S_{a} \\
+S_{b} \\
+S_{c} \\
+\end{matrix} \right]^*
+\left[ \begin{matrix}
+Z_{aa} & Z_{ab} & Z_{ac} \\
+Z_{ba} & Z_{bb} & Z_{bc} \\
+Z_{ca} & Z_{cb} & Z_{cc} \\
+\end{matrix} \right]
+\]
+
+De modo genérico, temos que:
+\[
+    |V_{sx}||V_{rx}|(cos\theta_{srx} + jsen\theta_{srx}) - |V_{rx}|^2 = S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}
+\]
+
+Separando os termos reais dos imaginários:
+
+\[
+    |V_{sx}||V_{rx}|cos\theta_{srx} - |V_{rx}|^2 = \mathfrak{Re}\{S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}\}
+\]
+
+\[
+    |V_{sx}||V_{rx}|sen\theta_{srx} = \mathfrak{Im}\{S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}\}
+\]
+
+Em função do seno e cosseno:
+
+\[
+    cos\theta_{srx} = \frac{\mathfrak{Re}_{S^*Z} + |V_{rx}|^2}{|V_{sx}||V_{rx}|}
+\]
+
+\[
+    sen\theta_{srx} = \frac{\mathfrak{Im}_{S^*Z}}{|V_{sx}||V_{rx}|}
+\]
+
+Onde:
+
+\[
+    \mathfrak{Re}_{S^*Z} = \mathfrak{Re}\{S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}\}
+\]
+
+\[
+    \mathfrak{Im}_{S^*Z} = \mathfrak{Im}\{S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}\}
+\]
+
+Usando a relação trigonométrica $cos^2\theta + sen^2\theta = 1$:
+
+\[
+    \left( \frac{\mathfrak{Re}_{S^*Z} + |V_{rx}|^2}{|V_{sx}||V_{rx}|} \right)^2 +
+    \left(\frac{\mathfrak{Im}_{S^*Z}}{|V_{sx}||V_{rx}|}\right)^2 = 1
+\]
+
+\[
+    \left(\mathfrak{Re}_{S^*Z} + |V_{rx}|^2 \right)^2 +
+    \mathfrak{Im}_{S^*Z}^2 = |V_{sx}|^2|V_{rx}|^2
+\]
+
+\[
+    \mathfrak{Re}_{S^*Z}^2 + 2\mathfrak{Re}_{S^*Z}|V_{rx}|^2 + |V_{rx}|^4 +
+    \mathfrak{Im}_{S^*Z}^2 - |V_{sx}|^2|V_{rx}|^2 = 0
+\]
+
+\[
+    |V_{rx}|^4 + (2\mathfrak{Re}_{S^*Z} - |V_{sx}|^2)|V_{rx}|^2 + \mathfrak{Re}_{S^*Z}^2 + 
+    \mathfrak{Im}_{S^*Z}^2 = 0
+\]
+
+Sendo:
+\[
+    \mathfrak{Re}_{S^*Z} = (P_aR_{xa} + Q_aX_{xa}) + (P_bR_{xb} + Q_bX_{xb}) + (P_cR_{xc} + Q_cX_{xc})
+\]
+
+e:
+
+\[
+\mathfrak{Re}_{S^*Z}^2 + \mathfrak{Im}_{S^*Z}^2 = (P_a^2 + Q_a^2)*(R_{xa}^2 + X_{xa}^2) + (P_b^2 + Q_b^2)*(R_{xb}^2 + X_{xb}^2) + (P_c^2 + Q_c^2)*(R_{xc}^2 + X_{xc}^2)
+\]

@@ -1,0 +1,89 @@
+\chapter{Introdução}\label{chp:intro}
+
+
+\section{Motivação e justificativa}
+
+     Desde a descoberta das cargas elétricas por Tales de Mileto na Grécia antiga, a energia elétrica vem promovendo mudanças radicais na sociedade e no meio ambiente, sendo esse fato mais evidente nas últimas décadas, com o advento dos computadores, equipamentos industriais, satélites de telecomunicações e etc. Sua importância é tão grande que muitas vezes é usada como índice de desenvolvimento dos países e sua disponibilidade implica diretamente na qualidade de vida do ser humano.
+     
+     A expansão populacional dos últimos séculos e o desenvolvimento tecnológico fazem com que seja necessário uma produção cada vez maior de energia. Contudo, ampliar a capacidade de produção de energia elétrica gera impactos ambientais grandes, como na construção de uma nova usina termo-elétrica, que emitem grandes quantidades de $CO_2$, ou em uma hidro-elétrica, que inunda milhares de quilômetros de terra e modifica todo o ecossistema local.
+     
+     Devemos então aumentar a oferta de energia elétrica, gerando impactos ambientais minimizados e a um custo acessível, para viabilizar a sua utilização por toda a sociedade. 
+     
+     Nos últimos anos, o problema ambiental vem sendo abordado através da utilização cada vez maior de energias renováveis e limpas, como a energia solar e a eólica. Porém, tais fontes de energia ainda apresentam um custo elevado por kilowatt produzido.
+     
+     O viés utilizado para promover a acessibilidade à energia é o da melhora na eficiência dos sistemas de geração, transmissão e distribuição, com foco na redução das perdas e melhora na qualidade da energia elétrica entregue ao consumidor. 
+     
+     Muitos trabalhos tem sido desenvolvidos nas áreas de geração, transmissão e distribuição de energia elétrica, sendo dada uma atenção cada vez maior aos sistema de distribuição, pois é onde se encontram as maiores perdas (tanto técnicas quanto não-técnicas) e é a parte mais vulnerável a falhas. Outro motivo para o aumento no interesse em sisteas de distribuição é a possibilidade da inserção de geradores distribuídos, \textit{smart grids} e a capacidade de otimização da rede em tempo real.
+     
+     Desta forma, este trabalho se justifica na necessidade de ferramentas que melhorem os sistemas de distribuição de energia elétrica, tornando-os mais eficientes e confiáveis.
+    
+    \newpage
+    
+\section{Objetivos}
+
+    Os objetivos primários são:
+    
+    \begin{itemize}
+        \item implementação dos métodos soma de correntes e soma de
+        potências para o cálculo do fluxo de potência em sistemas de distribuição radiais;
+        
+        \item  comparação de desempenho entre os métodos;
+        
+        \item  desenvolvimento e análise do algoritmo de otimização do
+        fluxo de potência por redução de barras com compensação desacoplada.
+    \end{itemize}
+ 
+
+    Para realizar as simulações, foi elaborado, como objetivo secundário, o desenvolvimento de um programa gráfico para análise de sistemas de distribuição utilizando os algoritmos acima citados.
+
+\section{Metodologia}
+    
+     Tendo em vista à necessidade de desempenho e o gasto de recursos computacionais do fluxo de potência para sistemas de distribuição, foi adotada a linguagem de programação \textit{C++} para a implementação dos algorítimos, pois a mesma possui uma boa relação entre velocidade de execução e complexidade do código fonte.
+     De modo a facilitar o desenvolvimento da parte gráfica, foi utilizado o \textit{framework} Qt, o qual possui uma extensa biblioteca de classes e funções em C++ para o desenvolvimento de aplicações multiplataforma.
+     
+     O computador utilizado para realizar as simulações possui as seguintes configurações:
+     
+     \begin{itemize}
+         \item processador Intel \textregistered ~ Core \texttrademark ~ i5-3330 CPU @ 3.00GHz;
+         \item memória RAM Kingston de 4GB 1333MHz;
+         \item HD Seagate 750GB ST3750640NS;
+         \item sistema operacional Ubuntu 15.10 x64.
+        \end{itemize}
+     
+     A metodologia utilizada para o desenvolvimento deste trabalho segue as seguintes etapas:
+     
+     \begin{enumerate}
+         \item desenvolvimento da interface gráfica inicial;
+         
+         \item implementação dos algoritmos do fluxo de potência;
+         
+         \item implementação da otimização por redução de barras;
+         
+         \item análise de performance para vários sistemas de distribuição.
+     \end{enumerate}
+    
+    
+
+\section{Organização do trabalho}
+
+    Este trabalho está organizado da seguinte forma:\\
+    
+    No Capitulo \ref{chp:brasil} são apresentadas informações gerais sobre a atual situação do setor de energia elétrica no Brasil. São analisadas as fontes de energia elétrica, a variação da demanda e o perfil de consumo dos brasileiros. Esse capitulo também evidencia as perdas no sistema elétrico e mostra uma comparação em nível internacional das perdas e do custo da energia elétrica.\\
+    
+    O Capitulo \ref{chp:sde} explora as características e componentes do sistemas de distribuição de energia elétrica (SDE). Faz-se uma introdução aos métodos de Newton-Rahpson e de Gauss-Seidel, considerados os métodos clássicos na solução do fluxo de potência, de modo a evidenciar os motivos pelos quais os mesmos apresentam problemas de desempenho e convergência. \\
+    
+    No Capitulo \ref{chp:fluxo} é apresentado o modelo de linha de transmissão utilizado e são descritos os dois métodos de varredura (soma das potências e soma das correntes) empregados no cálculo do fluxo de potência para sistemas de distribuição, bem como suas limitações teóricas e práticas. É discutido como o fluxo de potência auxilia no melhoramento dos SDEs e a necessidade de algoritmos robustos e velozes. São abordadas também outras ferramentas que utilizam o fluxo de potência para aprimorar o custo e a qualidade da energia nos SDEs, como o fluxo ótimo, algoritmos de detecção de furto de energia e os \textit{Smart Grids}. \\
+    
+    No Capitulo \ref{chp:otimizacao} é apresentado o método de otimização proposto, junto com seu desenvolvimento matemático e as suas implicações. Para facilitar a compreensão, o capitulo anexa um fluxograma do algoritmo e uma sugestão de implementação.\\
+    
+    No Capitulo \ref{chp:quickflow} é apresentado o programa resultante deste trabalho, a sua organização em termos de software, a abordagem orientada a objetos utilizada para a implementação do fluxo de potência e modelagem dos elementos, suas funcionalidades e suas limitações.\\
+    
+    O Capitulo \ref{chp:resultado} trata da apresentação quantitativa dos resultados obtidos com o uso da ferramenta computacional desenvolvida. São apresentados os resultados dos cálculos para os sistemas de 34 e 69 barras, sendo realizada uma verificação entre o resultado obtido por cada um dos métodos, com e sem otimização, de modo verificar a diferença numérica resultante. Também é analisado o tempo e o número de iterações utilizado por cada algoritmo para os sistemas de 14, 34, 69, 136, 700 e 3000 barras para determinar qual o método mais rápido e qual o impacto da otimização. Por ultimo, é feita uma observação em relação a convergência dos métodos.\\
+    
+    No Capitulo \ref{chp:conclusao} são apresentadas as conclusões referentes à metodologia utilizada e as técnicas empregadas para execução desta monografia. É feita uma análise qualitativa dos resultados obtidos e de sua importância. São discutidas as dificuldades encontradas durante a execução deste trabalho e os mecanismos utilizados para superar as mesmas. Por fim, são apresentadas algumas ideias para trabalhos futuros, de modo a desenvolver a área de sistemas elétricos de potência. 
+    
+    
+    
+    
+
+

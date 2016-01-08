@@ -1,0 +1,335 @@
+%----------------------------------------------------------------------------
+%- Personalização do estilo LaTeX ABNTEX2 para o Departamento de Engenharia -
+%- Eletrica da Universidade Estadual de Londrina, baseado no Manual de      -
+%- Normalização para Apresentação de Monografias dos cursos da Universidade -
+%- criado por Laudicena de Fátima Ribeiro (Bibliotecária) em maio/2014.     -
+%-                                                                          -
+%-          14/09/2014               by Prof. Dr. Fernando Ciriaco          -
+%-          versão 3.1417                                                   -
+%----------------------------------------------------------------------------
+%          (testado com o ABNTEX2 e editor TeXnicCenter)  
+%
+% . \imprimircapa             monta a Capa
+% . \imprimirfolhaderosto     monta a Folha de Rosto
+% . \NEPfichacatalografica    monta a Ficha Catalográfica
+% . \textodedicatoria         monta página de Dedicatória
+% . \textoagradecimentos      monta página de Agradecimentos
+% . \textoepigrafe            monta página de Epígrafe
+% . \textoresumo              monta folha de Resumo
+% . \textoabstract            monta folha de Abstract
+
+% . \cite{...}                cita na forma "(FULANO, 2000)"
+% . \citeonline{...}          cita na forma "Fulano (2000)"
+%
+
+
+\NeedsTeXFormat{LaTeX2e} 
+\ProvidesPackage{DEEL}[2014/09/14]
+
+% Formatação da página e aspectos gerais
+\RequirePackage[a4paper,top=3cm,left=3cm,right=2cm,bottom=2cm]{geometry}
+
+% tabelas
+\RequirePackage{longtable}
+\RequirePackage{booktabs} % melhora o desenho das tabelas com \toprule \midrule e \bottomrule
+
+% index
+\RequirePackage{makeidx}  % índice
+\makeindex
+
+% referências
+\usepackage{prettyref} % facilita a construção de referências, deve-se usar \prettyref{...} no lugar de \ref{...}
+\newrefformat{fig}{figura~\ref{#1}}
+\newrefformat{tab}{tabela~\ref{#1}}
+\newrefformat{sec}{seção~\ref{#1}}
+\newrefformat{eq} {equação~(\ref{#1})}
+\newrefformat{chp}{capítulo~\ref{#1}}
+\newrefformat{ex} {exemplo~\ref{#1}}
+\newrefformat{anx}{anexo~\ref{#1}}
+\newrefformat{apd}{apêndice~\ref{#1}}
+\newrefformat{eta}{etapa~\ref{#1}}
+
+% acronimos
+\usepackage{acronym}  % uso de siglas
+
+% Formatação de paragrafos
+\renewcommand{\ABNTEXchapterfont}{\bfseries}
+
+% Parametros de Macros
+% --------
+\newcommand{\deelcurso}{}
+\newcommand{\cursoa}[1]{\renewcommand{\deelcurso}{#1}}
+\newcommand{\curso}[1]{\cursoa{#1}}
+
+\newcommand{\DEELautor}[3]{\autor{{#1 #2}}}
+      
+\newcommand{\deelchave}{}
+\newcommand{\chave}[1]{\renewcommand{\deelchave}{#1}}
+\newcommand{\palavraschave}[1]{\chave{#1}}
+
+\newcommand{\deelkey}{}
+\newcommand{\key}[1]{\renewcommand{\deelkey}{#1}}
+\newcommand{\keywords}[1]{\key{#1}}
+ 
+\newcommand{\deeljuryb}{}
+\newcommand{\juryb}[1]{\renewcommand{\deeljuryb}{#1}}
+\newcommand{\membrob}[1]{\juryb{#1}}
+
+\newcommand{\deeljuryc}{}
+\newcommand{\juryc}[1]{\renewcommand{\deeljuryc}{#1}}
+\newcommand{\membroc}[1]{\juryc{#1}}
+%------------------------------------------------------------
+
+\preambulo{Trabalho de Conclusão de Curso orientado pelo \imprimirorientador $\,$ intitulado ``\imprimirtitulo'' e apresentada à Universidade Estadual de Londrina, como parte dos requisitos necessários para a obtenção do Título de Bacharel em \deelcurso.}
+
+%%--------- Parametros da DEDICATÓRIA ----------
+\newcommand{\deelDEELdedicatoria}{}
+\newcommand{\dedica}[1]{\renewcommand{\deelDEELdedicatoria}{#1}}
+\newcommand{\DEELdedicatoria}[1]{\dedica{#1}}
+
+%%--------- Parametros dos AGRADECIMENTOS ----------
+\newcommand{\deelDEELagradecimentos}{}
+\newcommand{\agradece}[1]{\renewcommand{\deelDEELagradecimentos}{#1}}
+\newcommand{\DEELagradecimentos}[1]{\agradece{#1}}
+
+%%--------- Parametros da EPIGRAFE ----------
+\newcommand{\deelDEELepigrafe}{}
+\newcommand{\epigrafeb}[1]{\renewcommand{\deelDEELepigrafe}{#1}}
+\newcommand{\DEELepigrafe}[1]{\epigrafeb{#1}}
+
+%--------- Parametros do RESUMO ----------
+\newcommand{\deelDEELresumo}{}
+\newcommand{\resum}[1]{\renewcommand{\deelDEELresumo}{#1}}
+\newcommand{\DEELresumo}[1]{\resum{#1}}
+
+%--------- Parametros do ABSTRACT ----------
+\newcommand{\deeltitulouk}{}
+\newcommand{\titulouk}[1]{\renewcommand{\deeltitulouk}{#1}}
+\newcommand{\tituloingles}[1]{\titulouk{#1}}
+
+\newcommand{\deelDEELabstract}{}
+\newcommand{\abstrac}[1]{\renewcommand{\deelDEELabstract}{#1}}
+\newcommand{\DEELabstract}[1]{\abstrac{#1}}
+
+%--------- Formatação da CAPA da UEL ----------
+% ************* CAPA UEL **************
+\renewcommand{\imprimircapa}{%
+  \begin{capa}%
+	\begin{figure}[htb]
+		\begin{center}
+			\begin{minipage}[b]{0.2 \linewidth}
+				\begin{center}
+					\includegraphics[width=60pt, height=60pt]{logo_uel}
+				\end{center}
+			\end{minipage}
+			\begin{minipage}[b]{0.7 \linewidth}
+				{\large {\textbf{Universidade Estadual de Londrina}}\\[5pt]
+				Centro de Tecnologia e Urbanismo\\[5pt]
+				Departamento de Engenharia Elétrica}
+			\end{minipage}
+		\end{center}
+	\end{figure}
+				
+	\vspace{0.75cm}
+    
+    \center
+    {\ABNTEXchapterfont\large\imprimirautor}
+     \vspace*{5cm}
+    
+    {\ABNTEXchapterfont\bfseries\LARGE\imprimirtitulo}
+    \vfill
+
+		\vspace*{\stretch{3}}
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    \vspace*{1cm}
+  \end{capa}
+}
+%--------------- FIM da CAPA --------------------------
+
+% ----------  Formatação da FOLHA DE ROSTO da UEL -----
+% ******** FOLHA DE ROSTO *********
+\makeatletter
+\renewcommand{\folhaderostocontent}{
+\begin{center}
+{\Large {\textbf{Universidade Estadual de Londrina}}\\[5pt]
+Centro de Tecnologia e Urbanismo\\[5pt]
+				Departamento de Engenharia Elétrica}\\
+\textcolor{black}{\rule {16cm}{2.25pt}}
+
+\vspace*{1cm}
+    {\ABNTEXchapterfont\large\imprimirautor}
+\vspace{3.5cm}
+    
+    {\ABNTEXchapterfont\bfseries\Large\imprimirtitulo}
+    
+\vspace{2cm}
+    
+    \abntex@ifnotempty{\imprimirpreambulo}{%
+      \hspace{.20\textwidth}
+      \begin{minipage}{.75\textwidth}
+       \SingleSpacing
+         \imprimirpreambulo
+       \end{minipage}%
+       \vspace*{\fill}
+    }%
+    
+    {\abntex@ifnotempty{\imprimirinstituicao}{\imprimirinstituicao\vspace*{\fill}}}
+    {\large\imprimirorientadorRotulo~\imprimirorientador\par}
+    \abntex@ifnotempty{\imprimircoorientador}{%
+       {\large\imprimircoorientadorRotulo~\imprimircoorientador}%
+    }%
+    \vspace*{\fill}
+    
+    \textcolor{black}{\rule {16cm}{2.25pt}}
+
+    {\large\imprimirlocal}
+    \par
+    {\large\imprimirdata}
+    \vspace*{1cm}
+\end{center}
+}
+\makeatother
+%----------------- Fim da FOLHA DE ROSTO ---------------------- 
+
+
+%%-----------Formatação da Ficha catalográfica da UEL ----------
+%%
+\newcommand{\DEELfichacatalografica}{
+\vspace*{\stretch{1}}% Posição vertical
+\begin{center}
+\textbf{Ficha Catalográfica}
+\end{center}
+\vspace{0.25cm}
+\begin{tabular}{| @{\hspace{.5cm}} p{\textwidth-2cm} @{\hspace{.5cm}}|}
+\hline
+\noindent \imprimirautor \\
+\imprimirtitulo \, - \imprimirlocal, \imprimirdata \, - \pageref{LastPage} p., 30 cm.\\
+\imprimirorientadorRotulo \, \imprimirorientador \\
+\deelchave \\
+\noindent I. Universidade Estadual de Londrina. Curso de \deelcurso. II. \imprimirtitulo.\\
+\hline
+\end{tabular}
+}
+
+
+%-----------Formatação da FOLHA DE APROVAÇÃO da UEL ----------
+%
+\newcommand{\folhaaprovacao}{
+\newpage
+\begin{center}
+{\large \textbf{\imprimirautor}}
+\end{center}
+
+\vspace*{0.75cm}
+
+\begin{center}
+{\LARGE\ABNTEXchapterfont\imprimirtitulo\par}
+\end{center}
+
+\vspace*{1cm}
+
+\begin{flushright}
+\begin{minipage}{11cm}
+Trabalho de Conclusão de Curso apresentado ao Curso de \deelcurso \, da Universidade Estadual de Londrina, como requisito parcial para a obtenção do título de Bacharel em \deelcurso.
+\end{minipage}
+\end{flushright}
+\vspace*{0.4cm}
+
+\begin{flushright}
+\textbf{Comissão Examinadora}
+\end{flushright}
+\vspace*{-0.5cm}
+
+\setlength{\ABNTEXsignthickness}{0.4pt}
+\setlength{\ABNTEXsignskip}{1.5cm}
+
+\begin{flushright}
+\assinatura*{\imprimirorientador \\ Universidade Estadual de Londrina \\ Orientador}
+\hspace*{0.75cm}
+\assinatura*{\deeljuryb \\ Universidade Estadual de Londrina}
+\hspace*{0.75cm}
+\assinatura*{\deeljuryc \\ Universidade Estadual de Londrina}
+\end{flushright}
+
+\vspace*{2.5cm}
+\centerline{Londrina, \today}
+}
+
+%-----------Formatação da Dedicatória ----------
+\newcommand{\textodedicatoria}{
+\if\DEELdedicatoria\@empty
+\else
+  \newpage
+  \vspace*{\stretch{1}}
+  \begin{flushright}
+  \deelDEELdedicatoria
+  \end{flushright}
+\fi
+}
+
+%-----------Formatação da Dedicatória ----------
+\newcommand{\textoagradecimentos}{
+\if\DEELagradecimentos\@empty
+\else
+  \pretextualchapter{Agradecimentos}
+  \deelDEELagradecimentos
+\fi
+}
+
+%-----------Formatação da Epígrafe ----------
+\newcommand{\textoepigrafe}{
+\if\DEELepigrafe\@empty
+\else
+  \newpage
+  \vspace*{\stretch{1}}
+  \begin{flushright}
+  \deelDEELepigrafe
+  \end{flushright}
+\fi
+}
+
+%-----------Formatação do Resumo ----------
+\newcommand{\textoresumo}{
+\newpage
+\noindent {\textbf{\imprimirautor}}. \imprimirdata. 
+\pageref{LastPage}~p.  Trabalho de Conclusão de Curso em \deelcurso \,- Universidade Estadual de Londrina, \imprimirlocal.
+\vspace{1.25cm}
+\begin{resumo}
+\deelDEELresumo \\
+\vspace{0.75cm}
+
+{\textbf{Palavras-Chave:}} \deelchave
+\end{resumo}
+}
+
+
+%-----------Formatação do Abstract ----------
+\newcommand{\textoabstract}{
+\noindent {\textbf{\deeltitulouk}}. \imprimirdata. 
+\pageref{LastPage}~p. Monograph in \deelcurso \,- Universidade Estadual de Londrina, \imprimirlocal.
+\vspace{1.25cm}
+\begin{resumo}[Abstract]
+\foreignlanguage{english}{\deelDEELabstract}\\
+\vspace{0.75cm}
+
+{\textbf{Key-words:}} \deelkey
+\end{resumo}
+}
+
+
+%-----------Formatação dos Elementos Pré-Textuais (na ordem) ----------
+
+\newcommand{\ElementosPreTextuais}{
+\imprimircapa                   % Obrigatório
+\imprimirfolhaderosto           % Obrigatório
+
+\DEELfichacatalografica     % Obrigatório
+\folhaaprovacao         % Obrigatório
+\textodedicatoria       % Opcional
+\textoagradecimentos    % Opcional
+\textoepigrafe          % Opcional
+\textoresumo            % Obrigatório
+\textoabstract          % Obrigatório
+}
