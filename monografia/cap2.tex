@@ -1,30 +1,114 @@
 \chapter{Energia elétrica no Brasil}\label{chp:brasil}
-
+    \subsection{Sistema Elétrico de Potência brasileiro}
+    O Sistema Elétrico de Potência (SEP) brasileiro é definido como o conjunto de instalações e equipamentos destinados a geração, transmissão e distribuição de energia elétrica, regulamentado em 1978 pela Portaria \textnumero ~3.214. Esse sistema inclui desde as usinas geradoras até os equipamentos de medição nas unidades consumidoras e está presente em todo território nacional. A figura \ref{fig:SEP} exibe um diagrama com os principais componentes de um SEP e suas tensões de trabalho.
    
-   \subsection{Matriz energética}
+    \begin{figure}[h]
+        \centering
+        \caption{Diagrama de um sistema elétrico de potência.}  
+        \includegraphics[scale=0.35]{SEP}
+        \label{fig:SEP}
+          
+        Fonte: \textit{United States Department of Energy}, 2014\footnotemark. 
+    \end{figure}
+    \footnotetext{Tradução do autor.}
    
+    As usinas geradoras e a infraestrutura de transmissão constituem Sistema Interligado Nacional (SIN), mostrado na figura \ref{fig:SIN}, e fornecem 98,3\% da energia elétrica consumida no país \cite{Dados2014}. Os 1,7\%  restantes encontram-se em pequenos sistemas, chamados sistemas isolados, localizados em sua grande maioria na região amazônica. O órgão responsável pela operação e manutenção do SIN é o Operador Nacional do Sistema Elétrico (ONS) que, desde 26 de agosto de 1998, trabalha para garantir a segurança, continuidade e a economicidade do suprimento de energia elétrica para o país.
    
-   - crise hidrica
-   - Sistema de Bandeiras Tarifárias
-   - desenvolvimento energia solar e eolica
+    \begin{figure}[h]
+        \centering
+        \caption{Sistema Interligado Nacional (SIN).}
+        \includegraphics[scale=0.13]{SIN}
+        \label{fig:SIN}
+          
+        Fonte: Dados Relevantes 2014, ONS.
+    \end{figure}
+        
+    O sistemas de distribuição (elementos em verde na figura \ref{fig:SEP}) é o responsável por receber a energia em alta tensão do SIN e entregá-la aos consumidores a um nível de tensão adequado. Esse sistema é controlado por 67 empresas, denominadas concessionarias de energia elétrica, que operam sob fiscalização da Agência Nacional de Energia Elétrica (ANEEL) e entregam energia para as mais de 77 milhões de unidades consumidoras (UC) \cite{BoletimSet}.
+    
+    O termo unidade consumidora se refere ao conjunto de instalações e equipamentos elétricos, pertencentes a um consumidor, que recebe energia elétrica através de um único ponto de entrega, com medição individual.
+      
+    \subsection{Fontes de energia elétrica}
+        Devido a abundância de cursos d'água, a principal fonte de energia elétrica no Brasil é a hídrica. Apesar de ser um recurso renovável, as usinas hidrelétricas, que compõem 63\% da geração total (figura \ref{fig:fontes}), vem apresentando problemas para suprir a demanda crescente. Longos períodos de estiagem diminuem os reservatórios, resultando em um aumento no uso de energia termoelétrica, que é mais cara e mais poluente. Sendo assim, o custo do kWh é diretamente influenciado pelo índice pluviométrico na região das usinas \cite{Bandeiras}.
    
+        \begin{figure}[h]
+            \centering
+            \caption{Fonte para produção de energia elétrica em 2014 \cite{Anuario2015}.}
+            \includegraphics[scale=0.7]{fontes_pie}
+            \label{fig:fontes}
+           
+            Fonte: Autoria própria. 
+        \end{figure}
+        
+        A tabela \ref{tab:fontes} apresenta a quantidade de energia produzida de acordo com a fonte utilizada e sua variação entre os anos de 2010 e 2014. Nota-se que mesmo com o crescimento da demanda, a utilização de recursos hídricos sofreu uma redução no período avaliado, enquanto a geração térmica (gás natural, derivados de petróleo, carvão e biomassa) aumentou consideravelmente.
+        
+       \begin{table}
+           \centering
+           \caption{Geração elétrica por fonte no Brasil (GWh)}
+           \begin{tabular}{ccccccc}
+               \toprule
+                                & \textbf{2010} & \textbf{2011} & \textbf{2012} & \textbf{2013} & \textbf{2014} & $\bm{\Delta \%_{2010-2014}}$ \\
+               \midrule
+               Gás Natural 		& 36476 & 25095 & 46760 & 69003 & 81075 & 122,3 \\
+               Hidráulica 		& 403290& 428333& 415342& 390992& 373439& -7,4 	\\
+               Deriv. Petróleo 	& 14216 & 12239 & 16214 & 22090	& 31668 & 122,8 \\
+               Carvão 			& 6992 	& 6485 	& 8422 	& 14802	& 18385 & 163,0	\\
+               Nuclear 			& 14523 & 15659 & 16038 & 15450	& 15379 & 5,9	\\
+               Biomassa 		& 131209& 31633 & 34662 & 39679	& 44733 & 43,3	\\
+               Eólica 			& 2177 	& 2705 	& 5050 	& 6578 	& 12210 & 460,9	\\
+               Outras 			& 6916 	& 9609 	& 10010 & 12241	& 13590 & 96,5	\\
+               \midrule
+               \textbf{Total} & \textbf{515799} & \textbf{531758} & \textbf{552498} & \textbf{570835} & \textbf{590479} & \textbf{14,5} \\
+               \bottomrule
+            \end{tabular}
+            \label{tab:fontes}
+            
+            Fonte: Anuário Estatístico de Energia Elétrica 2015, Empresa de Pesquisa Energética.
+        \end{table}
+             
+        Embora a quantidade de energia eólica utilizada tenha sido relativamente baixa (menor que 5\% da produção total), os programas de incentivo fiscal, a exemplo do Programa de Incentivo às Fontes Alternativas de Energia Elétrica (Proinfa), e o investimento no setor tem apresentado resultados significativos, como o crescimento de mais de 4 vezes na quantidade de energia elétrica produzida para a geração eólica em 5 anos. Em conjunto com os dados da tabela \ref{tab:usinas}, que expõe a grande quantidade de parques eólicos sendo construídos em 2014, fica evidente que há uma tendencia crescente no uso dessas fontes alternativas de energia. Isso culmina em uma diversificação da matriz energética do país, reduzindo a emissão de poluentes e tornado-a menos vulnerável a escassez de um ou outro determinado recurso.
+                
+        \begin{table}[h]
+            \centering
+            \caption{Usinas em construção no Brasil em 2014.}
+            \begin{tabular}{cc}
+                \toprule
+                \textbf{Tipo} & \textbf{Quantidade}\\
+                \midrule
+                Hidrelétrica 			& 11 \\
+                Eolielétrica 			& 131 \\
+                Termelétrica 			& 28 \\
+                Termonuclear 			& 1	\\
+                PCH 					& 41	\\
+                Central Hidrelétrica 	& 1	\\
+                \bottomrule
+            \end{tabular}
+            \label{tab:usinas}
+                    
+            Fonte: Anuário Estatístico de Energia Elétrica 2015, Empresa de Pesquisa Energética.
+        \end{table}
+        
+    \subsection{Perdas do sistema}
+        As perdas são parte intrínseca dos SEPs e qualquer equipamento elétrico/eletrônico, não podendo ser evitadas e sim reduzidas a níveis aceitáveis.
+        
+        \begin{figure}[h]
+            \centering
+            \caption{Fonte para produção de energia elétrica em 2014 \cite{Anuario2015}.}
+            \includegraphics[width=\textwidth]{perdas_mundo}
+            \label{fig:perdas_mundo}
+                        
+            Fonte: Autoria própria. 
+        \end{figure}
+                    
+        - Historico de perdas
+        - Perdas agosto 2015
+        - Perdas por regiao
+        - Custo tarifa por regiao
    
-   - evolução da demanda.
-   - crescimento do consumo e população
+        - Perdas tecnicas x perdas não técnicas.
    
-   - consumo por região
+    \subsection{Ferramentas computacionais para melhoria dos sistemas de distribuição}
    
-   \subsection{Perdas do sistema}
-   - Historico de perdas
-   - Perdas agosto 2015
-   - Perdas por regiao
-   - Custo tarifa por regiao
-   
-   - Perdas tecnicas x perdas não técnicas.
-   
-   \subsection{Ferramentas computacionais para melhoria dos sistemas de distribuição}
-   
-   - fluxo de potencia
-   - fluxo otimo
-   - smart grid
+        - fluxo de potencia
+        - fluxo otimo
+        - smart grid
 

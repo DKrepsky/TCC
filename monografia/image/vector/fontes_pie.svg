@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   style="font-size:12px;font-family:'unica one', sans-serif"
+   width="450"
+   height="350"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="fontes_pie.svg"
+   inkscape:export-filename="/home/david/github/TCC/temp/fontes_pie.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata173">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview171"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="1.668772"
+     inkscape:cx="24.363195"
+     inkscape:cy="208.91742"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4618" />
+  <desc
+     id="desc4">Created with Highcharts 4.0.4</desc>
+  <defs
+     id="defs6">
+    <clipPath
+       id="highcharts-443">
+      <rect
+         x="0"
+         y="0"
+         width="414"
+         height="375"
+         id="rect9" />
+    </clipPath>
+  </defs>
+  <g
+     id="g4694"
+     transform="translate(-389.40678,-38.983051)" />
+  <g
+     style="visibility:visible"
+     id="g31"
+     transform="translate(10,-40)"
+     visibility="visible"
+     class="highcharts-markers" />
+  <g
+     id="g4618">
+    <g
+       style="visibility:visible;fill:#24cbe5;fill-opacity:1"
+       transform="matrix(0.93104077,0.36491519,-0.36491519,0.93104077,307.07925,237.52145)"
+       id="g51">
+      <text
+         x="3"
+         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#24cbe5;fill-opacity:1"
+         y="14"
+         id="text53">
+        <tspan
+           style="fill:#000000;fill-opacity:1"
+           id="tspan55">63.24 %</tspan>
+      </text>
+    </g>
+    <g
+       inkscape:transform-center-y="-0.29962152"
+       inkscape:transform-center-x="2.6965937"
+       style="visibility:visible;fill:#ed561b;fill-opacity:1"
+       transform="matrix(0.97051277,-0.24104971,0.24104971,0.97051277,-2.7863,241.0136)"
+       id="g57">
+      <text
+         x="3"
+         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#ed561b;fill-opacity:1"
+         y="14"
+         id="text59">
+        <tspan
+           style="fill:#000000;fill-opacity:1"
+           id="tspan61">13.73 %</tspan>
+      </text>
+    </g>
+    <g
+       style="visibility:visible;fill:#dddf00;fill-opacity:1;stroke:none;stroke-opacity:1"
+       transform="matrix(0.93629696,0.35120933,-0.35120933,0.93629696,13.783588,130.92916)"
+       id="g63">
+      <text
+         x="3"
+         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#dddf00;fill-opacity:1;stroke:none;stroke-opacity:1"
+         y="14"
+         id="text65">
+        <tspan
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+           id="tspan67">7.57 %</tspan>
+      </text>
+    </g>
+    <g
+       style="visibility:visible;fill:#000000;fill-opacity:0.66666669"
+       transform="matrix(0.77724654,0.62919617,-0.62919617,0.77724654,52.021356,76.290746)"
+       id="g69">
+      <text
+         x="3"
+         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#000000;fill-opacity:0.66666669"
+         y="14"
+         id="text71">
+        <tspan
+           style="fill:#000000;fill-opacity:1"
+           id="tspan73">5.36 %</tspan>
+      </text>
+    </g>
+    <g
+       style="visibility:visible;fill:#64e572;fill-opacity:1"
+       transform="matrix(0.56464904,0.82533112,-0.82533112,0.56464904,91.226567,48.32834)"
+       id="g75">
+      <text
+         x="3"
+         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#000000;fill-opacity:1;"
+         y="14"
+         id="text77">
+        <tspan
+           style="fill:#000000;fill-opacity:1;"
+           id="tspan79">3.11 %</tspan>
+      </text>
+    </g>
+    <g
+       style="visibility:visible;fill:#ff9655;fill-opacity:1"
+       transform="matrix(0.42602721,0.90471034,-0.90471034,0.42602721,122.8395,38.78905)"
+       id="g81">
+      <text
+         x="3"
+         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#ff9655;fill-opacity:1"
+         y="14"
+         id="text83">
+        <tspan
+           style="fill:#000000;fill-opacity:1"
+           id="tspan85">2.6 %</tspan>
+      </text>
+    </g>
+    <g
+       style="visibility:visible;fill:#62fdf6;fill-opacity:1"
+       transform="matrix(0.23204227,0.97270571,-0.97270571,0.23204227,146.27908,30.426252)"
+       id="g87">
+      <text
+         x="3"
+         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#62fdf6;fill-opacity:1"
+         y="14"
+         id="text89">
+        <tspan
+           style="fill:#000000;fill-opacity:1"
+           id="tspan91">2.06 %</tspan>
+      </text>
+    </g>
+    <g
+       inkscape:transform-center-y="-4.1947012"
+       inkscape:transform-center-x="-7.7901595"
+       style="visibility:visible;fill:#c7c7c7;fill-opacity:1"
+       transform="matrix(0.00250007,0.99999687,-0.99999687,0.00250007,173.96929,33.182196)"
+       id="g93">
+      <text
+         x="3"
+         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#000000;fill-opacity:1;"
+         y="14"
+         id="text95">
+        <tspan
+           style="fill:#000000;fill-opacity:1;"
+           id="tspan97">2.3 %</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     id="g4580">
+    <g
+       id="g4571">
+      <text
+         x="337.44989"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+         y="24.034412"
+         id="text107">Hidráulica</text>
+      <rect
+         x="316.44989"
+         y="13.034413"
+         width="16"
+         height="12"
+         id="rect109"
+         style="fill:#24cbe5;fill-opacity:1" />
+    </g>
+    <g
+       class="highcharts-legend-item"
+       transform="translate(316.4499,23.034413)"
+       id="g111">
+      <text
+         x="21"
+         y="15"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+         id="text113">
+        <tspan
+           id="tspan115">Gás Natural</tspan>
+      </text>
+      <rect
+         x="0"
+         y="4"
+         width="16"
+         height="12"
+         id="rect117"
+         style="fill:#ed561b" />
+    </g>
+    <g
+       class="highcharts-legend-item"
+       transform="translate(316.4499,37.034413)"
+       id="g119">
+      <text
+         x="21"
+         y="15"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+         id="text121">Biomassa</text>
+      <rect
+         x="0"
+         y="4"
+         width="16"
+         height="12"
+         id="rect123"
+         style="fill:#dddf00" />
+    </g>
+    <g
+       id="g4575">
+      <text
+         x="337.44989"
+         y="66.034416"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+         id="text127">
+        <tspan
+           id="tspan129">Derivados de petróleo</tspan>
+      </text>
+      <rect
+         x="316.44989"
+         y="55.034412"
+         width="16"
+         height="12"
+         id="rect131"
+         style="fill:#000000;fill-opacity:0.66666669" />
+    </g>
+    <g
+       class="highcharts-legend-item"
+       transform="translate(316.4499,65.034413)"
+       id="g133">
+      <text
+         x="21"
+         y="15"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+         id="text135">Carvão</text>
+      <rect
+         x="0"
+         y="4"
+         width="16"
+         height="12"
+         id="rect137"
+         style="fill:#64e572" />
+    </g>
+    <g
+       class="highcharts-legend-item"
+       transform="translate(316.4499,79.034413)"
+       id="g139">
+      <text
+         x="21"
+         y="15"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+         id="text141">Nuclear</text>
+      <rect
+         x="0"
+         y="4"
+         width="16"
+         height="12"
+         id="rect143"
+         style="fill:#ff9655" />
+    </g>
+    <g
+       class="highcharts-legend-item"
+       transform="translate(316.4499,93.034413)"
+       id="g145">
+      <text
+         x="21"
+         y="15"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+         id="text147">Eólica</text>
+      <rect
+         x="0"
+         y="4"
+         width="16"
+         height="12"
+         id="rect149"
+         style="fill:#62fdf6" />
+    </g>
+    <g
+       class="highcharts-legend-item"
+       transform="translate(316.4499,107.03441)"
+       id="g151">
+      <text
+         x="21"
+         y="15"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+         id="text153">Outras</text>
+      <rect
+         x="0"
+         y="4"
+         width="16"
+         height="12"
+         id="rect155"
+         style="fill:#c7c7c7" />
+    </g>
+  </g>
+  <g
+     class="highcharts-tooltip"
+     style="white-space:nowrap"
+     transform="translate(0,-10049)"
+     id="g157">
+    <path
+       d="m 3,0 10,0 c 3,0 3,0 3,3 l 0,10 c 0,3 0,3 -3,3 L 3,16 C 0,16 0,16 0,13 L 0,3 C 0,0 0,0 3,0"
+       transform="translate(1,1)"
+       id="path159"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05" />
+    <path
+       d="m 3,0 10,0 c 3,0 3,0 3,3 l 0,10 c 0,3 0,3 -3,3 L 3,16 C 0,16 0,16 0,13 L 0,3 C 0,0 0,0 3,0"
+       transform="translate(1,1)"
+       id="path161"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1" />
+    <path
+       d="m 3,0 10,0 c 3,0 3,0 3,3 l 0,10 c 0,3 0,3 -3,3 L 3,16 C 0,16 0,16 0,13 L 0,3 C 0,0 0,0 3,0"
+       transform="translate(1,1)"
+       id="path163"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15" />
+    <path
+       d="m 3,0 10,0 c 3,0 3,0 3,3 l 0,10 c 0,3 0,3 -3,3 L 3,16 C 0,16 0,16 0,13 L 0,3 C 0,0 0,0 3,0"
+       id="path165"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-opacity:0.85" />
+    <text
+       x="8"
+       style="color:#000000;font-size:12px;fill:#000000"
+       y="21"
+       id="text167" />
+  </g>
+  <g
+     id="g4608">
+    <path
+       style="visibility:visible;fill:#24cbe5;stroke:#ffffff;stroke-width:1;stroke-linejoin:round;fill-opacity:1"
+       inkscape:connector-curvature="0"
+       id="path15"
+       d="M 173.43635,65.463556 A 135.5,135.5 0 1 1 73.272979,292.18865 l 100.190971,-91.2251 z" />
+    <path
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       inkscape:connector-curvature="0"
+       id="path17"
+       d="M 73.181799,292.08841 A 135.5,135.5 0 0 1 39.011177,184.1498 l 134.452773,16.81375 z" />
+    <path
+       style="visibility:visible;fill:#dddf00;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       inkscape:connector-curvature="0"
+       id="path19"
+       d="m 39.028058,184.01536 a 135.5,135.5 0 0 1 22.634091,-59.60641 l 111.801801,76.5546 z" />
+    <path
+       style="visibility:visible;fill:#000000;stroke:#ffffff;stroke-width:1;stroke-linejoin:round;fill-opacity:0.66666669"
+       inkscape:connector-curvature="0"
+       id="path21"
+       d="M 61.738759,124.29718 A 135.5,135.5 0 0 1 93.155069,91.827247 L 173.46395,200.96355 Z" />
+    <path
+       style="visibility:visible;fill:#64e572;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       inkscape:connector-curvature="0"
+       id="path23"
+       d="M 93.264239,91.746993 A 135.5,135.5 0 0 1 115.94673,78.276882 l 57.51722,122.686668 z" />
+    <path
+       style="visibility:visible;fill:#ff9655;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       inkscape:connector-curvature="0"
+       id="path25"
+       d="m 116.06944,78.219426 a 135.5,135.5 0 0 1 20.54918,-7.650165 l 36.84533,130.394289 z" />
+    <path
+       style="visibility:visible;fill:#62fdf6;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       inkscape:connector-curvature="0"
+       id="path27"
+       d="m 136.74903,70.532481 a 135.5,135.5 0 0 1 17.08404,-3.639352 l 19.63088,134.070421 z" />
+    <path
+       style="visibility:visible;fill:#c7c7c7;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       inkscape:connector-curvature="0"
+       id="path29"
+       d="m 153.96715,66.873565 a 135.5,135.5 0 0 1 19.30859,-1.409881 l 0.18821,135.499866 z" />
+  </g>
+</svg>
