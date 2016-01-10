@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   style="font-size:12px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif"
+   width="394.01794"
+   height="331.50223"
+   id="svg3620"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="perfil.svg">
+  <metadata
+     id="metadata3815">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview3813"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.18"
+     inkscape:cx="172.74918"
+     inkscape:cy="151.64664"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4743" />
+  <desc
+     id="desc3622">Created with Highcharts 4.0.4</desc>
+  <defs
+     id="defs3624">
+    <radialGradient
+       cx="6.9282031"
+       cy="8.7757244"
+       r="9.6994848"
+       id="highcharts-85"
+       gradientTransform="matrix(1.1547005,0,0,0.8660254,57,371)"
+       fx="6.9282031"
+       fy="8.7757244"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#50B432"
+         stop-opacity="1"
+         id="stop3627" />
+      <stop
+         offset="1"
+         stop-color="rgb(4,104,0)"
+         stop-opacity="1"
+         id="stop3629" />
+    </radialGradient>
+    <radialGradient
+       cx="6.9282031"
+       cy="8.7757244"
+       r="9.6994848"
+       id="highcharts-86"
+       gradientTransform="matrix(1.1547005,0,0,0.8660254,160.03125,371)"
+       fx="6.9282031"
+       fy="8.7757244"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#c51bed"
+         stop-opacity="1"
+         id="stop3632" />
+      <stop
+         offset="1"
+         stop-color="rgb(121,0,161)"
+         stop-opacity="1"
+         id="stop3634" />
+    </radialGradient>
+    <radialGradient
+       cx="6.9282031"
+       cy="8.7757244"
+       r="9.6994848"
+       id="highcharts-87"
+       gradientTransform="matrix(1.1547005,0,0,0.8660254,249.71875,371)"
+       fx="6.9282031"
+       fy="8.7757244"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#DDDF00"
+         stop-opacity="1"
+         id="stop3637" />
+      <stop
+         offset="1"
+         stop-color="rgb(145,147,0)"
+         stop-opacity="1"
+         id="stop3639" />
+    </radialGradient>
+    <radialGradient
+       cx="6.9282031"
+       cy="8.7757244"
+       r="9.6994848"
+       id="highcharts-88"
+       gradientTransform="matrix(1.1547005,0,0,0.8660254,344.71875,371)"
+       fx="6.9282031"
+       fy="8.7757244"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#24CBE5"
+         stop-opacity="1"
+         id="stop3642" />
+      <stop
+         offset="1"
+         stop-color="rgb(0,127,153)"
+         stop-opacity="1"
+         id="stop3644" />
+    </radialGradient>
+    <radialGradient
+       cx="6.9282031"
+       cy="8.7757244"
+       r="9.6994848"
+       id="highcharts-89"
+       gradientTransform="matrix(1.1547005,0,0,0.8660254,414.39062,371)"
+       fx="6.9282031"
+       fy="8.7757244"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#c1c1c1"
+         stop-opacity="1"
+         id="stop3647" />
+      <stop
+         offset="1"
+         stop-color="rgb(117,117,117)"
+         stop-opacity="1"
+         id="stop3649" />
+    </radialGradient>
+    <radialGradient
+       cx="6.9282031"
+       cy="8.7757244"
+       r="9.6994848"
+       id="highcharts-90"
+       gradientTransform="matrix(1.1547005,0,0,0.8660254,491.39062,371)"
+       fx="6.9282031"
+       fy="8.7757244"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#ff0000"
+         stop-opacity="1"
+         id="stop3652" />
+      <stop
+         offset="1"
+         stop-color="rgb(179,0,0)"
+         stop-opacity="1"
+         id="stop3654" />
+    </radialGradient>
+    <clipPath
+       id="highcharts-91">
+      <rect
+         x="0"
+         y="0"
+         width="580"
+         height="338"
+         id="rect3657" />
+    </clipPath>
+    <radialGradient
+       cx="290"
+       cy="105.4"
+       r="222.60001"
+       id="highcharts-92"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(10,10)">
+      <stop
+         offset="0"
+         stop-color="#50B432"
+         stop-opacity="1"
+         id="stop3660" />
+      <stop
+         offset="1"
+         stop-color="rgb(4,104,0)"
+         stop-opacity="1"
+         id="stop3662" />
+    </radialGradient>
+    <radialGradient
+       cx="290"
+       cy="105.4"
+       r="222.60001"
+       id="highcharts-93"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(10,10)">
+      <stop
+         offset="0"
+         stop-color="#c51bed"
+         stop-opacity="1"
+         id="stop3665" />
+      <stop
+         offset="1"
+         stop-color="rgb(121,0,161)"
+         stop-opacity="1"
+         id="stop3667" />
+    </radialGradient>
+    <radialGradient
+       cx="290"
+       cy="105.4"
+       r="222.60001"
+       id="highcharts-94"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(10,10)">
+      <stop
+         offset="0"
+         stop-color="#DDDF00"
+         stop-opacity="1"
+         id="stop3670" />
+      <stop
+         offset="1"
+         stop-color="rgb(145,147,0)"
+         stop-opacity="1"
+         id="stop3672" />
+    </radialGradient>
+    <radialGradient
+       cx="290"
+       cy="105.4"
+       r="222.60001"
+       id="highcharts-95"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(10,10)">
+      <stop
+         offset="0"
+         stop-color="#24CBE5"
+         stop-opacity="1"
+         id="stop3675" />
+      <stop
+         offset="1"
+         stop-color="rgb(0,127,153)"
+         stop-opacity="1"
+         id="stop3677" />
+    </radialGradient>
+    <radialGradient
+       cx="290"
+       cy="105.4"
+       r="222.60001"
+       id="highcharts-96"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(10,10)">
+      <stop
+         offset="0"
+         stop-color="#c1c1c1"
+         stop-opacity="1"
+         id="stop3680" />
+      <stop
+         offset="1"
+         stop-color="rgb(117,117,117)"
+         stop-opacity="1"
+         id="stop3682" />
+    </radialGradient>
+    <radialGradient
+       cx="290"
+       cy="105.4"
+       r="222.60001"
+       id="highcharts-97"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(1.7372881,-2.5)">
+      <stop
+         offset="0"
+         stop-color="#ff0000"
+         stop-opacity="1"
+         id="stop3685" />
+      <stop
+         offset="1"
+         stop-color="rgb(179,0,0)"
+         stop-opacity="1"
+         id="stop3687" />
+    </radialGradient>
+  </defs>
+  <g
+     style="visibility:visible"
+     id="g3705"
+     transform="translate(-78.953666,2.9998469)"
+     visibility="visible"
+     class="highcharts-markers" />
+  <g
+     id="g4785"
+     transform="translate(-88.953666,-7.0001531)">
+    <path
+       inkscape:connector-curvature="0"
+       style="visibility:visible;fill:url(#highcharts-92);stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+       id="path3693"
+       d="M 299.96762,20.000003 A 159,159 0 0 1 456.89244,153.19761 L 300,179 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       style="visibility:visible;fill:url(#highcharts-93);stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+       id="path3695"
+       d="M 456.91816,153.35452 A 159,159 0 0 1 264.95964,334.09085 L 300,179 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       style="visibility:visible;fill:url(#highcharts-94);stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+       id="path3697"
+       d="M 264.80456,334.05574 A 159,159 0 0 1 153.89987,241.73558 L 300,179 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       style="visibility:visible;fill:url(#highcharts-95);stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+       id="path3699"
+       d="M 153.83721,241.58945 A 159,159 0 0 1 142.17394,198.28563 L 300,179 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       style="visibility:visible;fill:url(#highcharts-96);stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
+       id="path3701"
+       d="m 142.15474,198.12779 a 159,159 0 0 1 11.79629,-81.98238 L 300,179 Z" />
+    <path
+       inkscape:connector-curvature="0"
+       style="visibility:visible;fill:url(#highcharts-97);stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path3703"
+       d="M 145.75125,103.4994 A 159,159 0 0 1 291.51644,7.500153 L 291.73729,166.5 Z" />
+    <g
+       transform="translate(-1.1984861,3.5954582)"
+       id="g4736">
+      <g
+         id="g4743">
+        <g
+           transform="translate(417.9307,40.339412)"
+           id="g3721"
+           style="visibility:visible">
+          <text
+             x="3"
+             style="color:#606060;font-size:10px;font-family:arial, sans-serif;fill:#606060"
+             y="14"
+             id="text3723">
+            <tspan
+               id="tspan3725"
+               style="font-size:15px;fill:#000000;fill-opacity:1">22.4 %</tspan>
+          </text>
+        </g>
+        <text
+           id="text3765"
+           y="39.03828"
+           style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1"
+           x="405.18671">
+          <tspan
+             id="tspan4716"
+             style="font-size:15px">Residencial</tspan>
+        </text>
+      </g>
+    </g>
+    <g
+       transform="translate(-19.175777,20.374263)"
+       id="g4750">
+      <g
+         style="visibility:visible"
+         id="g3727"
+         transform="translate(446.71698,279.33717)">
+        <text
+           id="text3729"
+           y="14"
+           style="color:#606060;font-size:10px;font-family:arial, sans-serif;fill:#606060"
+           x="3">
+          <tspan
+             style="font-size:15px;fill:#000000;fill-opacity:1"
+             id="tspan3731">31.1 %</tspan>
+        </text>
+      </g>
+      <text
+         x="442.30121"
+         y="277.53702"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1"
+         id="text3771">
+        <tspan
+           style="font-size:15px"
+           id="tspan4714">Industrial</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(-2.3969721,1.1984861)"
+       id="g4757">
+      <g
+         style="visibility:visible"
+         id="g3733"
+         transform="translate(129.89614,304.42975)">
+        <text
+           id="text3735"
+           y="14"
+           style="color:#606060;font-size:10px;font-family:arial, sans-serif;fill:#606060"
+           x="3">
+          <tspan
+             style="font-size:15px;fill:#000000;fill-opacity:1"
+             id="tspan3737">15 %</tspan>
+        </text>
+      </g>
+      <text
+         x="116.71328"
+         y="303.90372"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1"
+         id="text3777">
+        <tspan
+           style="font-size:15px"
+           id="tspan4712">Comercial</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(9.5878886,18.576534)"
+       id="g4764">
+      <g
+         style="visibility:visible"
+         id="g3739"
+         transform="translate(85.323008,207.41925)">
+        <text
+           id="text3741"
+           y="14"
+           style="color:#606060;font-size:10px;font-family:arial, sans-serif;fill:#606060"
+           x="3">
+          <tspan
+             style="font-size:15px;fill:#000000;fill-opacity:1"
+             id="tspan3743">4.5 %</tspan>
+        </text>
+      </g>
+      <text
+         x="89.132332"
+         y="207.42558"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1"
+         id="text3783">
+        <tspan
+           style="font-size:15px"
+           id="tspan4710">Rural</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(1.1984861,-6.5916734)"
+       id="g4771">
+      <g
+         style="visibility:visible"
+         id="g3745"
+         transform="translate(87.596974,151.32203)">
+        <text
+           id="text3747"
+           y="14"
+           style="color:#606060;font-size:10px;font-family:arial, sans-serif;fill:#606060"
+           x="3">
+          <tspan
+             style="font-size:15px;fill:#000000;fill-opacity:1"
+             id="tspan3749">8.4 %</tspan>
+        </text>
+      </g>
+      <text
+         x="87.030083"
+         y="151.69597"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1"
+         id="text3789">
+        <tspan
+           style="font-size:15px"
+           id="tspan4708">Outros</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(-3.5954582,6.5916734)"
+       id="g4778">
+      <g
+         style="visibility:visible"
+         id="g3751"
+         transform="translate(140.27913,16.932203)">
+        <text
+           id="text3753"
+           y="14"
+           style="color:#606060;font-size:10px;font-family:arial, sans-serif;fill:#606060"
+           x="3">
+          <tspan
+             style="font-size:15px;fill:#000000;fill-opacity:1"
+             id="tspan3755">18.5 %</tspan>
+        </text>
+      </g>
+      <text
+         x="142.90926"
+         y="15.667804"
+         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1"
+         id="text3795">
+        <tspan
+           style="font-size:15px"
+           id="tspan4706">Perdas</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     class="highcharts-tooltip"
+     style="white-space:nowrap"
+     transform="translate(-88.953666,-10006)"
+     id="g3799">
+    <path
+       d="m 3,0 10,0 c 3,0 3,0 3,3 l 0,10 c 0,3 0,3 -3,3 L 3,16 C 0,16 0,16 0,13 L 0,3 C 0,0 0,0 3,0"
+       transform="translate(1,1)"
+       id="path3801"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05" />
+    <path
+       d="m 3,0 10,0 c 3,0 3,0 3,3 l 0,10 c 0,3 0,3 -3,3 L 3,16 C 0,16 0,16 0,13 L 0,3 C 0,0 0,0 3,0"
+       transform="translate(1,1)"
+       id="path3803"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1" />
+    <path
+       d="m 3,0 10,0 c 3,0 3,0 3,3 l 0,10 c 0,3 0,3 -3,3 L 3,16 C 0,16 0,16 0,13 L 0,3 C 0,0 0,0 3,0"
+       transform="translate(1,1)"
+       id="path3805"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15" />
+    <path
+       d="m 3,0 10,0 c 3,0 3,0 3,3 l 0,10 c 0,3 0,3 -3,3 L 3,16 C 0,16 0,16 0,13 L 0,3 C 0,0 0,0 3,0"
+       id="path3807"
+       inkscape:connector-curvature="0"
+       style="fill:#f9f9f9;fill-opacity:0.85" />
+    <text
+       x="8"
+       style="color:#000000;font-size:12px;fill:#000000"
+       y="21"
+       id="text3809" />
+  </g>
+</svg>

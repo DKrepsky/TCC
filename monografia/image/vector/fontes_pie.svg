@@ -44,12 +44,12 @@
      showgrid="false"
      showguides="false"
      inkscape:zoom="1.668772"
-     inkscape:cx="24.363195"
-     inkscape:cy="208.91742"
+     inkscape:cx="166.53529"
+     inkscape:cy="181.65177"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g4618" />
+     inkscape:current-layer="svg2" />
   <desc
      id="desc4">Created with Highcharts 4.0.4</desc>
   <defs
@@ -81,11 +81,11 @@
        id="g51">
       <text
          x="3"
-         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#24cbe5;fill-opacity:1"
+         style="color:#b0b0b3;font-size:10px;font-family:arial, sans-serif;fill:#000000;fill-opacity:1;"
          y="14"
          id="text53">
         <tspan
-           style="fill:#000000;fill-opacity:1"
+           style="fill:#000000;fill-opacity:1;"
            id="tspan55">63.24 %</tspan>
       </text>
     </g>
@@ -192,147 +192,110 @@
       </text>
     </g>
   </g>
-  <g
-     id="g4580">
-    <g
-       id="g4571">
-      <text
-         x="337.44989"
-         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
-         y="24.034412"
-         id="text107">Hidráulica</text>
-      <rect
-         x="316.44989"
-         y="13.034413"
-         width="16"
-         height="12"
-         id="rect109"
-         style="fill:#24cbe5;fill-opacity:1" />
-    </g>
-    <g
-       class="highcharts-legend-item"
-       transform="translate(316.4499,23.034413)"
-       id="g111">
-      <text
-         x="21"
-         y="15"
-         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
-         id="text113">
-        <tspan
-           id="tspan115">Gás Natural</tspan>
-      </text>
-      <rect
-         x="0"
-         y="4"
-         width="16"
-         height="12"
-         id="rect117"
-         style="fill:#ed561b" />
-    </g>
-    <g
-       class="highcharts-legend-item"
-       transform="translate(316.4499,37.034413)"
-       id="g119">
-      <text
-         x="21"
-         y="15"
-         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
-         id="text121">Biomassa</text>
-      <rect
-         x="0"
-         y="4"
-         width="16"
-         height="12"
-         id="rect123"
-         style="fill:#dddf00" />
-    </g>
-    <g
-       id="g4575">
-      <text
-         x="337.44989"
-         y="66.034416"
-         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
-         id="text127">
-        <tspan
-           id="tspan129">Derivados de petróleo</tspan>
-      </text>
-      <rect
-         x="316.44989"
-         y="55.034412"
-         width="16"
-         height="12"
-         id="rect131"
-         style="fill:#000000;fill-opacity:0.66666669" />
-    </g>
-    <g
-       class="highcharts-legend-item"
-       transform="translate(316.4499,65.034413)"
-       id="g133">
-      <text
-         x="21"
-         y="15"
-         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
-         id="text135">Carvão</text>
-      <rect
-         x="0"
-         y="4"
-         width="16"
-         height="12"
-         id="rect137"
-         style="fill:#64e572" />
-    </g>
-    <g
-       class="highcharts-legend-item"
-       transform="translate(316.4499,79.034413)"
-       id="g139">
-      <text
-         x="21"
-         y="15"
-         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
-         id="text141">Nuclear</text>
-      <rect
-         x="0"
-         y="4"
-         width="16"
-         height="12"
-         id="rect143"
-         style="fill:#ff9655" />
-    </g>
-    <g
-       class="highcharts-legend-item"
-       transform="translate(316.4499,93.034413)"
-       id="g145">
-      <text
-         x="21"
-         y="15"
-         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
-         id="text147">Eólica</text>
-      <rect
-         x="0"
-         y="4"
-         width="16"
-         height="12"
-         id="rect149"
-         style="fill:#62fdf6" />
-    </g>
-    <g
-       class="highcharts-legend-item"
-       transform="translate(316.4499,107.03441)"
-       id="g151">
-      <text
-         x="21"
-         y="15"
-         style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
-         id="text153">Outras</text>
-      <rect
-         x="0"
-         y="4"
-         width="16"
-         height="12"
-         id="rect155"
-         style="fill:#c7c7c7" />
-    </g>
-  </g>
+  <text
+     x="337.44989"
+     style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1;"
+     y="24.034412"
+     id="text107">Hidráulica</text>
+  <rect
+     x="316.44989"
+     y="13.034413"
+     width="16"
+     height="12"
+     id="rect109"
+     style="fill:#24cbe5;fill-opacity:1;stroke:#000000;stroke-opacity:0.44025156" />
+  <text
+     x="337.44989"
+     y="38.034412"
+     style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1;"
+     id="text113">
+    <tspan
+       id="tspan115"
+       style="fill:#000000;fill-opacity:1;">Gás Natural</tspan>
+  </text>
+  <rect
+     x="316.44989"
+     y="27.034412"
+     width="16"
+     height="12"
+     id="rect117"
+     style="fill:#ed561b;stroke:#000000;stroke-opacity:0.43921569" />
+  <text
+     x="337.44989"
+     y="52.034412"
+     style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1;"
+     id="text121">Biomassa</text>
+  <rect
+     x="316.44989"
+     y="41.034412"
+     width="16"
+     height="12"
+     id="rect123"
+     style="fill:#dddf00;stroke:#000000;stroke-opacity:0.43921569" />
+  <text
+     x="337.44989"
+     y="66.034416"
+     style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1;"
+     id="text127">
+    <tspan
+       id="tspan129"
+       style="fill:#000000;fill-opacity:1;">Derivados de petróleo</tspan>
+  </text>
+  <rect
+     x="316.44989"
+     y="55.034412"
+     width="16"
+     height="12"
+     id="rect131"
+     style="fill:#000000;fill-opacity:0.66666667;stroke:#000000;stroke-opacity:0.43921569" />
+  <text
+     x="337.44989"
+     y="80.034416"
+     style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1;"
+     id="text135">Carvão</text>
+  <rect
+     x="316.44989"
+     y="69.034416"
+     width="16"
+     height="12"
+     id="rect137"
+     style="fill:#64e572;stroke:#000000;stroke-opacity:0.43921569" />
+  <text
+     x="337.44989"
+     y="94.034416"
+     style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1;"
+     id="text141">Nuclear</text>
+  <rect
+     x="316.44989"
+     y="83.034416"
+     width="16"
+     height="12"
+     id="rect143"
+     style="fill:#ff9655;stroke:#000000;stroke-opacity:0.43921569" />
+  <text
+     x="337.44989"
+     y="108.03442"
+     style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1;"
+     id="text147">Eólica</text>
+  <rect
+     x="316.44989"
+     y="97.034416"
+     width="16"
+     height="12"
+     id="rect149"
+     style="fill:#62fdf6;stroke:#000000;stroke-opacity:0.43921569" />
+  <text
+     x="337.44989"
+     y="122.03441"
+     style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#000000;fill-opacity:1;"
+     id="text153">Outras</text>
+  <rect
+     x="316.44989"
+     y="111.03441"
+     width="16"
+     height="12"
+     id="rect155"
+     style="fill:#c7c7c7;stroke:#000000;stroke-opacity:0.43921569" />
   <g
      class="highcharts-tooltip"
      style="white-space:nowrap"
@@ -368,44 +331,44 @@
        id="text167" />
   </g>
   <g
-     id="g4608">
+     id="g4264">
     <path
-       style="visibility:visible;fill:#24cbe5;stroke:#ffffff;stroke-width:1;stroke-linejoin:round;fill-opacity:1"
+       style="visibility:visible;fill:#24cbe5;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path15"
        d="M 173.43635,65.463556 A 135.5,135.5 0 1 1 73.272979,292.18865 l 100.190971,-91.2251 z" />
     <path
-       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       style="visibility:visible;fill:#ed561b;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path17"
        d="M 73.181799,292.08841 A 135.5,135.5 0 0 1 39.011177,184.1498 l 134.452773,16.81375 z" />
     <path
-       style="visibility:visible;fill:#dddf00;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       style="visibility:visible;fill:#dddf00;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path19"
        d="m 39.028058,184.01536 a 135.5,135.5 0 0 1 22.634091,-59.60641 l 111.801801,76.5546 z" />
     <path
-       style="visibility:visible;fill:#000000;stroke:#ffffff;stroke-width:1;stroke-linejoin:round;fill-opacity:0.66666669"
+       style="visibility:visible;fill:#000000;fill-opacity:0.66666667;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path21"
        d="M 61.738759,124.29718 A 135.5,135.5 0 0 1 93.155069,91.827247 L 173.46395,200.96355 Z" />
     <path
-       style="visibility:visible;fill:#64e572;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       style="visibility:visible;fill:#64e572;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path23"
        d="M 93.264239,91.746993 A 135.5,135.5 0 0 1 115.94673,78.276882 l 57.51722,122.686668 z" />
     <path
-       style="visibility:visible;fill:#ff9655;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       style="visibility:visible;fill:#ff9655;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path25"
        d="m 116.06944,78.219426 a 135.5,135.5 0 0 1 20.54918,-7.650165 l 36.84533,130.394289 z" />
     <path
-       style="visibility:visible;fill:#62fdf6;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       style="visibility:visible;fill:#62fdf6;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path27"
        d="m 136.74903,70.532481 a 135.5,135.5 0 0 1 17.08404,-3.639352 l 19.63088,134.070421 z" />
     <path
-       style="visibility:visible;fill:#c7c7c7;stroke:#ffffff;stroke-width:1;stroke-linejoin:round"
+       style="visibility:visible;fill:#c7c7c7;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-opacity:1"
        inkscape:connector-curvature="0"
        id="path29"
        d="m 153.96715,66.873565 a 135.5,135.5 0 0 1 19.30859,-1.409881 l 0.18821,135.499866 z" />

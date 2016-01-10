@@ -1,0 +1,1954 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   style="font-family:signika, serif;font-size:12px;"
+   width="600"
+   height="400"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="tipo_perda.svg">
+  <metadata
+     id="metadata529">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview527"
+     showgrid="false"
+     inkscape:zoom="1.668772"
+     inkscape:cx="323.00851"
+     inkscape:cy="226.92121"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <desc
+     id="desc4">Created with Highcharts 4.0.4</desc>
+  <defs
+     id="defs6">
+    <clipPath
+       id="highcharts-134">
+      <rect
+         x="1"
+         y="1"
+         width="295"
+         height="470"
+         id="rect9" />
+    </clipPath>
+  </defs>
+  <rect
+     x="1"
+     y="1"
+     width="598"
+     height="398"
+     strokeWidth="2"
+     fill="none"
+     class=" highcharts-background"
+     id="rect11" />
+  <rect
+     x="118"
+     y="10"
+     width="472"
+     height="297"
+     fill="#ffffff"
+     id="rect13" />
+  <path
+     fill="rgb(255, 255, 255)"
+     fill-opacity=" .5"
+     d="M 117.5 10 L 117.5 307 145.5 307 145.5 10"
+     id="path15" />
+  <path
+     fill="rgb(255, 255, 255)"
+     fill-opacity=" .5"
+     d="M 173.5 10 L 173.5 307 200.5 307 200.5 10"
+     id="path17" />
+  <path
+     fill="rgb(255, 255, 255)"
+     fill-opacity=" .5"
+     d="M 228.5 10 L 228.5 307 256.5 307 256.5 10"
+     id="path19" />
+  <path
+     fill="rgb(255, 255, 255)"
+     fill-opacity=" .5"
+     d="M 284.5 10 L 284.5 307 311.5 307 311.5 10"
+     id="path21" />
+  <path
+     fill="rgb(255, 255, 255)"
+     fill-opacity=" .5"
+     d="M 339.5 10 L 339.5 307 367.5 307 367.5 10"
+     id="path23" />
+  <path
+     fill="rgb(255, 255, 255)"
+     fill-opacity=" .5"
+     d="M 395.5 10 L 395.5 307 422.5 307 422.5 10"
+     id="path25" />
+  <path
+     fill="rgb(255, 255, 255)"
+     fill-opacity=" .5"
+     d="M 450.5 10 L 450.5 307 478.5 307 478.5 10"
+     id="path27" />
+  <path
+     fill="rgb(255, 255, 255)"
+     fill-opacity=" .5"
+     d="M 506.5 10 L 506.5 307 533.5 307 533.5 10"
+     id="path29" />
+  <path
+     d="M 561.5 10 L 561.5 307 589.5 307 589.5 10"
+     id="path31"
+     fill-opacity=" .5"
+     fill="rgb(255, 255, 255)" />
+  <g
+     class="highcharts-grid"
+     id="g33" />
+  <g
+     class="highcharts-grid"
+     id="g35">
+    <path
+       fill="none"
+       d="M 145.5 10 L 145.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path37" />
+    <path
+       fill="none"
+       d="M 173.5 10 L 173.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path39" />
+    <path
+       fill="none"
+       d="M 200.5 10 L 200.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path41" />
+    <path
+       fill="none"
+       d="M 228.5 10 L 228.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path43" />
+    <path
+       fill="none"
+       d="M 256.5 10 L 256.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path45" />
+    <path
+       fill="none"
+       d="M 284.5 10 L 284.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path47" />
+    <path
+       fill="none"
+       d="M 311.5 10 L 311.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path49" />
+    <path
+       fill="none"
+       d="M 339.5 10 L 339.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path51" />
+    <path
+       fill="none"
+       d="M 367.5 10 L 367.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path53" />
+    <path
+       fill="none"
+       d="M 395.5 10 L 395.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path55" />
+    <path
+       fill="none"
+       d="M 422.5 10 L 422.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path57" />
+    <path
+       fill="none"
+       d="M 450.5 10 L 450.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path59" />
+    <path
+       fill="none"
+       d="M 478.5 10 L 478.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path61" />
+    <path
+       fill="none"
+       d="M 506.5 10 L 506.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path63" />
+    <path
+       fill="none"
+       d="M 533.5 10 L 533.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path65" />
+    <path
+       fill="none"
+       d="M 561.5 10 L 561.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path67" />
+    <path
+       fill="none"
+       d="M 590.5 10 L 590.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path69" />
+    <path
+       fill="none"
+       d="M 117.5 10 L 117.5 307"
+       stroke="#C0C0C0"
+       stroke-width="1"
+       opacity="1"
+       id="path71" />
+  </g>
+  <rect
+     x="118"
+     y="10"
+     width="472"
+     height="297"
+     strokeWidth="-2"
+     stroke="#026fc1"
+     stroke-width="2"
+     fill="none"
+     id="rect73" />
+  <g
+     class="highcharts-axis"
+     id="g75">
+    <path
+       fill="none"
+       d="M 118 40.5 L 108 40.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path77" />
+    <path
+       fill="none"
+       d="M 118 69.5 L 108 69.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path79" />
+    <path
+       fill="none"
+       d="M 118 99.5 L 108 99.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path81" />
+    <path
+       fill="none"
+       d="M 118 129.5 L 108 129.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path83" />
+    <path
+       fill="none"
+       d="M 118 159.5 L 108 159.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path85" />
+    <path
+       fill="none"
+       d="M 118 188.5 L 108 188.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path87" />
+    <path
+       fill="none"
+       d="M 118 218.5 L 108 218.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path89" />
+    <path
+       fill="none"
+       d="M 118 248.5 L 108 248.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path91" />
+    <path
+       fill="none"
+       d="M 118 277.5 L 108 277.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path93" />
+    <path
+       fill="none"
+       d="M 118 307.5 L 108 307.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path95" />
+    <path
+       fill="none"
+       d="M 118 9.5 L 108 9.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path97" />
+    <path
+       fill="none"
+       d="M 117.5 10 L 117.5 307"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       visibility="visible"
+       id="path99" />
+  </g>
+  <g
+     class="highcharts-axis"
+     id="g101">
+    <path
+       fill="none"
+       d="M 145.5 307 L 145.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path103" />
+    <path
+       fill="none"
+       d="M 173.5 307 L 173.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path105" />
+    <path
+       fill="none"
+       d="M 200.5 307 L 200.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path107" />
+    <path
+       fill="none"
+       d="M 228.5 307 L 228.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path109" />
+    <path
+       fill="none"
+       d="M 256.5 307 L 256.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path111" />
+    <path
+       fill="none"
+       d="M 284.5 307 L 284.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path113" />
+    <path
+       fill="none"
+       d="M 311.5 307 L 311.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path115" />
+    <path
+       fill="none"
+       d="M 339.5 307 L 339.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path117" />
+    <path
+       fill="none"
+       d="M 367.5 307 L 367.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path119" />
+    <path
+       fill="none"
+       d="M 395.5 307 L 395.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path121" />
+    <path
+       fill="none"
+       d="M 422.5 307 L 422.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path123" />
+    <path
+       fill="none"
+       d="M 450.5 307 L 450.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path125" />
+    <path
+       fill="none"
+       d="M 478.5 307 L 478.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path127" />
+    <path
+       fill="none"
+       d="M 506.5 307 L 506.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path129" />
+    <path
+       fill="none"
+       d="M 533.5 307 L 533.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path131" />
+    <path
+       fill="none"
+       d="M 561.5 307 L 561.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path133" />
+    <path
+       fill="none"
+       d="M 590.5 307 L 590.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path135" />
+    <path
+       fill="none"
+       d="M 117.5 307 L 117.5 317"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       opacity="1"
+       id="path137" />
+    <text
+       x="354"
+       text-anchor="middle"
+       transform="translate(0,0)"
+       class=" highcharts-yaxis-title"
+       style="color:#000000;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       visibility="visible"
+       y="346"
+       id="text139">
+      <tspan
+         id="tspan141">Perdas [%]</tspan>
+    </text>
+    <path
+       fill="none"
+       d="M 118 307.5 L 590 307.5"
+       stroke="#C0D0E0"
+       stroke-width="1"
+       visibility="visible"
+       id="path143" />
+  </g>
+  <g
+     class="highcharts-data-labels"
+     visibility="visible"
+     transform="translate(118.59924,7.6030279)"
+     id="g315"
+     style="visibility:visible;opacity:1">
+    <g
+       transform="translate(285,9)"
+       id="g317">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:14px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text319">
+        <tspan
+           id="tspan321"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">10.28</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(170,39)"
+       id="g323">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:14px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text325">
+        <tspan
+           id="tspan327"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">6.13</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(282,68)"
+       id="g329">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:14px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text331">
+        <tspan
+           id="tspan333"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">10.17</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(173,98)"
+       id="g335">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text337">
+        <tspan
+           id="tspan339"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">6.22</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(198,128)"
+       id="g341">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text343">
+        <tspan
+           id="tspan345"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">7.14</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(164,157)"
+       id="g347">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text349">
+        <tspan
+           id="tspan351"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">5.90</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(273,187)"
+       id="g353">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text355">
+        <tspan
+           id="tspan357"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">9.85</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(285,217)"
+       id="g359">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text361">
+        <tspan
+           id="tspan363"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">10.26</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(271,246)"
+       id="g365">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text367">
+        <tspan
+           id="tspan369"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">9.77</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(181,275)"
+       id="g371">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text373">
+        <tspan
+           id="tspan375"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">6.51</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     class="highcharts-data-labels"
+     visibility="visible"
+     transform="translate(119.19849,8.2022709)"
+     id="g377"
+     style="visibility:visible;opacity:1">
+    <g
+       transform="translate(43,0)"
+       id="g379">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:14px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text381">
+        <tspan
+           id="tspan383"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">1.55</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(98,30)"
+       id="g385">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:14px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text387">
+        <tspan
+           id="tspan389"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">3.54</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(123,59)"
+       id="g391">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:14px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text393">
+        <tspan
+           id="tspan395"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">4.42</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(52,89)"
+       id="g397">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:14px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text399">
+        <tspan
+           id="tspan401"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">1.88</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(428,119)"
+       id="g403">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:14px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text405">
+        <tspan
+           id="tspan407"
+           style="fill:#000000;fill-opacity:1;font-size:12.5px">15.43</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(92,148)"
+       id="g409">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text411">
+        <tspan
+           id="tspan413"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">3.30</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(195,178)"
+       id="g415">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text417">
+        <tspan
+           id="tspan419"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">7.03</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(52,208)"
+       id="g421">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text423">
+        <tspan
+           id="tspan425"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">1.86</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(97,238)"
+       id="g427">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text429">
+        <tspan
+           id="tspan431"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">3.50</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(40,267)"
+       id="g433">
+      <text
+         x="3"
+         style="color:#a0a0a0;font-size:12.5px;font-family:arial, sans-serif;fill:#a0a0a0"
+         y="17"
+         id="text435">
+        <tspan
+           id="tspan437"
+           style="font-size:12.5px;fill:#000000;fill-opacity:1">1.44</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     class="highcharts-legend"
+     transform="translate(206,368)"
+     id="g439">
+    <g
+       id="g441">
+      <g
+         id="g443">
+        <g
+           class="highcharts-legend-item"
+           transform="translate(8,3)"
+           id="g445">
+          <text
+             x="21"
+             style="color:#333;font-size:9pt;font-weight:normal;cursor:pointer;font-family:'lucida grande','lucida sans unicode',arial,helvetica,sans-serif;text-transform:none;fill:#333;"
+             text-anchor="start"
+             y="15"
+             id="text447">Técnicas</text>
+          <rect
+             x="0"
+             y="4"
+             width="16"
+             height="12"
+             fill="#50b432"
+             id="rect449" />
+        </g>
+        <g
+           class="highcharts-legend-item"
+           transform="translate(97.015625,3)"
+           id="g451">
+          <text
+             x="21"
+             y="15"
+             style="color:#333;font-size:9pt;font-weight:normal;cursor:pointer;font-family:'lucida grande','lucida sans unicode',arial,helvetica,sans-serif;text-transform:none;fill:#333;"
+             text-anchor="start"
+             id="text453">
+            <tspan
+               id="tspan455">Não técnicas</tspan>
+          </text>
+          <rect
+             x="0"
+             y="4"
+             width="16"
+             height="12"
+             fill="#ED561B"
+             id="rect457" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     class="highcharts-axis-labels highcharts-xaxis-labels"
+     id="g459">
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="30.850000000000044"
+       opacity="1"
+       id="text461">CEMIG</text>
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="60.550000000000004"
+       opacity="1"
+       id="text463">ELETROPAULO</text>
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="90.25"
+       opacity="1"
+       id="text465">COELBA</text>
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="119.94999999999999"
+       opacity="1"
+       id="text467">COPEL</text>
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="149.65"
+       opacity="1"
+       id="text469">LIGTH</text>
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="179.35"
+       opacity="1"
+       id="text471">CPFL-PAULISTA</text>
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="209.04999999999998"
+       opacity="1"
+       id="text473">CELPE</text>
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="238.75000000000003"
+       opacity="1"
+       id="text475">COELCE</text>
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="268.45"
+       opacity="1"
+       id="text477">CELG</text>
+    <text
+       x="103"
+       text-anchor="end"
+       transform="translate(0,0)"
+       style="width:178px;color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="298.15"
+       opacity="1"
+       id="text479">CELESC</text>
+  </g>
+  <g
+     class="highcharts-axis-labels highcharts-yaxis-labels"
+     id="g481">
+    <text
+       x="121.3359375"
+       text-anchor="middle"
+       style="color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="328"
+       opacity="1"
+       id="text483">0</text>
+    <text
+       x="145.76471"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text485">1</text>
+    <text
+       x="173.52942"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text487">2</text>
+    <text
+       x="201.29411"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text489">3</text>
+    <text
+       x="229.05882"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text491">4</text>
+    <text
+       x="256.82352"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text493">5</text>
+    <text
+       x="284.58823"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text495">6</text>
+    <text
+       x="312.35294"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text497">7</text>
+    <text
+       x="340.11765"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text499">8</text>
+    <text
+       x="367.88235"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text501">9</text>
+    <text
+       x="395.64706"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text503">10</text>
+    <text
+       x="423.41177"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text505">11</text>
+    <text
+       x="451.17648"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text507">12</text>
+    <text
+       x="478.94116"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text509">13</text>
+    <text
+       x="506.70587"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text511">14</text>
+    <text
+       x="534.47058"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text513">15</text>
+    <text
+       x="562.23529"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="328"
+       id="text515">16</text>
+    <text
+       x="0"
+       text-anchor="middle"
+       style="color:#000000;cursor:default;font-size:12px;font-family:'arial', sans-serif;text-transform:none;font-weight:normal;fill:#000000;"
+       y="-9999"
+       id="text517">1700</text>
+  </g>
+  <g
+     class="highcharts-tooltip"
+     style="cursor:default;padding:0;white-space:nowrap;"
+     transform="translate(0,-9999)"
+     id="g519">
+    <path
+       fill="rgb(255, 255, 255)"
+       fill-opacity=" 0.85"
+       d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0"
+       id="path521" />
+    <text
+       x="8"
+       style="font-size:12px;color:#000000;fill:#000000;"
+       y="21"
+       id="text523" />
+  </g>
+  <g
+     class="highcharts-series-group"
+     id="g145">
+    <g
+       class="highcharts-series"
+       visibility="visible"
+       transform="translate(590,307) rotate(90) scale(-1,1) scale(1 1)"
+       width="472"
+       height="297"
+       clip-path="url(#highcharts-134)"
+       id="g147">
+      <rect
+         x="273.5"
+         y="187.5"
+         width="8"
+         height="285"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect149" />
+      <rect
+         x="273.5"
+         y="187.5"
+         width="8"
+         height="285"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect151" />
+      <rect
+         x="273.5"
+         y="187.5"
+         width="8"
+         height="285"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect153" />
+      <rect
+         x="273.5"
+         y="187.5"
+         width="8"
+         height="285"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect155" />
+      <rect
+         x="243.5"
+         y="302.5"
+         width="8"
+         height="170"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect157" />
+      <rect
+         x="243.5"
+         y="302.5"
+         width="8"
+         height="170"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect159" />
+      <rect
+         x="243.5"
+         y="302.5"
+         width="8"
+         height="170"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect161" />
+      <rect
+         x="243.5"
+         y="302.5"
+         width="8"
+         height="170"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect163" />
+      <rect
+         x="214.5"
+         y="190.5"
+         width="8"
+         height="282"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect165" />
+      <rect
+         x="214.5"
+         y="190.5"
+         width="8"
+         height="282"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect167" />
+      <rect
+         x="214.5"
+         y="190.5"
+         width="8"
+         height="282"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect169" />
+      <rect
+         x="214.5"
+         y="190.5"
+         width="8"
+         height="282"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect171" />
+      <rect
+         x="184.5"
+         y="299.5"
+         width="8"
+         height="173"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect173" />
+      <rect
+         x="184.5"
+         y="299.5"
+         width="8"
+         height="173"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect175" />
+      <rect
+         x="184.5"
+         y="299.5"
+         width="8"
+         height="173"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect177" />
+      <rect
+         x="184.5"
+         y="299.5"
+         width="8"
+         height="173"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect179" />
+      <rect
+         x="154.5"
+         y="274.5"
+         width="8"
+         height="198"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect181" />
+      <rect
+         x="154.5"
+         y="274.5"
+         width="8"
+         height="198"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect183" />
+      <rect
+         x="154.5"
+         y="274.5"
+         width="8"
+         height="198"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect185" />
+      <rect
+         x="154.5"
+         y="274.5"
+         width="8"
+         height="198"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect187" />
+      <rect
+         x="125.5"
+         y="308.5"
+         width="8"
+         height="164"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect189" />
+      <rect
+         x="125.5"
+         y="308.5"
+         width="8"
+         height="164"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect191" />
+      <rect
+         x="125.5"
+         y="308.5"
+         width="8"
+         height="164"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect193" />
+      <rect
+         x="125.5"
+         y="308.5"
+         width="8"
+         height="164"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect195" />
+      <rect
+         x="95.5"
+         y="199.5"
+         width="8"
+         height="273"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect197" />
+      <rect
+         x="95.5"
+         y="199.5"
+         width="8"
+         height="273"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect199" />
+      <rect
+         x="95.5"
+         y="199.5"
+         width="8"
+         height="273"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect201" />
+      <rect
+         x="95.5"
+         y="199.5"
+         width="8"
+         height="273"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect203" />
+      <rect
+         x="65.5"
+         y="187.5"
+         width="8"
+         height="285"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect205" />
+      <rect
+         x="65.5"
+         y="187.5"
+         width="8"
+         height="285"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect207" />
+      <rect
+         x="65.5"
+         y="187.5"
+         width="8"
+         height="285"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect209" />
+      <rect
+         x="65.5"
+         y="187.5"
+         width="8"
+         height="285"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect211" />
+      <rect
+         x="36.5"
+         y="201.5"
+         width="8"
+         height="271"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect213" />
+      <rect
+         x="36.5"
+         y="201.5"
+         width="8"
+         height="271"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect215" />
+      <rect
+         x="36.5"
+         y="201.5"
+         width="8"
+         height="271"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect217" />
+      <rect
+         x="36.5"
+         y="201.5"
+         width="8"
+         height="271"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect219" />
+      <rect
+         x="6.5"
+         y="291.5"
+         width="8"
+         height="181"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="5"
+         stroke-opacity="0.049999999999999996"
+         transform="translate(-1,-1)"
+         id="rect221" />
+      <rect
+         x="6.5"
+         y="291.5"
+         width="8"
+         height="181"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="3"
+         stroke-opacity="0.09999999999999999"
+         transform="translate(-1,-1)"
+         id="rect223" />
+      <rect
+         x="6.5"
+         y="291.5"
+         width="8"
+         height="181"
+         fill="none"
+         rx="0"
+         ry="0"
+         stroke="black"
+         stroke-width="1"
+         stroke-opacity="0.15"
+         transform="translate(-1,-1)"
+         id="rect225" />
+      <rect
+         x="6.5"
+         y="291.5"
+         width="8"
+         height="181"
+         fill="#50b432"
+         rx="0"
+         ry="0"
+         stroke="#FFFFFF"
+         stroke-width="1"
+         id="rect227" />
+    </g>
+    <g
+       class="highcharts-markers"
+       visibility="visible"
+       transform="translate(590,307) rotate(90) scale(-1,1) scale(1 1)"
+       width="472"
+       height="297"
+       clip-path="none"
+       id="g229" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect233"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="43"
+       width="8"
+       y="-161.5"
+       x="-25.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect235"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="43"
+       width="8"
+       y="-161.5"
+       x="-25.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect237"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="43"
+       width="8"
+       y="-161.5"
+       x="-25.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1;fill-opacity:1"
+       id="rect239"
+       ry="0"
+       rx="0"
+       height="43"
+       width="8"
+       y="-160.5"
+       x="-24.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect241"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="98"
+       width="8"
+       y="-216.5"
+       x="-55.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect243"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="98"
+       width="8"
+       y="-216.5"
+       x="-55.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect245"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="98"
+       width="8"
+       y="-216.5"
+       x="-55.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1"
+       id="rect247"
+       ry="0"
+       rx="0"
+       height="98"
+       width="8"
+       y="-215.5"
+       x="-54.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect249"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="123"
+       width="8"
+       y="-241.5"
+       x="-84.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect251"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="123"
+       width="8"
+       y="-241.5"
+       x="-84.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect253"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="123"
+       width="8"
+       y="-241.5"
+       x="-84.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1"
+       id="rect255"
+       ry="0"
+       rx="0"
+       height="123"
+       width="8"
+       y="-240.5"
+       x="-83.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect257"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="52"
+       width="8"
+       y="-170.5"
+       x="-114.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect259"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="52"
+       width="8"
+       y="-170.5"
+       x="-114.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect261"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="52"
+       width="8"
+       y="-170.5"
+       x="-114.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1"
+       id="rect263"
+       ry="0"
+       rx="0"
+       height="52"
+       width="8"
+       y="-169.5"
+       x="-113.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect265"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="428"
+       width="8"
+       y="-546.5"
+       x="-144.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect267"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="428"
+       width="8"
+       y="-546.5"
+       x="-144.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect269"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="428"
+       width="8"
+       y="-546.5"
+       x="-144.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1"
+       id="rect271"
+       ry="0"
+       rx="0"
+       height="428"
+       width="8"
+       y="-545.5"
+       x="-143.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect273"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="92"
+       width="8"
+       y="-210.5"
+       x="-173.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect275"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="92"
+       width="8"
+       y="-210.5"
+       x="-173.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect277"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="92"
+       width="8"
+       y="-210.5"
+       x="-173.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1"
+       id="rect279"
+       ry="0"
+       rx="0"
+       height="92"
+       width="8"
+       y="-209.5"
+       x="-172.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect281"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="195"
+       width="8"
+       y="-313.5"
+       x="-203.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect283"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="195"
+       width="8"
+       y="-313.5"
+       x="-203.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect285"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="195"
+       width="8"
+       y="-313.5"
+       x="-203.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1"
+       id="rect287"
+       ry="0"
+       rx="0"
+       height="195"
+       width="8"
+       y="-312.5"
+       x="-202.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect289"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="52"
+       width="8"
+       y="-170.5"
+       x="-233.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect291"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="52"
+       width="8"
+       y="-170.5"
+       x="-233.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect293"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="52"
+       width="8"
+       y="-170.5"
+       x="-233.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1"
+       id="rect295"
+       ry="0"
+       rx="0"
+       height="52"
+       width="8"
+       y="-169.5"
+       x="-232.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect297"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="97"
+       width="8"
+       y="-215.5"
+       x="-263.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect299"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="97"
+       width="8"
+       y="-215.5"
+       x="-263.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect301"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="97"
+       width="8"
+       y="-215.5"
+       x="-263.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1"
+       id="rect303"
+       ry="0"
+       rx="0"
+       height="97"
+       width="8"
+       y="-214.5"
+       x="-262.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:5;stroke-opacity:0.05"
+       id="rect305"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="40"
+       width="8"
+       y="-158.5"
+       x="-292.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:3;stroke-opacity:0.1"
+       id="rect307"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="40"
+       width="8"
+       y="-158.5"
+       x="-292.5" />
+    <rect
+       style="visibility:visible;fill:none;stroke:#000000;stroke-width:1;stroke-opacity:0.15"
+       id="rect309"
+       transform="matrix(0,-1,-1,0,0,0)"
+       ry="0"
+       rx="0"
+       height="40"
+       width="8"
+       y="-158.5"
+       x="-292.5" />
+    <rect
+       style="visibility:visible;fill:#ed561b;stroke:#ffffff;stroke-width:1"
+       id="rect311"
+       ry="0"
+       rx="0"
+       height="40"
+       width="8"
+       y="-157.5"
+       x="-291.5"
+       transform="matrix(0,-1,-1,0,0,0)" />
+    <g
+       class="highcharts-markers"
+       visibility="visible"
+       transform="translate(590,307) rotate(90) scale(-1,1) scale(1 1)"
+       width="472"
+       height="297"
+       clip-path="none"
+       id="g313" />
+  </g>
+</svg>
