@@ -129,8 +129,8 @@ sympy-plots-for-*.tex/
 refs/
 
 # Releases
-#monografia/monografia.pdf
-#apresentação/apresentacao.pdf
+monografia/monografia.pdf
+apresentação/apresentacao.pdf
 
 # temp folder
 temp/
