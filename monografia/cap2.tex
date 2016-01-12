@@ -164,10 +164,11 @@
                     
                     
         \section{Ferramentas para melhoria dos sistemas de distribuição}
-            Dada a complexidade dos SEP, faz-se necessário o uso de ferramentas computacionais e equipamentos eletrônicos para se obter um melhor desempenho. Abaixo são descritas algumas ferramentas que possibilitam um aprimoramento dos sistemas de distribuição.
+        
+            Dada a complexidade dos SEP, faz-se necessário o uso de ferramentas computacionais e equipamentos eletrônicos para o controle e um melhor desempenho dos sistemas. Abaixo são descritas algumas ferramentas que possibilitam um aprimoramento dos sistemas de distribuição.
         
             \subsection{Fluxo de potência}
-                O fluxo de potência (FP) (ou fluxo de carga) é um problema matemático, com posto por um conjunto de equações algébricas não lineares, que permite determinar os valores de tensão complexa nas barras e a potência que flui através das linhas, bem como as perdas e outras variáveis de interesse, para um sistema elétrico de potência em regime permanente. Após determinado o estado operativo sistema, é possível avaliar se o mesmo está ou não operando de forma adequada e, caso não esteja, determinar as ações corretivas para regularizar a adversidade.
+                O fluxo de potência (FP), também conhecido como fluxo de carga, é um problema matemático composto por um conjunto de equações algébricas não lineares, que permite determinar os valores de tensão complexa nas barras e a potência que flui através das linhas, bem como as perdas e outras variáveis de interesse, para um sistema elétrico de potência em regime permanente. Após determinado o estado operativo sistema, é possível avaliar se o mesmo está ou não operando de forma adequada e, caso não esteja, determinar as ações corretivas para regularizar a adversidade.
                 Dentre as principais aplicações do fluxo de potência, encontram-se:
                 
                 \begin{itemize}
@@ -178,9 +179,30 @@
                     \item \textbf{Otimização de sistemas em operação:} determinar pontos onde as perdas técnicas são altas é fundamental para melhorar a eficiência na distribuição de energia. Transformadores com defeito, cabos fora das especificações e isoladores danificados prejudicam o transporte da energia elétrica, gerando prejuízos que muitas vezes passam despercebidos. O FP permite o cálculo das perdas nos componentes do sistema, possibilitando a identificação e substituição de equipamento avariado. No caso das perdas não técnicas, alguns algoritmos baseados no fluxo de potência tem surgido na literatura de modo a automatizar a detecção de fraudes na rede \cite{CaioOba}.
                 \end{itemize}
                 
-            \subsection{Fluxo ótimo}
+            \subsection{Fluxo de potência ótimo}
+            O Fluxo de Potência Ótimo (FPO) é uma extensão do fluxo de potência que tem como finalidade fornecer a melhor condição de operação de um SEP de acordo com um critério pré-determinado. Um uso comum do FPO é na alocação de geradores distribuídos de modo a obter a configuração do sistema que garanta o menor custo por kWh transportado. 
             
+            Devido as mudanças na estrutura econômica do setor de energia elétrica, passando um ambiente centralizado nos monopólios para um modelo competitivo, onde vários agentes produzem e transportam a energia elétrica, o FPO tem se mostrado de grande utilidade na operação e planejamento do SEP, de modo a melhorar eficiência econômica e a qualidade no fornecimento de energia \cite{Araujo}.
+                   
             \subsection{\textit{Smart Grid}}
-       
- 
-    
+            \textit{Smart Grid}, ou rede inteligente, refere-se a aplicação de técnicas de tecnologia da informação, tais como \textit{Big Data}, de modo a controlar de forma automatizada a geração e distribuição de energia elétrica, visando melhorar a sua eficiência operacional. É composta por \textit{hardware} (medidores inteligentes, atuadores remotos e etc.) interligados através de uma rede de comunicação confiável, que fornecem dados sobre o estado de operação do sistema para serem processados por ferramentas computacionais (\textit{software}) que controlam a geração, regulação e transmissão da energia em tempo real.
+            
+            Suas principais características são:
+            
+            \begin{itemize}
+                \item resposta instantânea a variações na demanda;
+                
+                \item melhor precisão nas medições;
+                
+                \item facilita a inclusão de geradores distribuídos;
+                
+                \item comunicação entre sensores e atuadores agiliza as correções em caso de falha.
+                
+                \item monitora a infra-estrutura e os equipamentos em busca de condições anormais de operação;
+                
+                \item ajusta em tempo-real as fontes de ativos e reativos na rede, de modo a obter uma melhor qualidade na energia (maior fator de potência, menor variação de frequência e etc.);
+                
+                \item atua de modo a garantir o estado ótimo de operação da rede (perdas mínimas).
+            \end{itemize}
+           
+            As redes inteligentes utilizam os algoritmos do fluxo de potência e do fluxo de potência ótimo para estimar o estado de operação do sistema e determinar as medidas necessárias para atingir os objetivos citados anteriormente, reforçando ainda mais a necessidade de algoritmos rápidos e precisos para o fluxo de potência.
