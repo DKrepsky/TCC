@@ -1,201 +1,134 @@
-\chapter{Métodos de varredura}\label{chp:fluxo}
+\chapter{Fluxo de potência por varredura}\label{chp:fluxo}
+
+\section{Modelagem matemática}
+Para o estudo do fluxo de potência, é preciso realizar a modelagem matemática dos componentes reais do sistema. Os modelos apresentados nesta seção consideram a operação estática do sistema e sem interferência da frequência da tensão de suprimento.
+
+
+\subsection{Linhas trifásicas}
+As linhas nas redes de distribuição são, geralmente, modeladas utilizando o modelo de linha curta para as redes primárias e secundárias e o de linha média ($\pi$ nominal) para as redes de subtransmissão \cite{Kagan}.
+
+Neste trabalho é utilizado o modelo de linha curta a três fios, considerando o efeito do acoplamento entre as linha. Assim, a linha de transmissão pode ser representada graficamente conforme a figura \ref{fig:linha-tri}.
+
+\begin{figure}[h]
+    \centering
+    \caption{Representação de uma linha trifásica conectando as barras \textit{i} e \textit{j}.}
+    \includegraphics[scale=0.4]{linha-tri}
+    \label{fig:linha-tri}
+    
+    \small Fonte: Autoria própria.
+\end{figure}
+        
+O modelo matemático utilizado para descrever a linha que conecta as barras \textit{i} e \textit{j} se dá na seguinte forma matricial:
 
 \[
-\left[ \begin{matrix}
-V_{sa} \\
-V_{sb} \\
-V_{sc} \\
-\end{matrix} \right] -
-\left[ \begin{matrix}
-V_{ra} \\
-V_{rb} \\
-V_{rc} \\
-\end{matrix} \right] =
-\left[ \begin{matrix}
-I_{a} \\
-I_{b} \\
-I_{c} \\
-\end{matrix} \right]
+\mathbf{Z}_{ij} = 
 \left[ \begin{matrix}
 Z_{aa} & Z_{ab} & Z_{ac} \\
 Z_{ba} & Z_{bb} & Z_{bc} \\
 Z_{ca} & Z_{cb} & Z_{cc} \\
 \end{matrix} \right]
-\]
+\].
+
+Onde os elementos $Zaa$, $Zbb$ e $Zcc$ são a impedância própria das fases \textit{a}, \textit{b} e \textit{c}, respectivamente, e os outros elementos são a impedância do acoplamento entre as fases.
+
+\subsection{Linha bifásica ou monofásica}
+
+As linhas bifásicas e monofásicas são representadas da mesma forma que as linhas trifásicas, porém, os elementos que compõem a matriz impedância $\mathbf{Z}$, para as fases faltantes, são considerados zero.
+
+\subsection{Cargas e geradores}
+As cargas e os geradores são modelados considerando a conexão em estrela, sendo que, para cargas bifásicas ou monofásicas, é considerado que a corrente nas fases faltantes é zero. Este trabalho utiliza somente cargas que possuem potência constante.
+
+A notação utilizada para descrever a potência complexa $\mathbf{S}$ das cargas e geradores conectados na barra \textit{i} é:
 
 \[
-I = \frac{S^*}{V^*}
-\]
-
-\[
+\mathbf{S}_i = 
 \left[ \begin{matrix}
-V_{sa} \\
-V_{sb} \\
-V_{sc} \\
-\end{matrix} \right] -
-\left[ \begin{matrix}
-V_{ra} \\
-V_{rb} \\
-V_{rc} \\
-\end{matrix} \right] = \frac{
-    \left[ \begin{matrix}
-    S_{a} \\
-    S_{b} \\
-    S_{c} \\
-    \end{matrix} \right]^*}
-{\left[ \begin{matrix}
-    V_{ra} \\
-    V_{rb} \\
-    V_{rc} \\
-    \end{matrix} \right]^*}
-\left[ \begin{matrix}
-Z_{aa} & Z_{ab} & Z_{ac} \\
-Z_{ba} & Z_{bb} & Z_{bc} \\
-Z_{ca} & Z_{cb} & Z_{cc} \\
+P_{a} + jQ_{a}\\
+P_{b} + jQ_{b}\\
+P_{c} + jQ_{c}\\
 \end{matrix} \right]
-\]
+\].
 
-Multiplicando ambos os lados por $\left[V_{ra} \, V_{rb} \, V_{rc} \right]^*$ temos:
+Onde $P$ é a potência real e $Q$ é a potência reativa.
 
-\[
-\left[ \begin{matrix}
-V_{sa} \\
-V_{sb} \\
-V_{sc} \\
-\end{matrix} \right] \left[V_{ra} \, V_{rb} \, V_{rc} \right]^* -
-\left[ \begin{matrix}
-V_{ra} \\
-V_{rb} \\
-V_{rc} \\
-\end{matrix} \right] \left[V_{ra} \, V_{rb} \, V_{rc} \right]^* =
-\left[ \begin{matrix}
-S_{a} \\
-S_{b} \\
-S_{c} \\
-\end{matrix} \right]^*
-\left[ \begin{matrix}
-Z_{aa} & Z_{ab} & Z_{ac} \\
-Z_{ba} & Z_{bb} & Z_{bc} \\
-Z_{ca} & Z_{cb} & Z_{cc} \\
-\end{matrix} \right]
-\]
+\subsection{Capacitores \textit{Shunt}}
+Os elementos \textit{shunt} também são considerados como tendo potência constante. A notação utilizada para descrever-los é a mesma para as cargas e geradores.
 
-Como $C \cdot C^* = |C|^2$:
 
-\[
-\left[ \begin{matrix}
-V_{sa}V_{ra}^* \\
-V_{sb}V_{rb}^* \\
-V_{sc}V_{rc}^* \\
-\end{matrix} \right] -
-\left[ \begin{matrix}
-|V_{ra}|^2 \\
-|V_{rb}|^2 \\
-|V_{rc}|^2 \\
-\end{matrix} \right] =
-\left[ \begin{matrix}
-S_{a} \\
-S_{b} \\
-S_{c} \\
-\end{matrix} \right]^*
-\left[ \begin{matrix}
-Z_{aa} & Z_{ab} & Z_{ac} \\
-Z_{ba} & Z_{bb} & Z_{bc} \\
-Z_{ca} & Z_{cb} & Z_{cc} \\
-\end{matrix} \right]
-\]
+\section{Método da soma das potências}
 
-\[
-C = |C|(cos(\theta) + jsen(\theta))
-\]
+O método da soma das potências, originalmente proposto por \cite{Cespedes}, se baseia na eliminação do ângulo de fase nas equações do fluxo de potência para simplificar a resolução do problema. Na maioria dos estudos relacionados ao fluxo de potência, o ângulo da tensão não é significante, sendo analisado somente o módulo da tensão que chega aos consumidores. Caso seja necessário, o ângulo pode ser determinado com a adição de mais uma etapa de varredura. 
 
-\[
-\left[ \begin{matrix}
-|V_{sa}||V_{ra}|(cos\theta_{sra} + jsen\theta_{sra}) \\
-|V_{sb}||V_{rb}|(cos\theta_{srb} + jsen\theta_{srb}) \\
-|V_{sc}||V_{rc}|(cos\theta_{src} + jsen\theta_{src}) \\
-\end{matrix} \right] -
-\left[ \begin{matrix}
-|V_{ra}|^2 \\
-|V_{rb}|^2 \\
-|V_{rc}|^2 \\
-\end{matrix} \right] =
-\left[ \begin{matrix}
-S_{a} \\
-S_{b} \\
-S_{c} \\
-\end{matrix} \right]^*
-\left[ \begin{matrix}
-Z_{aa} & Z_{ab} & Z_{ac} \\
-Z_{ba} & Z_{bb} & Z_{bc} \\
-Z_{ca} & Z_{cb} & Z_{cc} \\
-\end{matrix} \right]
-\]
+O algoritmo consiste em duas operações, uma a montante, ou seja, a partir dos nós mais distantes da barra de referência, e uma operação a jusante, partindo da barra de referência até as barras finais.
 
-De modo genérico, temos que:
-\[
-|V_{sx}||V_{rx}|(cos\theta_{srx} + jsen\theta_{srx}) - |V_{rx}|^2 = S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}
-\]
+Na operação a montante, são calculadas as potências equivalentes em cada nó, i.e., somando somando todas as potências que são alimentadas através da barra, incluindo as perdas.
 
-Separando os termos reais dos imaginários:
+Assim, primeiro se calcula a potência na barra através da equação \ref{equ:scespedes}, até a barra inicial.
 
-\[
-|V_{sx}||V_{rx}|cos\theta_{srx} - |V_{rx}|^2 = \mathfrak{Re}\{S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}\}
-\]
+\begin{equation}
+\mathbf{S}_{i}^{equivalente} = \mathbf{S}_i + \sum(\mathbf{S} + \mathbf{L}).
+\label{equ:scespedes}
+\end{equation}
 
-\[
-|V_{sx}||V_{rx}|sen\theta_{srx} = \mathfrak{Im}\{S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}\}
-\]
+Onde $\sum(\mathbf{S} + \mathbf{L})$ é a soma das potência, e as perdas nas linhas, que saem da barra \textit{i} para as barras subsequentes.
 
-Em função do seno e cosseno:
+Na operação a jusante, partindo da barra inicial, é determinado o valor absoluto da tensão em cada barra com o uso da equação \ref{equ:vcespedes} ou \ref{equ:vcespedes2}.
 
-\[
-cos\theta_{srx} = \frac{\mathfrak{Re}_{S^*Z} + |V_{rx}|^2}{|V_{sx}||V_{rx}|}
-\]
 
-\[
-sen\theta_{srx} = \frac{\mathfrak{Im}_{S^*Z}}{|V_{sx}||V_{rx}|}
-\]
+\begin{figure}[h]
+    \centering
+    \caption{Conexão entre as barras \textit{s} e \textit{r}.}
+    \includegraphics[scale=0.4]{cespedes}
+    \label{fig:cespedes}
+    
+    \small Fonte: Autoria própria.
+\end{figure}
+
+\begin{equation}
+\label{equ:vcespedes}
+|V_{r}|^4 + (2\mathfrak{Re} \{S^* \cdot Z\} - |V_{s}|^2)|V_{r}|^2 + \mathfrak{Re} \{S^* \cdot Z\}^2 + 
+\mathfrak{Im} \{S^* \cdot Z\}^2 = 0    
+\end{equation}
+
+\begin{equation}
+\label{equ:vcespedes2}
+V_r^4 + [2 \cdot (PR+QX) -  V_s^2] \cdot  V_r^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0.  
+\end{equation}
 
 Onde:
+\begin{itemize}
+    \item \emph{s} é o nó fonte e \emph{r} é o nó à jusante;
+    \item \emph{$V_s$} é o módulo da tensão em \emph{s};
+    \item \emph{$V_r$} é o módulo da tensão em \emph{r};
+    \item \emph{P} e \emph{Q} são as potências ativa e reativa equivalentes da carga;
+    \item \emph{R} é a resistência e \emph{X} a reatância da linha de transmissão;
+\end{itemize}
 
-\[
-\mathfrak{Re}_{S^*Z} = \mathfrak{Re}\{S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}\}
-\]
+A equação \ref{equ:vcespedes} surge da aplicação direta da Lei de Ohm ao sistema da figura \ref{fig:cespedes}.
 
-\[
-\mathfrak{Im}_{S^*Z} = \mathfrak{Im}\{S_{a}^*Z_{xa} + S_{b}^*Z_{xb} + S_{c}^*Z_{xc}\}
-\]
+Ao final da operação a jusante, as perdas são atualizadas através da equação \ref{equ:lcespedes}.
 
-Usando a relação trigonométrica $cos^2\theta + sen^2\theta = 1$:
+ \begin{eqnarray}
+ \label{equ:lcespedes}
+ L_p = R \frac{(P^2 + Q^2)}{V_r^2} \\
+ L_q = X \frac{(P^2 + Q^2)}{V_r^2}
+ \end{eqnarray}
 
-\[
-\left( \frac{\mathfrak{Re}_{S^*Z} + |V_{rx}|^2}{|V_{sx}||V_{rx}|} \right)^2 +
-\left(\frac{\mathfrak{Im}_{S^*Z}}{|V_{sx}||V_{rx}|}\right)^2 = 1
-\]
+Sendo \emph{$L_p$} e \emph{$L_q$} as perdas ativas e reativas, respectivamente.
 
-\[
-\left(\mathfrak{Re}_{S^*Z} + |V_{rx}|^2 \right)^2 +
-\mathfrak{Im}_{S^*Z}^2 = |V_{sx}|^2|V_{rx}|^2
-\]
+É dito que o algoritmo convergiu quando a variação da das perdas totais, entre uma iteração e outra, é menor que um fator de tolerância estabelecido.
 
-\[
-\mathfrak{Re}_{S^*Z}^2 + 2\mathfrak{Re}_{S^*Z}|V_{rx}|^2 + |V_{rx}|^4 +
-\mathfrak{Im}_{S^*Z}^2 - |V_{sx}|^2|V_{rx}|^2 = 0
-\]
+O ângulo das tensões pode ser calculado, com outra operação a jusante, a partir da equação \ref{equ:thcespedes}.
 
-\[
-|V_{rx}|^4 + (2\mathfrak{Re}_{S^*Z} - |V_{sx}|^2)|V_{rx}|^2 + \mathfrak{Re}_{S^*Z}^2 + 
-\mathfrak{Im}_{S^*Z}^2 = 0
-\]
+\begin{equation}
+\label{equ:thcespedes}
+\delta_s = \delta_r - cos^{-1} \left( \sqrt{1 - \left( \frac{XP + RQ}{|V_s||V_r|} \right)}\right)
+\end{equation}
 
-Sendo:
-\[
-\mathfrak{Re}_{S^*Z} = (P_aR_{xa} + Q_aX_{xa}) + (P_bR_{xb} + Q_bX_{xb}) + (P_cR_{xc} + Q_cX_{xc})
-\]
+Sendo $\delta_s$ o ângulo da tensão na barra \textit{s} e $\delta_r$ o ângulo da tensão na barra \textit{r}.
 
-e:
+Segundo \citeonline{Ochoa}, o método não considera o acoplamento entre as linhas, sendo aplicado em paralelo para cada uma das fases. Um método para compensação parcial é proposto por \cite{Ramos}, porém não foi explorado nesse trabalho.
 
-\[
-\mathfrak{Re}_{S^*Z}^2 + \mathfrak{Im}_{S^*Z}^2 = (P_a^2 + Q_a^2)*(R_{xa}^2 + X_{xa}^2) + (P_b^2 + Q_b^2)*(R_{xb}^2 + X_{xb}^2) + (P_c^2 + Q_c^2)*(R_{xc}^2 + X_{xc}^2)
-\]
+\section{Método da soma das correntes}
+
+Esse método, proposto originalmente para redes monofásicas \cite{Shirmohammad} e depois adaptado para redes trifásicas \cite{Shirmohammad3F}, utiliza a soma das correntes nas linhas para determinar o fluxo de potência.

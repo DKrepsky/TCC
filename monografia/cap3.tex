@@ -1,1 +1,146 @@
 \chapter{Sistemas de distribuição}\label{chp:sde}
+
+    \section{Caracteísticas gerais}
+        Os sistemas de distribuição de energia elétrica (SDE) são compostos pelos métodos e equipamentos que realizam o transporte de potência da linha de transmissão até o consumidor final.
+    
+        A distribuição começa nas estações de subtransmissão, que recebem do sistema de transmissão a energia produzida nas usinas geradoras e à encaminha as subestações de distribuição. Por sua vez, as subestações de distribuição, que se encontram perto dos centros urbanos, transformam a energia de AT para MT e a transporta até os consumidores, por vias aéreas ou subterrâneas.
+    
+        Grandes consumidores (demanda maior que 2500kW), como shopping centers, hospitais e universidades, são chamados consumidores primários, pois recebem a energia em MT (geralmente entre 13,8kV e 2,3kV) e realizam a conversão interna para seu consumo em BT. Já as residencias, comércio e pequenas industrias, são ditos consumidores secundários, pois recebem a energia da rede, através nos transformadores de distribuição, pronta para o consumo em BT.
+    
+        As tensões padronizadas para conexão dos SDEs são listadas na tabela \ref{tab:tensao}, bem como as tensões em BT para consumo final. Além dos valores da tabela \ref{tab:tensao}, existem subestações que recebem energia em 230kV, porém são poucas, devido aos custos elevados para se trabalhar nesse nível de tensão \cite{SetorEletrico}. 
+                        
+       \begin{table}[h]
+           \centering
+           \caption{Valores de tensão padronizados para interconexão dos SEPs e consumo final.}
+           \begin{tabular}{lc}
+               \toprule
+               \textbf{Tensão [Volts]} & \textbf{Classificação}\\
+               \midrule
+               138k & AT \\
+               115k	& AT \\
+               88k 	& AT \\
+               69k	& AT \\
+               34,5k& MT \\
+               13,8k& MT \\
+               4k 	& MT \\
+               2,3k & MT \\
+               220  & BT \\
+               127	& BT \\               
+               \bottomrule
+           \end{tabular}
+           \label{tab:tensao}
+                            
+           \small Fonte: Resoluções ANEEL, \textnumero ~505 de 26/11/2001 e \textnumero ~676 de 19/12/2003.
+       \end{table}
+    
+    Um outro nível de BT que era comumente utilizado é o de 110V, porém, caiu em desuso devidos as normas impostas pela Associação Brasileira de Normas Técnicas (ABNT). Ainda é possível encontrar redes de 110V em regiões rurais devido ao uso de transformadores bifásicos.
+    
+    No Brasil, esses sistemas são administrados por 64 concessionárias, sendo nove na região norte, 11 na região nordeste, cinco na região centro-oeste, 22 na região sudeste e 17 na região sul do país, sendo que algumas atuam também em mais de uma região. As concessionárias são apresentadas de acordo com sua localização na figura \ref{fig:concessionarias}.
+
+    \begin{figure}[h]
+        \centering
+        \caption{Localização das concessionárias de distribuição de energia elétrica do Brasil.}
+        \includegraphics[scale=0.8]{concessionarias}
+        \label{fig:concessionarias}
+            
+        \small Fonte: Leão, R. P. S., Universidade Federal do Ceará (UFC).
+    \end{figure}
+
+    Os principais critérios de avaliação dos SDEs são:
+    
+    \begin{itemize}
+        \item \textbf{Segurança:} Os SDEs não devem, de modo algum, apresentar riscos aos seus usuários e a equipe técnica responsável pela manutenção do mesmo.
+        
+        \item \textbf{Flexibilidade:} capacidade de adaptação do sistema a novas condições de carga e alteração da rede, com um custo de implementação mínimo e pouca necessidade de interrupção da operação.
+        
+        \item \textbf{Continuidade:} avalia os meios que o sistema possui para minimizar os efeitos de falhas e o tempo de restabelecimento da transmissão.
+        
+        \item \textbf{Regulação de tensão:} refere-se as flutuações de tensão que ocorrem pela inserção ou remoção de cargas consideráveis no sistema.
+        
+        \item \textbf{Custo de operação:} é o custo inerente de operação do sistema, influenciado diretamente pela eficiência do mesmo.
+        
+        \item \textbf{Custo de manutenção:} refere-se aos custos para reparo, inspeção e manutenção preventiva do sistema, bem como o tempo necessário para executa-las.
+    \end{itemize}
+
+    Muitos dos sistemas de distribuição são implementados visando somente o investimento inicial para inicio das operações, resultando em um baixo desempenho nos critérios citados e em prejuízos a longo prazo.
+
+\section{Subtransmissão}\label{sec:subtrans}
+A subtransmissão é o circuito que transporta a energia do sistema de transmissão até as subestações de distribuição, através de linhas trifásicas operando nos níveis de 34,5 kV, 69 kV, 88 kV, 115 kV e 138 kV. Alguns consumidores, como industrias de grande porte e estações de tratamento e bombeamento de água, são alimentados diretamente pelo sistema de subtransmissão.
+
+A topologia mais simples para esses sistemas é a radial simples \cite{Kagan, SetorEletrico}, onde a potência flui a partir da subestação de subtransmissão, passando pelas SEs de distribuição e chegando ao consumidor final. A figura \ref{fig:radial} mostra uma representação em diagrama unifilar da topologia radial simples.
+
+    \begin{figure}[h]
+        \centering
+        \caption{Diagrama unifilar de um sistema de subtransmissão radial.}
+        \includegraphics[scale=0.4]{radial}
+        \label{fig:radial}
+        
+        \small Fonte: Leão, R. P. S., Universidade Federal do Ceará (UFC).
+    \end{figure}
+
+O principal problema da distribuição radial simples é que no caso de falha, todo o sistema, a partir do local de contingência, é desconectado do barramento de alimentação, provocando a interrupção generalizada do serviço. Assim, o transporte de energia só poderá  ser restabelecido após providenciados os reparos necessários, comprometendo a confiabilidade do sistema.
+
+De modo a melhorar a confiabilidade do sistema, são adicionados alimentadores secundários, assim, quando ocorre uma falha, o serviço pode ser restaurado comutando os alimentadores. Essa topologia é chamada de radial com recurso e seu diagrama unifilar é apresentado na figura \ref{fig:recurso}.
+
+    \begin{figure}[h]
+        \centering
+        \caption{Diagrama unifilar de um sistema de subtransmissão radial com recurso.}
+        \includegraphics[scale=0.4]{recurso}
+        \label{fig:recurso}
+        
+        \small Fonte: Leão, R. P. S., Universidade Federal do Ceará (UFC).
+    \end{figure}
+    
+Outros arranjos que podem ser utilizados são os sistemas em anel e os sistemas em reticulado, representados nas figuras \ref{fig:anel} e \ref{fig:reticulado}, respectivamente.
+
+
+    \begin{figure}[h]
+        \centering
+        \caption{Diagrama unifilar de um sistema de subtransmissão em anel.}
+        \includegraphics[scale=0.4]{anel}
+        \label{fig:anel}
+        
+        \small Fonte: Leão, R. P. S., Universidade Federal do Ceará (UFC).
+    \end{figure}
+    
+    \begin{figure}[h]
+        \centering
+        \caption{Diagrama unifilar de um sistema de subtransmissão reticulado.}
+        \includegraphics[scale=0.4]{reticulado}
+        \label{fig:reticulado}
+        
+        \small Fonte: Leão, R. P. S., Universidade Federal do Ceará (UFC).
+    \end{figure}
+    
+\section{Distribuição}\label{sec:subdist}
+A subestações de distribuição são as responsáveis por transformar a tensão do sistema de subtransmissão em tensão primária. Normalmente operam em 13,8kV, porém é comum encontrar outros valores de MT e até mesmo AT.
+
+As SEs de distribuição tem como objetivo o transporte de potência até os consumidores primários, aos transformadores de distribuição e as estações transformadoras. Para tal, utiliza-se de redes aéreas, com postes de madeira ou concreto, ou subterrâneas e tem, normalmente, capacidade de transportar 12MW de potência por alimentador \cite{Kagan}.
+
+As estações transformadoras (ETs) e os transformadores de distribuição convertem a tensão primária em tensão secundária para o consumidor final. No Brasil, a tensão secundária é padronizada nos valores de 127V e 220V e é usada principalmente no setor residencial.
+
+Quanto a topologia, nos sistemas de distribuição é comum o uso de mais de um alimentador, sendo as barras interconectadas por chaves de manobra para isolar falhas no sistema. A figura \ref{fig:se-topologia} mostra essa topologia.
+ 
+     \begin{figure}[h]
+         \centering
+         \caption{Diagrama unifilar de um sistema de distribuição.}
+         \includegraphics[scale=0.7]{se-topologia}
+         \label{fig:se-topologia}
+         
+         \small Fonte: Autoria própria.
+        \end{figure}
+
+\section{Outras características do sistema de distribuição}
+
+A partir das topologias apresentadas nas seções \ref{sec:subtrans} e \ref{sec:subdist}, é possível notar que os sistemas de distribuição são, em sua grande maioria, radiais. Esse fato é importante para a solução do fluxo de potência, pois a eficiência dos algoritmos apresentados no capitulo \ref{chp:fluxo} é diretamente influenciada pelo número de malhas na rede. Para a análise de sistemas com topologia do tipo anel, reticulado ou outra malhada, são empregadas técnicas de compensação por inserção de corrente nas barras, tornando os cálculos mais complexos e consumindo mais recurso computacional. 
+
+Os sistemas de distribuição atendem a centenas ou até mesmo milhares de consumidores, assim, devido ao seu tamanho e a quantidade de elementos presentes na rede, o uso de métodos tradicionais de cálculo do fluxo, Newton-Rapshon e Gauss-Seidel, se tornam ineficientes e de difícil convergência, devido ao tamanho da matriz admitância. Outro problema é que, dada a característica radial, a matriz admitância se torna muito esparsa, pois a maioria das barras estão conectadas somente a duas ou três outras barras.
+
+As cargas nos sistemas de distribuição, diferente das do sistema de transmissão, são desbalanceadas. Assim, é necessário levar em consideração os fatores de assimetria da rede e, em alguns casos, considerar a influência das correntes de neutro e de terra\cite{Pizzali}, elevando a complexidade dos cálculos.
+
+Um outro fator importante é a relação X/R (reatância pela resistência) nos cabos de transmissão, que causam instabilidade nos algoritmos clássicos \cite{Pizzali}. Essa condição é agravada devido a presença de ramos longos e curtos, fazendo com que os sistemas de distribuição sejam considerados mal-condicionados (\textit{ill-conditioned}) do ponto de vista matemático \cite{Shirmohammad3F}.
+
+
+
+
+

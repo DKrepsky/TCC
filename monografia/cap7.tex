@@ -1,1 +1,18 @@
-\chapter{Resultado das simulações}\label{chp:resultado}
+\chapter{Conclusão e considerações finais}\label{chp:conclusao}
+\section{Conclusão}
+    Neste trabalho foram implementados dois métodos para o cálculo do fluxo de potência, soma de potências e soma de correntes, para sistemas de distribuição. Foi observado que ambos os métodos de resolução do fluxo de potência se mostram bastante robustos em relação a convergência. 
+    
+    O desempenho dos métodos de varredura é satisfatório para análise do estado de operação da rede, sendo necessário poucos milissegundos, em um computador de uso pessoal, para o cálculo dos parâmetros em sistemas compostos por milhares de barras. Em relação a comparação entre os métodos, ficou demonstrado um melhor desempenho do método da soma das potências, porém, o mesmo não leva em consideração o desbalanço de carga entre as fases.
+    
+    A técnica de otimização proposta, por redução de barras, mostrou um ganho de desempenho considerável, principalmente quando aplicada com o método da soma de correntes (23 vezes para o sistema de 3300 barras). O erro introduzido devido a compensação desacoplada pode ser considerado baixo, porém, o indicio de que a otimização é eficiente justifica a investigação de uma técnica de compensação mais robusta. 
+    
+    Quanto a \textit{interface} gráfica, a mesma se mostrou bastante útil na análise de sistemas de distribuição de energia elétrica, agilizando a avaliação dos resultados e o teste com sistemas diferentes. Contudo, a falta de elementos como transformadores, disjuntores, reguladores de tensão e etc., a torna uma ferramenta bastante simples, impossibilitando uma análise mais precisa das condições de operação do sistema.
+
+    Assim, o trabalho apresenta uma importante contribuição para a busca de algoritmos mais rápidos e robustos para solução do fluxo de potência.
+    
+\section{Trabalhos futuros}
+    O modelo matemático utilizado no trabalho, apesar de ser comum na literatura, não provê uma modelagem fiel do sistema. Um aprimoramento seria a investigação dos métodos utilizados com modelos de 4 ou 5 fios, com a inclusão de outros elementos presentes no sistema, tais como disjuntores, transformadores, reguladores de tensão, chaves e etc.
+
+    Visto que a otimização por redução de barras é feita com algumas simplificações, fica aberto para investigação, técnicas que modelem de forma mais precisa as características dos elementos do sistema, levando a uma melhor compensação da tensão nas barras reduzidas e evitando a remoção de elementos que interferem de forma substancial no estado do sistema, como reguladores de tensão.
+    
+    A ferramenta desenvolvida é um passo inicial para análise dos sistemas de distribuição. Assim, há a possibilidade de explorar uma grande quantidade de outros algoritmos para o cálculo do fluxo de potência, com o auxilio de uma interface gráfica para análise. Uma outra possibilidade é a integração de métodos para o calculo do fluxo de potência ótimo, análise de curto circuito e etc.
