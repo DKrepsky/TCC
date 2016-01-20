@@ -129,6 +129,14 @@ Sendo $\delta_s$ o ângulo da tensão na barra \textit{s} e $\delta_r$ o ângulo da
 
 Segundo \citeonline{Ochoa}, o método não considera o acoplamento entre as linhas, sendo aplicado em paralelo para cada uma das fases. Um método para compensação parcial é proposto por \cite{Ramos}, porém não foi explorado nesse trabalho.
 
+Outro problema apresentado pelo método é que ele não pode ser executado em redes malhadas, tornando-o limitado para aplicações em sistemas reais.
+
 \section{Método da soma das correntes}
 
 Esse método, proposto originalmente para redes monofásicas \cite{Shirmohammad} e depois adaptado para redes trifásicas \cite{Shirmohammad3F}, utiliza a soma das correntes nas linhas para determinar o fluxo de potência.
+Semelhante ao método da soma das potências, o algoritmo consiste em duas varreduras, denominadas \textit{backward sweep} e \textit{forward sweep}, sendo uma à montante e outra à jusante.
+
+Uma das vantagens do método da soma das correntes é que o mesmo pode ser aplicado a redes fracamente malhadas. Outra vantagem é que o algoritmo possui compensação para o acoplamento entre as linhas, levando a resultados mais precisos.
+
+
+
