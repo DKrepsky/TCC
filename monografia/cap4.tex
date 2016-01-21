@@ -138,10 +138,45 @@ Semelhante ao método da soma das potências, o algoritmo consiste em duas varredu
 
 Uma das vantagens do método da soma das correntes é que o mesmo pode ser aplicado a redes fracamente malhadas. Outra vantagem é que o algoritmo possui compensação para o acoplamento entre as linhas, levando a resultados mais precisos.
 
-O algoritmo funciona da seguinte maneira:
-\begin{enumerate}
-    \item Primeiro, é assumido um perfil de 
-\end{enumerate}
-Após assumir um perfil de tensão inicial, geralmente 1 p.u., 
-Durante a varredura a 
+Para a execução do algoritmo, deve-se assumir um perfil de tensão inicial, geralmente 1 pu.
 
+No inicio do processo iterativo, o primeiro passo é determinar corrente na barra através da equação \ref{equ:ishirm}.
+
+\begin{equation}
+\label{equ:ishirm}
+\left[ \begin{matrix}
+I_{ia} \\
+I_{ib} \\
+I_{ic} \\
+\end{matrix} \right]^{(k)} = 
+\left[ \begin{matrix}
+\left(\frac{S_{ia}}{V_{ia}^{(k-1)}}\right)^* \\
+\left(\frac{S_{ib}}{V_{ib}^{(k-1)}}\right)^* \\
+\left(\frac{S_{ic}}{V_{ic}^{(k-1)}}\right)^* \\
+\end{matrix} \right] - 
+\left[ \begin{matrix}
+Y_{ia}^* & & \\
+& Y_{ib}^* & \\
+& & Y_{ic}^* \\
+\end{matrix} \right]
+\left[ \begin{matrix}
+V_{ia} \\
+V_{ib} \\
+V_{ic} \\
+\end{matrix} \right]^{(k-1)}
+\end{equation}
+
+Onde:
+\begin{itemize}
+  \item $I_{ia}$, $I_{ib}$ e $I_{ic}$ são as correntes injetadas na barra \textit{i};
+  
+  \item $S_{ia}$, $S_{ib}$ e $S_{ic}$ são as potências injetadas na barra \textit{i};
+  
+  \item $V_{ia}$, $V_{ib}$ e $V_{ic}$ são as tensões na barra \textit{i};
+  
+  \item $Y_{ia}$, $Y_{ib}$ e $Y_{ic}$ é a admitância dos elementos \textit{shunt} conectados a barra \textit{i};
+  
+  \item \textit{k} é a iteração;
+\end{itemize}
+
+Para o caso onde os elementos \textit{shunt} possuem potência constante  
