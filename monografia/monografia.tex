@@ -1,70 +1,56 @@
-%---------------------  SCRIPT PRINCIPAL DO TCC  -------------------------
-%-------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
 % Modelo de TCC para a Universidade Estadual de Londrina no estilo Abntex2
 %
 % 				Prof. Dr. Fernando Ciriaco Dias Neto (fciriaco@uel.br) 
-%--------------------------------------------------------------------------
-\documentclass[12pt,oneside,a4paper,english]{abntex2}   % dados do padrão Abntex2
+%-------------------------------------------------------------------------------
+\documentclass[12pt,oneside,a4paper,english]{abntex2}   %  Padrão Abntex2
 
-%-----------Pacotes---------------------------------------------------------
+% Pacotes ----------------------------------------------------------------------
 \usepackage{DEEL}  % personalização da ABNTEX2 para a Universidade Estadual de Londrina
 \usepackage{graphics,graphicx} % pacotes para inserir figuras .eps ou .jpg
 \graphicspath{ {image/} }
-\usepackage{amssymb}            % pacote para fontes e simbolos matemáticos
-\usepackage{longtable}          % possibilita inserir grandes tabelas
-\usepackage{color,colortbl,multirow} % permite textos e tabelas com cores
-\usepackage{amsmath}            % pacote para equações
-\usepackage[latin1]{inputenc}   % acentos e cedilha das línguas latinas
+\usepackage{amssymb}            % pacote para fontes e simbolos matemáticos.
+\usepackage{longtable}          % possibilita inserir grandes tabelas.
+\usepackage{color,colortbl,multirow} % permite textos e tabelas com cores.
+\usepackage{amsmath}            % pacote para equações.
+\usepackage[latin1]{inputenc}   % acentos e cedilha das línguas latinas.
 \usepackage[T1]{fontenc}
 \usepackage{url}
-\usepackage{threeparttable}     % permite a inserção de notas de rodapé nas tabelas
-\usepackage{lscape}             % orientação de página LANDSCAPE
+\usepackage{threeparttable}     % inserção de notas de rodapé nas tabelas.
+\usepackage{lscape}             % orientação de página LANDSCAPE.
 \usepackage{pifont}             % acrescenta símbolos diferentes.
-%\usepackage{cmap}				        % Mapear caracteres especiais no PDF
-\usepackage{lmodern}			      % Usa a fonte Latin Modern			
-\usepackage{lastpage}			      % Usado pela Ficha catalográfica
-\usepackage{indentfirst}		    % Indenta o primeiro parágrafo de cada sessão.
-
-% Pacotes de citações
-% ---
-\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
-\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+\usepackage{lmodern}			      % Usa a fonte Latin Modern.
+\usepackage{lastpage}			      % Usado pela Ficha catalográfica.
+\usepackage{indentfirst}		    % Indenta o primeiro parágrafo.
+\usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações.
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT.
 \usepackage[warn]{textcomp}
-
 \usepackage{bm}
-% acrescente outros pacotes se necessário
-%-------------------------------------------------------------------------------
 
-%-------- Hifenização manual das palavras que estão incorretas no texto --------
-%\hyphenation{pa-ra-me-tros mul-ti-plas}  % descomente e acrescente as palavras
-
-\data{2016}        % Ano de realização
+\data{2016}        
 \curso{Engenharia Elétrica}
 
-%--------------  INÍCIO DO DOCUMENTO -------------------------------------------
-%------------------------------------------------------------------------------- 
+% Início do documento ----------------------------------------------------------
 \begin{document}
 
-%---------------------------------------------------------------
-%--------- DADOS BÁSICOS DO TRABALHO (Preencher todos) ---------
-%---------------------------------------------------------------
+% Dados básicos do trabalho ----------------------------------------------------
 \titulo{Fluxo de potência para sistemas de distribuição com otimização por redução de barras}   
+
 \tituloingles{Power flow for distribution systems with optimization trough bars reduction}   
 
 \palavraschave{1. Fluxo de potência. 2. Método de varredura. 3. Sistemas de distribuição. 4. Carga desbalanceada 5. Otimização} 
+
 \keywords{1. Power flow. 2. Backward-Forward Sweep. 3. Distribution systems. 4. Three-phase systems 5. Optimization}   % 5 key-words
 
-\DEELautor{David Maykon Krepsky}{Silva}        
-											
-\orientador{Prof. Dr. Luis Alfonso Gallego Pareja}     
-
+\DEELautor{David Maykon Krepsky}{Silva}       
+ 										
+\orientador{Prof. Dr. Luis Alfonso Gallego Pareja}  
+   
 \membrob{M.Sc. Osni Vicente}
+
 \membroc{Dra. Silvia Galvão de Souza Cervantes}
 
 \local{Londrina}
-
-%-------------------------------------------------------------------------------
-
 
 \DEELdedicatoria{Dedico este trabalho especialmente para minha filha, \\ por ser minha fonte de inspiração, força e coragem. \\ }
 
@@ -80,7 +66,6 @@
         
         E a todos aquele que, direta ou indiretamente, contribuíram para este trabalho.}
 
-
 \DEELepigrafe{``\textit{May God bless and keep you always,} \\
     \textit{May your wishes all come true,} \\
     \textit{May you always do for others} \\
@@ -89,66 +74,38 @@
     \textit{And climb on every rung,} \\
     \textit{May you stay, forever young.}'' \\ (Bob Dylan)} 
 
-
 \DEELresumo{Devido ao aumento no consumo de energia elétrica nos últimos anos, os sistemas de distribuição estão maiores e mais complexos. Assim, torna-se cada vez mais comum o uso do fluxo de potência para melhorar a qualidade e o desempenho das redes de distribuição. Os métodos tradicionais de cálculo do fluxo de potência, como os métodos de Newton-Raphson e Gauss-Seidel, apresentam problemas de desempenho e convergência devido as características peculiares dos sistemas de distribuição, sendo necessário um algoritmo rápido e robusto para possibilitar sua aplicação nesses sistemas. Este trabalho apresenta uma análise comparativa entre dois métodos de varredura, trifásicos, populares na literatura, de modo a avaliar a velocidade e a convergência dos mesmos para sistemas radiais com 14, 34, 69, 136, 700 e 3000 barras. Também é proposto um algoritmo para otimização do cálculo do fluxo de potência através da remoção de barras redundantes e compensação desacoplada. O primeiro método avaliado, originalmente proposto por \cite{Shirmohammad}, consiste na aplicação direta das leis de Kirchhoff. O segundo método, descrito por \cite{Cespedes}, utiliza a Lei de Ohm, eliminando a fase da tensão nas equações do fluxo de potência, possibilitando uma simplificação dos cálculos. De acordo com as simulações realizadas, os dois métodos se mostram robustos em relação a convergência, não apresentando problemas e utilizando poucas iterações nos sistemas analisados. Ambos os métodos possuem desempenho parecido, no quesito velocidade, para sistemas de poucas barras, porém, para sistemas grandes (700 e 3000 barras), a diferença se torna evidente, sendo o segundo método, aproximadamente, duas vezes mais rápido que o primeiro. O método de otimização proposto se mostrou capaz de reduzir drasticamente o tempo computacional utilizado, devido a compensação desacoplada, é introduzido uma pequena variação no resultado para as barras que foram otimizadas. Devido a redução no número de barras utilizadas na elaboração do fluxo de potência com a otimização ativada, ambos os métodos possuem tempo computacional semelhante, diferenciando apenas por alguns milissegundos. } 
-
 
 \DEELabstract{....} 
 
+% Elementos Pré-Textuais -------------------------------------------------------
+\ElementosPreTextuais
 
-
-
-%----- Elementos Pré-Textuais--------------------------
-\ElementosPreTextuais   % Insere todos os elementos Pré-Textuais listados (capa, folha de rosto, ...)
-												% capa                   % Obrigatório
-												% folhaderosto           % Obrigatório
-												% fichacatalografica     % Obrigatório
-												% folhaaprovacao         % Obrigatório
-												% dedicatoria            % Opcional
-												% agradecimentos         % Opcional
-												% epigrafe               % Opcional
-												% resumo                 % Obrigatório
-												% abstract               % Obrigatório
-
-%--------------------------------------------------------------------------------------------
 \newpage
-%---- Outros Elementos Pré-Textuais ----
-%--------Lista de figuras--------------------------------------------------------------------
+
 \listoffigures
+
 \newpage
-%--------Lista de tabelas--------------------------------------------------------------------
+
 \listoftables
+
 \newpage
-%--------Lista de Siglas e Abreviaturas------------------------------------------------------
-\include{list_siglas}   % (OBS: Elemento Condicionado à Necessidade) 
-%                       % Veja modelo no arquivo list_siglas.tex
-%--------Lista de Simbolos e Notação --------------------------------------------------------
-\include{list_simbolos} % (OBS: Elemento Condicionado à Necessidade)
-%                       % Veja modelo no arquivo list_simbolos.tex
-%--------Sumário-----------------------------------------------------------------------------
+
+\include{list_siglas}   
+\include{list_simbolos} 
+
 \tableofcontents
-%--------------------------------------------------------------------------------------------
 
-
-%----- Elementos Textuais--------------------------
-\include{cap1}				      % Capítulo 1 - Texto do cap1.tex
-%%
-\include{cap2}				      % Capítulo 2 - Texto do cap2.tex
-%%
-\include{cap3}				      % Capítulo 3 - Texto do cap3.tex
-%%
-\include{cap4}				      % Capítulo 4 - Texto do cap4.tex
-%%
+% Elementos Textuais -----------------------------------------------------------
+\include{cap1}
+\include{cap2}
+\include{cap3}
+\include{cap4}
 \include{cap5}
 \include{cap6}
 \include{cap7}
-%%--------------------------------------------------------------------------------------------
 
-
-%----- Elementos Pós-Textuais--------------------------
-%
-%--------Referências-------------------------------------------------------------------------
-%
+% Elementos Pós-Textuais -------------------------------------------------------
 \bibliography{bibliografia} % arquivo bibtex com as referências (modelo.bib)
 
 \include{apendice_1}

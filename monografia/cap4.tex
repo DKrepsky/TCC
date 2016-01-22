@@ -43,9 +43,14 @@ A notação utilizada para descrever a potência complexa $\mathbf{S}$ das cargas e
 \[
 \mathbf{S}_i = 
 \left[ \begin{matrix}
-P_{a} + jQ_{a}\\
-P_{b} + jQ_{b}\\
-P_{c} + jQ_{c}\\
+S_{ia}\\
+S_{ib}\\
+S_{ic}\\
+\end{matrix} \right] = 
+\left[ \begin{matrix}
+P_{ia} + jQ_{ia}\\
+P_{ib} + jQ_{ib}\\
+P_{ic} + jQ_{ic}\\
 \end{matrix} \right]
 \].
 
@@ -66,11 +71,11 @@ Na operação a montante, são calculadas as potências equivalentes em cada nó, i.e
 Assim, primeiro se calcula a potência na barra através da equação \ref{equ:scespedes}, até a barra inicial.
 
 \begin{equation}
-\mathbf{S}_{i}^{equivalente} = \mathbf{S}_i + \sum(\mathbf{S} + \mathbf{L}).
+\mathbf{S}_{i}^{equivalente} = \mathbf{S}_i + \sum_{m \, \in \, M}(\mathbf{S}_m + \mathbf{L}_m).
 \label{equ:scespedes}
 \end{equation}
 
-Onde $\sum(\mathbf{S} + \mathbf{L})$ é a soma das potência, e as perdas nas linhas, que saem da barra \textit{i} para as barras subsequentes.
+Onde $\sum(\mathbf{S}_m + \mathbf{L}_m)$ é a soma das potência e perdas no conjunto de linhas M, que saem da barra \textit{i} para as barras à montante.
 
 Na operação a jusante, partindo da barra inicial, é determinado o valor absoluto da tensão em cada barra com o uso da equação \ref{equ:vcespedes} ou \ref{equ:vcespedes2}.
 
@@ -116,7 +121,7 @@ Ao final da operação a jusante, as perdas são atualizadas através da equação \re
 
 Sendo \emph{$L_p$} e \emph{$L_q$} as perdas ativas e reativas, respectivamente.
 
-É dito que o algoritmo convergiu quando a variação da das perdas totais, entre uma iteração e outra, é menor que um fator de tolerância estabelecido.
+É dito que o algoritmo convergiu quando a variação das perdas totais, entre uma iteração e outra, é menor que um fator de tolerância $\epsilon$.
 
 O ângulo das tensões pode ser calculado, com outra operação a jusante, a partir da equação \ref{equ:thcespedes}.
 
@@ -138,45 +143,146 @@ Semelhante ao método da soma das potências, o algoritmo consiste em duas varredu
 
 Uma das vantagens do método da soma das correntes é que o mesmo pode ser aplicado a redes fracamente malhadas. Outra vantagem é que o algoritmo possui compensação para o acoplamento entre as linhas, levando a resultados mais precisos.
 
-Para a execução do algoritmo, deve-se assumir um perfil de tensão inicial, geralmente 1 pu.
+A execução do algoritmo segue os passos a seguir:
 
-No inicio do processo iterativo, o primeiro passo é determinar corrente na barra através da equação \ref{equ:ishirm}.
+\begin{enumerate}
+  \item Primeiro, é assumir um perfil de tensão inicial para as barras, geralmente 1 pu.
+  
+  \item O próximo passo é determinar a corrente nas barras através da equação \ref{equ:ishirm}.
+  
+  \begin{equation}
+  \label{equ:ishirm}
+  \left[ \begin{matrix}
+  I_{ia} \\
+  I_{ib} \\
+  I_{ic} \\
+  \end{matrix} \right]^{(k)} = 
+  \left[ \begin{matrix}
+  \left(\frac{S_{ia}}{V_{ia}^{(k-1)}}\right)^* \\
+  \left(\frac{S_{ib}}{V_{ib}^{(k-1)}}\right)^* \\
+  \left(\frac{S_{ic}}{V_{ic}^{(k-1)}}\right)^* \\
+  \end{matrix} \right] - 
+  \left[ \begin{matrix}
+  Y_{ia}^* & 0 & 0 \\
+  0 & Y_{ib}^* & 0 \\
+  0 & 0 & Y_{ic}^* \\
+  \end{matrix} \right]
+  \left[ \begin{matrix}
+  V_{ia} \\
+  V_{ib} \\
+  V_{ic} \\
+  \end{matrix} \right]^{(k-1)}
+  \end{equation}
+  
+  Onde:
+  \begin{itemize}
+    \item $I_{ia}$, $I_{ib}$ e $I_{ic}$ são as correntes injetadas na barra \textit{i};
+    
+    \item $S_{ia}$, $S_{ib}$ e $S_{ic}$ são as potências injetadas na barra \textit{i};
+    
+    \item $V_{ia}$, $V_{ib}$ e $V_{ic}$ são as tensões na barra \textit{i};
+    
+    \item $Y_{ia}$, $Y_{ib}$ e $Y_{ic}$ é a admitância dos elementos \textit{shunt} conectados a barra \textit{i};
+    
+    \item \textit{k} é a iteração.
+  \end{itemize}
+  
+  \item Em seguida, é iniciada a operação à montante, onde, partindo dos nós finais até a barra inicial, é calculada a corrente nas linhas com a equação \ref{equ:ilshirm}.
+  
+  \begin{equation}
+  \label{equ:ilshirm}
+  \left[ \begin{matrix}
+  J_{la} \\
+  J_{lb} \\
+  J_{lc} \\
+  \end{matrix} \right]^{(k)} = -
+  \left[ \begin{matrix}
+  I_{ia} \\
+  I_{ib} \\
+  I_{ic} \\
+  \end{matrix} \right]^{(k)} +
+  \sum_{m \, \in \, M}
+  \left[ \begin{matrix}
+  J_{ma} \\
+  J_{mb} \\
+  J_{mc} \\
+  \end{matrix} \right]^{(k)}
+  \end{equation}
+  
+  Onde $ J_{la} $, $ J_{lb} $ e $ J_{lc} $ são as correntes na linha \textit{l} e  $ J_{ma} $, $ J_{mb} $ e $ J_{mc} $ as correntes na linha m, sendo m o conjunto de linha que emanam à jusante da barra \textit{i}.
+  
+  \item Após o cálculo das correntes de linha, é executada a operação à jusante, utilizando a equação \ref{equ:vshirm} para aplicar a correção de tensão nas barras.
+  
+  \begin{equation}
+  \label{equ:vshirm}
+  \left[ \begin{matrix}
+  V_{ja} \\
+  V_{jb} \\
+  V_{jc} \\
+  \end{matrix} \right]^{(k)} = 
+  \left[ \begin{matrix}
+  V_{ia} \\
+  V_{ib} \\
+  V_{ic} \\
+  \end{matrix} \right]^{(k)} -
+  \left[ \begin{matrix}
+  Z_{aa} & Z_{ab} & Z_{ac} \\
+  Z_{ba} & Z_{bb} & Z_{bc} \\
+  Z_{ca} & Z_{cb} & Z_{cc} \\
+  \end{matrix} \right]
+  \left[ \begin{matrix}
+  J_{la} \\
+  J_{lb} \\
+  J_{lc} \\
+  \end{matrix} \right]^{(k)}
+  \end{equation}
+  
+  \item O critério de convergência é determinado a partir da variação da potência nas barras (equação \ref{equ:cvshirm}). Se a parte real ($P$) ou a parte imaginária ($Q$) de qualquer uma das variações de potência ($\Delta \mathbf{S}_i$) na equação \ref{equ:cvshirm} for maior que o fator de tolerância $\epsilon$, os passos de 2, 3 e 4 são executados novamente, até que se obtenha a convergência ou que atinga um número máximo de iterações.
+  
+    \begin{equation}
+    \label{equ:cvshirm}
+    \left[ \begin{matrix}
+    \Delta S_{ia} \\
+    \Delta S_{ib} \\
+    \Delta S_{ic} \\
+    \end{matrix} \right]^{(k)} = 
+    \left[ \begin{matrix}
+    V_{ia} \\
+    V_{ib} \\
+    V_{ic} \\
+    \end{matrix} \right]^{(k)}
+    \left[ \begin{matrix}
+    I_{ia}^* \\
+    I_{ib}^* \\
+    I_{ic}^* \\
+    \end{matrix} \right]^{(k)} -
+    \left[ \begin{matrix}
+    Y_{ia}^* & 0 & 0 \\
+    0 & Y_{ib}^* & 0 \\
+    0 & 0 & Y_{ic}^* \\
+    \end{matrix} \right]
+    \left[ \begin{matrix}
+    |V_{ia}|^2 \\
+    |V_{ib}|^2 \\
+    |V_{ic}|^2 \\
+    \end{matrix} \right]^{(k)} -
+    \left[ \begin{matrix}
+    S_{ia} \\
+    S_{ib} \\
+    S_{ic} \\
+    \end{matrix} \right]
+    \end{equation}
+\end{enumerate}
 
-\begin{equation}
-\label{equ:ishirm}
-\left[ \begin{matrix}
-I_{ia} \\
-I_{ib} \\
-I_{ic} \\
-\end{matrix} \right]^{(k)} = 
-\left[ \begin{matrix}
-\left(\frac{S_{ia}}{V_{ia}^{(k-1)}}\right)^* \\
-\left(\frac{S_{ib}}{V_{ib}^{(k-1)}}\right)^* \\
-\left(\frac{S_{ic}}{V_{ic}^{(k-1)}}\right)^* \\
-\end{matrix} \right] - 
-\left[ \begin{matrix}
-Y_{ia}^* & & \\
-& Y_{ib}^* & \\
-& & Y_{ic}^* \\
-\end{matrix} \right]
-\left[ \begin{matrix}
-V_{ia} \\
-V_{ib} \\
-V_{ic} \\
-\end{matrix} \right]^{(k-1)}
-\end{equation}
 
-Onde:
-\begin{itemize}
-  \item $I_{ia}$, $I_{ib}$ e $I_{ic}$ são as correntes injetadas na barra \textit{i};
-  
-  \item $S_{ia}$, $S_{ib}$ e $S_{ic}$ são as potências injetadas na barra \textit{i};
-  
-  \item $V_{ia}$, $V_{ib}$ e $V_{ic}$ são as tensões na barra \textit{i};
-  
-  \item $Y_{ia}$, $Y_{ib}$ e $Y_{ic}$ é a admitância dos elementos \textit{shunt} conectados a barra \textit{i};
-  
-  \item \textit{k} é a iteração;
-\end{itemize}
 
-Para o caso onde os elementos \textit{shunt} possuem potência constante  
+
+
+
+
+
+
+
+
+
+
