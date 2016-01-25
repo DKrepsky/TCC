@@ -4,7 +4,7 @@
 Para o estudo do fluxo de potência, é preciso realizar a modelagem matemática dos componentes reais do sistema. Os modelos apresentados nesta seção consideram a operação estática do sistema e sem interferência da frequência da tensão de suprimento.
 
 
-\subsection{Linhas trifásicas}
+\subsection{Linhas trifásicas}\label{subsec:linha}
 As linhas nas redes de distribuição são, geralmente, modeladas utilizando o modelo de linha curta para as redes primárias e secundárias e o de linha média ($\pi$ nominal) para as redes de subtransmissão \cite{Kagan}.
 
 Neste trabalho é utilizado o modelo de linha curta a três fios, considerando o efeito do acoplamento entre as linha. Assim, a linha de transmissão pode ser representada graficamente conforme a figura \ref{fig:linha-tri}.
@@ -59,7 +59,6 @@ Onde $P$ é a potência real e $Q$ é a potência reativa.
 \subsection{Capacitores \textit{Shunt}}
 Os elementos \textit{shunt} também são considerados como tendo potência constante. A notação utilizada para descrever-los é a mesma para as cargas e geradores.
 
-
 \section{Método da soma das potências}
 
 O método da soma das potências, originalmente proposto por \cite{Cespedes}, se baseia na eliminação do ângulo de fase nas equações do fluxo de potência para simplificar a resolução do problema. Na maioria dos estudos relacionados ao fluxo de potência, o ângulo da tensão não é significante, sendo analisado somente o módulo da tensão que chega aos consumidores. Caso seja necessário, o ângulo pode ser determinado com a adição de mais uma etapa de varredura. 
@@ -68,7 +67,7 @@ O algoritmo consiste em duas operações, uma a montante, ou seja, a partir dos nó
 
 Na operação a montante, são calculadas as potências equivalentes em cada nó, i.e., somando somando todas as potências que são alimentadas através da barra, incluindo as perdas.
 
-Assim, primeiro se calcula a potência na barra através da equação \ref{equ:scespedes}, até a barra inicial.
+Assim, primeiro é calculada a potência na barra através da equação \ref{equ:scespedes}, até a barra inicial.
 
 \begin{equation}
 \mathbf{S}_{i}^{equivalente} = \mathbf{S}_i + \sum_{m \, \in \, M}(\mathbf{S}_m + \mathbf{L}_m).
@@ -77,7 +76,7 @@ Assim, primeiro se calcula a potência na barra através da equação \ref{equ:scesp
 
 Onde $\sum(\mathbf{S}_m + \mathbf{L}_m)$ é a soma das potência e perdas no conjunto de linhas M, que saem da barra \textit{i} para as barras à montante.
 
-Na operação a jusante, partindo da barra inicial, é determinado o valor absoluto da tensão em cada barra com o uso da equação \ref{equ:vcespedes} ou \ref{equ:vcespedes2}.
+Na operação à jusante, partindo da barra inicial, é determinado o valor absoluto da tensão em cada barra com o uso da equação \ref{equ:vcespedes} ou \ref{equ:vcespedes2}.
 
 
 \begin{figure}[h]
@@ -97,7 +96,7 @@ Na operação a jusante, partindo da barra inicial, é determinado o valor absoluto
 
 \begin{equation}
 \label{equ:vcespedes2}
-V_r^4 + [2 \cdot (PR+QX) -  V_s^2] \cdot  V_r^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0.  
+|V_r|^4 + [2 \cdot (PR+QX) -  |V_s|^2] \cdot  |V_r|^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0.  
 \end{equation}
 
 Onde:
@@ -275,7 +274,16 @@ A execução do algoritmo segue os passos a seguir:
 \end{enumerate}
 
 
+\section{Renumeração das barras}
+Em ambos os métodos de cálculo do fluxo de potência, é necessário uma renumeração das barras, de modo a deixar o sistema em uma representação adequada para a execução do algoritmo.
 
+Neste trabalho foi empregada uma abordagem orientada a objetos, onde não é necessário a renumeração das barras. Para representar a estrutura da rede, é utilizada uma técnica que se assemelha a uma lista ligada (\textit{linked list}) \cite{Cormen}. Assim, cada objeto barra possui uma lista de objetos linha a qual está conectado. As linhas, por sua vez, possuem uma referência a duas barras, denominadas nó inicial e nó final.
+
+Dessa forma, não é necessário renumerar o sistema, pois a navegação é realizada através da referência aos objetos barra e linha.
+
+Para agilizar o acesso aleatório a uma barra, i.e. acessar uma barra sem a necessidade de percorrer toda a lista, é utilizada uma estrutura do tipo \textit{Hash Table} \cite{Cormen}, a qual permite buscar o endereço da barra, a partir do seu número, ou o endereço da linha, de acordo com seus nós inicial e final. 
+
+Na abordagem tradicional, a rede é representada usando vetores, dificultando a remoção e inserção de elementos, aumentando ainda mais o custo computacional para aplicação do algoritmo de otimização. A abordagem empregada facilita a utilização do algoritmo de redução de barras, visto que para remover ou inserir um elemento, é necessário somente alterar uma referência (ponteiro em C++), sem precisar movimentar uma grande quantidade de dados na memória. 
 
 
 
