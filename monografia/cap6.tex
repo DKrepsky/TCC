@@ -1,16 +1,97 @@
-\chapter{Resultado}\label{chp:resultado}
+\chapter{Resultados}\label{chp:resultado}
 
 \section{Métodos soma de potências e soma de correntes}
-
-\subsection{Tempo de execução}
 
 \subsection{Diferença numérica dos resultados}
 
 \subsection{Convergência}
 
+\subsection{Tempo de execução}
+
+  \begin{table}[h]
+    \centering
+    \caption{Tempo de execução.}
+    \begin{tabular}{ccc}
+      \toprule
+      \multirow{ 2}{*}{\textbf{Número de barras}} & \multicolumn{ 2}{c}{\textbf{tempo [ms]}} \\
+       & Soma de correntes & Soma de potências \\
+      \midrule
+      14		& 0   & 0  \\
+      34		& 0   & 0  \\
+      70		& 0   & 1  \\
+      136		& 1   & 3  \\
+      794		& 18  & 20 \\
+      3373  & 198 & 99 \\
+      \bottomrule
+    \end{tabular}
+    \label{tab:tempo}
+    
+    \small Fonte: Autoria própria.
+  \end{table}
+
+  \begin{figure}[h!]
+    \centering
+    \caption{Tempo de execução dos algoritmos do fluxo de potência.}
+    \includegraphics[width=\textwidth]{tempo}
+    \label{fig:tempo}
+    
+    \small Fonte: Autoria própria.
+  \end{figure}
+    
+\subsection{Número de iterações}
+
+  \begin{figure}[h!]
+    \centering
+    \caption{Número de iterações necessárias para convergência dos sistemas de teste.}
+    \includegraphics[width=\textwidth]{itera}
+    \label{fig:itera}
+    
+    \small Fonte: Autoria própria.
+  \end{figure}
+
 \section{Otimização}
 
 \subsection{Tempo de execução}
+
+  \begin{table}[h]
+    \centering
+    \caption{Tempo de execução com otimização.}
+    \begin{tabular}{cccc}
+      \toprule
+      \multirow{ 2}{*}{\textbf{Número de barras}} & \multicolumn{ 2}{c}{\textbf{tempo [ms]}} & \multirow{ 2}{*}{\textbf{Barras removidas}}\\
+      & Soma de correntes & Soma de potências \\
+      \midrule
+      14		& 0  & 0  & 0    \\
+      34		& 0  & 0  & 5    \\
+      70		& 0  & 1  & 18   \\
+      136		& 1  & 6  & 24   \\
+      794		& 6  & 10 & 428  \\
+      3373  & 13 & 26 & 2748 \\
+      \bottomrule
+    \end{tabular}
+    \label{tab:tempootm}
+    
+    \small Fonte: Autoria própria.
+  \end{table}
+  
+  \begin{figure}[h!]
+    \centering
+    \caption{Tempo de execução dos algoritmos do fluxo de potência com otimização.}
+    \includegraphics[width=\textwidth]{tempootm}
+    \label{fig:tempootm}
+    
+    \small Fonte: Autoria própria.
+  \end{figure}
+  
+\subsection{Número de iterações}
+  \begin{figure}[h!]
+    \centering
+    \caption{Número de iterações necessárias para convergência com otimização.}
+    \includegraphics[width=\textwidth]{iteraotm}
+    \label{fig:iteraotm}
+    
+    \small Fonte: Autoria própria.
+  \end{figure}
 
 \subsection{Erro introduzido pela otimização}
 

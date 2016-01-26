@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   style="font-size:12px;font-family:'unica one', sans-serif"
+   width="598"
+   height="398"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="itera.svg">
+  <metadata
+     id="metadata379">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview377"
+     showgrid="false"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="308.51775"
+     inkscape:cy="85.104207"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <desc
+     id="desc4">Created with Highcharts 4.2.0</desc>
+  <defs
+     id="defs6">
+    <clipPath
+       id="highcharts-101">
+      <rect
+         x="1"
+         y="1"
+         width="526"
+         height="314"
+         id="rect9" />
+    </clipPath>
+  </defs>
+  <rect
+     x="0"
+     y="0"
+     width="598"
+     height="398"
+     strokeWidth="2"
+     class=" highcharts-background"
+     id="rect11"
+     style="fill:none" />
+  <rect
+     x="61"
+     y="9"
+     width="528"
+     height="316"
+     id="rect13"
+     style="fill:#ffffff" />
+  <path
+     d="m 61,325.50002 528,0 0,-18 -528,0"
+     id="path15"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0.5" />
+  <path
+     d="m 61,290.50002 528,0 0,-18 -528,0"
+     id="path17"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0.5" />
+  <path
+     d="m 61,255.50002 528,0 0,-18 -528,0"
+     id="path19"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0.5" />
+  <path
+     d="m 61,220.50002 528,0 0,-18 -528,0"
+     id="path21"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0.5" />
+  <path
+     d="m 61,185.50002 528,0 0,-18 -528,0"
+     id="path23"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0.5" />
+  <path
+     d="m 61,149.50002 528,0 0,-17 -528,0"
+     id="path25"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0.5" />
+  <path
+     d="m 61,114.50002 528,0 0,-16.999997 -528,0"
+     id="path27"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0.5" />
+  <path
+     d="m 61,79.500023 528,0 0,-17 -528,0"
+     id="path29"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0.5" />
+  <path
+     d="m 61,44.500023 528,0 0,-17 -528,0"
+     id="path31"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;fill-opacity:0.5" />
+  <g
+     class="highcharts-grid"
+     id="g33"
+     transform="translate(-0.99999994,-0.99997659)" />
+  <g
+     class="highcharts-grid"
+     id="g35"
+     transform="translate(-0.99999994,-0.99997659)">
+    <path
+       d="m 62,326.5 528,0"
+       id="path37"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,308.5 528,0"
+       id="path39"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,291.5 528,0"
+       id="path41"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,273.5 528,0"
+       id="path43"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,256.5 528,0"
+       id="path45"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,238.5 528,0"
+       id="path47"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,221.5 528,0"
+       id="path49"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,203.5 528,0"
+       id="path51"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,186.5 528,0"
+       id="path53"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,168.5 528,0"
+       id="path55"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,150.5 528,0"
+       id="path57"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,133.5 528,0"
+       id="path59"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,115.5 528,0"
+       id="path61"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,98.5 528,0"
+       id="path63"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,80.5 528,0"
+       id="path65"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,63.5 528,0"
+       id="path67"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,45.5 528,0"
+       id="path69"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,28.5 528,0"
+       id="path71"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+    <path
+       d="m 62,9.5 528,0"
+       id="path73"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0c0c0;stroke-width:1" />
+  </g>
+  <rect
+     x="61"
+     y="9"
+     width="528"
+     height="316"
+     strokeWidth="-2"
+     id="rect75"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <g
+     class="highcharts-axis"
+     id="g77"
+     transform="translate(-0.99999994,-0.99997659)">
+    <path
+       d="m 149.5,326 0,10"
+       id="path79"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 237.5,326 0,10"
+       id="path81"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 325.5,326 0,10"
+       id="path83"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 413.5,326 0,10"
+       id="path85"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 501.5,326 0,10"
+       id="path87"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 590.5,326 0,10"
+       id="path89"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 61.5,326 0,10"
+       id="path91"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,326.5 528,0"
+       id="path93"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#c0d0e0;stroke-width:1" />
+  </g>
+  <g
+     class="highcharts-axis"
+     id="g95"
+     transform="translate(-0.99999994,-0.99997659)">
+    <path
+       d="m 62,326.5 -10,0"
+       id="path97"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,308.5 -10,0"
+       id="path99"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,291.5 -10,0"
+       id="path101"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,273.5 -10,0"
+       id="path103"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,256.5 -10,0"
+       id="path105"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,238.5 -10,0"
+       id="path107"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,221.5 -10,0"
+       id="path109"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,203.5 -10,0"
+       id="path111"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,186.5 -10,0"
+       id="path113"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,168.5 -10,0"
+       id="path115"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,150.5 -10,0"
+       id="path117"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,133.5 -10,0"
+       id="path119"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,115.5 -10,0"
+       id="path121"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,98.5 -10,0"
+       id="path123"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,80.5 -10,0"
+       id="path125"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,63.5 -10,0"
+       id="path127"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,45.5 -10,0"
+       id="path129"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,28.5 -10,0"
+       id="path131"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <path
+       d="m 62,9.5 -10,0"
+       id="path133"
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <text
+       x="23.65625"
+       transform="matrix(0,-1,1,0,-144.34375,191.65625)"
+       class=" highcharts-yaxis-title"
+       style="color:#000000;font-weight:normal;font-size:15px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;fill:#000000"
+       y="168"
+       id="text135">Iterações</text>
+    <path
+       d="m 61.5,10 0,316"
+       id="path137"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#c0d0e0;stroke-width:1" />
+    <text
+       id="text4507"
+       y="358.95428"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;fill:#000000"
+       class=" highcharts-yaxis-title"
+       x="296.39313">
+      <tspan
+         style="font-size:15px"
+         id="tspan4511">Número de Barras</tspan>
+    </text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="311.60638"
+       y="355.65601"
+       id="text4513"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4515"
+         x="311.60638"
+         y="355.65601" /></text>
+  </g>
+  <g
+     class="highcharts-series-group"
+     id="g139"
+     transform="translate(-0.99999994,-0.99997659)">
+    <g
+       class="highcharts-series highcharts-series-0"
+       transform="translate(62,10)"
+       clip-path="url(#highcharts-101)"
+       id="g141">
+      <rect
+         x="19.5"
+         y="176.5"
+         width="22"
+         height="140"
+         rx="0"
+         ry="0"
+         id="rect143"
+         style="fill:#ff0000;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="107.5"
+         y="18.5"
+         width="22"
+         height="298"
+         rx="0"
+         ry="0"
+         id="rect145"
+         style="fill:#ff0000;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="195.5"
+         y="140.5"
+         width="22"
+         height="176"
+         rx="0"
+         ry="0"
+         id="rect147"
+         style="fill:#ff0000;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="283.5"
+         y="140.5"
+         width="22"
+         height="176"
+         rx="0"
+         ry="0"
+         id="rect149"
+         style="fill:#ff0000;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="371.5"
+         y="176.5"
+         width="22"
+         height="140"
+         rx="0"
+         ry="0"
+         id="rect151"
+         style="fill:#ff0000;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="459.5"
+         y="158.5"
+         width="22"
+         height="158"
+         rx="0"
+         ry="0"
+         id="rect153"
+         style="fill:#ff0000;stroke:#ffffff;stroke-width:1" />
+    </g>
+    <g
+       class="highcharts-markers highcharts-series-0"
+       transform="translate(62,10)"
+       clip-path="none"
+       id="g155" />
+    <g
+       class="highcharts-series highcharts-series-1"
+       transform="translate(62,10)"
+       clip-path="url(#highcharts-101)"
+       id="g157">
+      <rect
+         x="46.5"
+         y="228.5"
+         width="22"
+         height="88"
+         rx="0"
+         ry="0"
+         id="rect159"
+         style="fill:#0400ff;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="134.5"
+         y="88.5"
+         width="22"
+         height="228"
+         rx="0"
+         ry="0"
+         id="rect161"
+         style="fill:#0400ff;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="222.5"
+         y="193.5"
+         width="22"
+         height="123"
+         rx="0"
+         ry="0"
+         id="rect163"
+         style="fill:#0400ff;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="310.5"
+         y="211.5"
+         width="22"
+         height="105"
+         rx="0"
+         ry="0"
+         id="rect165"
+         style="fill:#0400ff;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="398.5"
+         y="211.5"
+         width="22"
+         height="105"
+         rx="0"
+         ry="0"
+         id="rect167"
+         style="fill:#0400ff;stroke:#ffffff;stroke-width:1" />
+      <rect
+         x="486.5"
+         y="193.5"
+         width="22"
+         height="123"
+         rx="0"
+         ry="0"
+         id="rect169"
+         style="fill:#0400ff;stroke:#ffffff;stroke-width:1" />
+    </g>
+    <g
+       class="highcharts-markers highcharts-series-1"
+       transform="translate(62,10)"
+       clip-path="none"
+       id="g171" />
+  </g>
+  <g
+     class="highcharts-data-labels highcharts-series-0"
+     visibility="visible"
+     transform="translate(61,9.0000234)"
+     id="g173"
+     style="visibility:visible;opacity:1">
+    <g
+       transform="translate(22,153)"
+       id="g175">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text177">
+        <tspan
+           id="tspan179">8</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(107,-5)"
+       id="g181">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text183">
+        <tspan
+           id="tspan185">17</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(195,117)"
+       id="g187">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text189">
+        <tspan
+           id="tspan191">10</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(283,117)"
+       id="g193">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text195">
+        <tspan
+           id="tspan197">10</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(374,153)"
+       id="g199">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text201">
+        <tspan
+           id="tspan203">8</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(462,135)"
+       id="g205">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text207">
+        <tspan
+           id="tspan209">9</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     class="highcharts-data-labels highcharts-series-1"
+     visibility="visible"
+     transform="translate(61,9.0000234)"
+     id="g211"
+     style="visibility:visible;opacity:1">
+    <g
+       transform="translate(49,205)"
+       id="g213">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text215">
+        <tspan
+           id="tspan217">5</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(134,65)"
+       id="g219">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text221">
+        <tspan
+           id="tspan223">13</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(225,170)"
+       id="g225">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text227">
+        <tspan
+           id="tspan229">7</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(313,188)"
+       id="g231">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text233">
+        <tspan
+           id="tspan235">6</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(401,188)"
+       id="g237">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text239">
+        <tspan
+           id="tspan241">6</tspan>
+      </text>
+    </g>
+    <g
+       transform="translate(489,170)"
+       id="g243">
+      <text
+         x="5"
+         style="color:#000000;font-weight:bold;font-size:12px;font-family:arial, sans-serif;fill:#000000"
+         y="17"
+         id="text245">
+        <tspan
+           id="tspan247">7</tspan>
+      </text>
+    </g>
+  </g>
+  <g
+     class="highcharts-legend"
+     transform="translate(156,371.58402)"
+     id="g249">
+    <g
+       id="g251">
+      <g
+         id="g253">
+        <g
+           class="highcharts-legend-item"
+           transform="translate(8,3)"
+           id="g255">
+          <text
+             x="21"
+             style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+             y="15"
+             id="text257">
+            <tspan
+               id="tspan259">Soma de Correntes</tspan>
+          </text>
+          <rect
+             x="0"
+             y="4"
+             width="16"
+             height="12"
+             id="rect261"
+             style="fill:#ff0000" />
+        </g>
+        <g
+           class="highcharts-legend-item"
+           transform="translate(153.04687,3)"
+           id="g263">
+          <text
+             x="21"
+             y="15"
+             style="color:#333333;font-weight:normal;font-size:11.25px;font-family:'lucida grande', 'lucida sans unicode', arial, helvetica, sans-serif;text-transform:none;text-anchor:start;fill:#333333"
+             id="text265">
+            <tspan
+               id="tspan267">Soma de Potências</tspan>
+          </text>
+          <rect
+             x="0"
+             y="4"
+             width="16"
+             height="12"
+             id="rect269"
+             style="fill:#0400ff" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     class="highcharts-axis-labels highcharts-xaxis-labels"
+     id="g271"
+     transform="translate(-0.99999994,-0.99997659)">
+    <text
+       x="106"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="346"
+       id="text273">14</text>
+    <text
+       x="194"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="346"
+       id="text275">34</text>
+    <text
+       x="282"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="346"
+       id="text277">70</text>
+    <text
+       x="370"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="346"
+       id="text279">136</text>
+    <text
+       x="458"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="346"
+       id="text281">794</text>
+    <text
+       x="546"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:middle;opacity:1;fill:#000000"
+       y="346"
+       id="text283">3373</text>
+  </g>
+  <g
+     class="highcharts-axis-labels highcharts-yaxis-labels"
+     id="g285"
+     transform="translate(-0.99999994,-0.99997659)">
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="331"
+       id="text287">
+      <tspan
+         id="tspan289">0</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="313"
+       id="text291">
+      <tspan
+         id="tspan293">1</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="296"
+       id="text295">
+      <tspan
+         id="tspan297">2</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="278"
+       id="text299">
+      <tspan
+         id="tspan301">3</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="261"
+       id="text303">
+      <tspan
+         id="tspan305">4</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="243"
+       id="text307">
+      <tspan
+         id="tspan309">5</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="226"
+       id="text311">
+      <tspan
+         id="tspan313">6</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="208"
+       id="text315">
+      <tspan
+         id="tspan317">7</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="191"
+       id="text319">
+      <tspan
+         id="tspan321">8</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="173"
+       id="text323">
+      <tspan
+         id="tspan325">9</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="155"
+       id="text327">
+      <tspan
+         id="tspan329">10</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="138"
+       id="text331">
+      <tspan
+         id="tspan333">11</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="120"
+       id="text335">
+      <tspan
+         id="tspan337">12</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="103"
+       id="text339">
+      <tspan
+         id="tspan341">13</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="85"
+       id="text343">
+      <tspan
+         id="tspan345">14</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="68"
+       id="text347">
+      <tspan
+         id="tspan349">15</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="50"
+       id="text351">
+      <tspan
+         id="tspan353">16</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="33"
+       id="text355">
+      <tspan
+         id="tspan357">17</tspan>
+    </text>
+    <text
+       x="47"
+       style="color:#000000;font-weight:normal;font-size:12px;font-family:arial, sans-serif;text-transform:none;text-anchor:end;opacity:1;fill:#000000"
+       y="15"
+       id="text359">
+      <tspan
+         id="tspan361">18</tspan>
+    </text>
+  </g>
+</svg>
