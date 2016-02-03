@@ -1,3 +1,1006 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1032px" height="1154px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><path d="M 101.47 162.59 L 101.47 216.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 101.47 221.47 L 97.97 214.47 L 101.47 216.22 L 104.97 214.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="42" y="102" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(48,125)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="107" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 107px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Barra = Barra Inicial</div></div></foreignObject><text x="54" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 101.47 282.59 L 101.47 336.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 101.47 341.47 L 97.97 334.47 L 101.47 336.22 L 104.97 334.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 161.47 252 L 232.06 252 L 232.06 32 L 443.34 32" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 448.59 32 L 441.59 35.5 L 443.34 32 L 441.59 28.5 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="42" y="222" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><path d="M 54 222 L 54 282 M 150 222 L 150 282" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(60,245)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="83" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 83px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Processa Barra</div></div></foreignObject><text x="42" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 101.47 62.59 L 101.47 96.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 101.47 101.47 L 97.97 94.47 L 101.47 96.22 L 104.97 94.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="102" cy="32" rx="50" ry="30" fill="#ffffff" stroke="#000000" stroke-width="2" pointer-events="none"/><g transform="translate(54,19)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="96" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 96px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Redução de Barras</div></div></foreignObject><text x="48" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 82.61 342 L 121.39 342 C 138.29 342 152 355.43 152 372 C 152 388.57 138.29 402 121.39 402 L 82.61 402 C 65.71 402 52 388.57 52 372 C 52 355.43 65.71 342 82.61 342 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(81,366)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="42" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 44px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Retorna</div></div></foreignObject><text x="21" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 500.29 62.59 L 500.29 96.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500.29 101.47 L 496.79 94.47 L 500.29 96.22 L 503.79 94.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="500" cy="32" rx="50" ry="30" fill="#ffffff" stroke="#000000" stroke-width="2" pointer-events="none"/><g transform="translate(459,26)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="82" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 84px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Processa Barra</div></div></foreignObject><text x="41" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 500.29 332 L 500.29 485.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500.29 490.88 L 496.79 483.88 L 500.29 485.63 L 503.79 483.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 605 296.71 L 675.1 296.71" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 680.35 296.71 L 673.35 300.21 L 675.1 296.71 L 673.35 293.21 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500 262 L 605 297 L 500 332 L 395 297 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(443,291)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="114" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 116px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Número de linhas = 1</div></div></foreignObject><text x="57" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 500.29 562.59 L 500.29 840.93" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500.29 846.18 L 496.79 839.18 L 500.29 840.93 L 503.79 839.18 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 395.59 527.29 L 316.07 527.29" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 310.82 527.29 L 317.82 523.79 L 316.07 527.29 L 317.82 530.79 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500 492 L 605 527 L 500 562 L 395 527 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(443,521)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="114" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 116px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Número de linhas = 2</div></div></foreignObject><text x="57" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 500.29 222.59 L 500.29 256.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500.29 261.47 L 496.79 254.47 L 500.29 256.22 L 503.79 254.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 605 162.59 L 1001.47 162.59 L 1001.47 867.29 L 767.84 867.29" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 762.59 867.29 L 769.59 863.79 L 767.84 867.29 L 769.59 870.79 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500 102 L 605 162 L 500 222 L 395 162 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(397,149)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="206" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 206px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Possuí cargas, geradores ou elementos shunt?</div></div></foreignObject><text x="103" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 500.29 992 L 500.29 1005.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500.29 1010.88 L 496.79 1003.88 L 500.29 1005.63 L 503.79 1003.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 579.12 962.59 L 684.51 962.59" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 689.76 962.59 L 682.76 966.09 L 684.51 962.59 L 682.76 959.09 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 452.44 932 L 548.56 932 L 579 952 L 579 987 C 579 988.33 578.16 989.6 576.65 990.54 C 575.15 991.47 573.11 992 570.99 992 L 430.01 992 C 427.89 992 425.85 991.47 424.35 990.54 C 422.84 989.6 422 988.33 422 987 L 422 952 L 452.44 932 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(437,949)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="127" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 127px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Para cada barra <div>conectada a barra atual</div></div></div></foreignObject><text x="64" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 500.29 1072 L 500.29 1085.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500.29 1090.88 L 496.79 1083.88 L 500.29 1085.63 L 503.79 1083.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="440" y="1012" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(441,1028)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Barra = Próxima Barra</div></div></foreignObject><text x="59" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 440.29 1122.59 L 369.71 1122.59 L 369.71 962.59 L 415.1 962.59" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 420.35 962.59 L 413.35 966.09 L 415.1 962.59 L 413.35 959.09 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="440" y="1092" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><path d="M 452 1092 L 452 1152 M 548 1092 L 548 1152" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(458,1115)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="83" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 83px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Processa Barra</div></div></foreignObject><text x="42" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 790.88 962.59 L 1021.47 962.59 L 1021.47 33.18 L 549.71 33.18 L 549.71 38.37" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 549.71 33.12 L 553.21 40.12 L 549.71 38.37 L 546.21 40.12 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 721.61 932 L 760.39 932 C 777.29 932 791 945.43 791 962 C 791 978.57 777.29 992 760.39 992 L 721.61 992 C 704.71 992 691 978.57 691 962 C 691 945.43 704.71 932 721.61 932 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(720,956)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="42" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 44px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Retorna</div></div></foreignObject><text x="21" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 741.47 327.29 L 741.47 345.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 741.47 350.88 L 737.97 343.88 L 741.47 345.63 L 744.97 343.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="682" y="267" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(683,283)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Remove barra do sistema</div></div></foreignObject><text x="59" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 741.47 412 L 741.47 430.34" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 741.47 435.59 L 737.97 428.59 L 741.47 430.34 L 744.97 428.59 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="681" y="352" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(682,368)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Remove linha conectada a barra</div></div></foreignObject><text x="59" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 814.41 462.59 L 875.1 462.59" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 880.35 462.59 L 873.35 466.09 L 875.1 462.59 L 873.35 459.09 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 741.47 487.29 L 741.47 840.93" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 741.47 846.18 L 737.97 839.18 L 741.47 840.93 L 744.97 839.18 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 687.1 441.25 C 689.19 438.58 692.58 437.03 696.17 437.1 L 821.21 437.1 C 824.07 437.07 826.8 437.53 828.58 438.34 C 830.36 439.16 830.99 440.24 830.28 441.25 L 795.84 482.75 C 793.75 485.42 790.36 486.97 786.78 486.9 L 659.92 486.9 C 657.39 486.75 655.16 486.21 653.78 485.42 C 652.4 484.62 651.99 483.66 652.67 482.75 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(702,449)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="79" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 79px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Salva barra na<div>memória LIFO</div></div></div></foreignObject><text x="40" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 892.36 432 L 981.47 432 C 982 432.57 982 433.43 981.47 434 C 977.47 438.46 974.83 449.59 974.83 462 C 974.83 474.41 977.47 485.54 981.47 490 C 982 490.57 982 491.43 981.47 492 L 892.36 492 C 886.64 492 882 478.57 882 462 C 882 445.43 886.64 432 892.36 432 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(919,456)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="26" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 28px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">LIFO</div></div></foreignObject><text x="13" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 500.29 887.29 L 500.29 925.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 500.29 930.88 L 496.79 923.88 L 500.29 925.63 L 503.79 923.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="500" cy="867" rx="20" ry="20" fill="#ffffff" stroke="#000000" stroke-width="2" pointer-events="none"/><path d="M 249.71 556.71 L 249.71 576.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 249.71 581.47 L 246.21 574.47 L 249.71 576.22 L 253.21 574.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="190" y="497" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(191,513)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Remove barra do sistema</div></div></foreignObject><text x="59" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 249.71 642.59 L 249.71 665.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 249.71 670.88 L 246.21 663.88 L 249.71 665.63 L 253.21 663.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="190" y="582" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(191,598)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Remove linhas conectada a barra</div></div></foreignObject><text x="59" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 179.12 867.29 L 107.84 867.29" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="none"/><path d="M 102.59 867.29 L 109.59 863.79 L 107.84 867.29 L 109.59 870.79 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 323.82 867.29 L 473.93 867.29" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 479.18 867.29 L 472.18 870.79 L 473.93 867.29 L 472.18 863.79 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 197.1 846.25 C 199.19 843.58 202.58 842.03 206.17 842.1 L 331.21 842.1 C 334.07 842.07 336.8 842.53 338.58 843.34 C 340.36 844.16 340.99 845.24 340.28 846.25 L 305.84 887.75 C 303.75 890.42 300.36 891.97 296.78 891.9 L 169.92 891.9 C 167.39 891.75 165.16 891.21 163.78 890.42 C 162.4 889.62 161.99 888.66 162.67 887.75 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/><g transform="translate(211,854)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="81" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 83px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Salva barra na <div>memória LIFO</div></div></div></foreignObject><text x="41" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 12.36 837 L 101.47 837 C 102 837.57 102 838.43 101.47 839 C 97.47 843.46 94.83 854.59 94.83 867 C 94.83 879.41 97.47 890.54 101.47 895 C 102 895.57 102 896.43 101.47 897 L 12.36 897 C 6.64 897 2 883.57 2 867 C 2 850.43 6.64 837 12.36 837 Z" fill="#ffffff" stroke="#000000" stroke-width="2" stroke-miterlimit="10" transform="translate(52,0)scale(-1,1)translate(-52,0)" pointer-events="none"/><g transform="translate(39,861)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="26" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 28px; white-space: nowrap; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">LIFO</div></div></foreignObject><text x="13" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 249.71 732 L 249.71 745.63" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 249.71 750.88 L 246.21 743.88 L 249.71 745.63 L 253.21 743.88 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="190" y="672" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(191,688)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Calcula linha equivalente</div></div></foreignObject><text x="59" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 249.71 812 L 252.06 812 L 252.06 836.22" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 252.06 841.47 L 248.56 834.47 L 252.06 836.22 L 255.56 834.47 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><rect x="190" y="752" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><g transform="translate(191,768)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="117" height="26" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; width: 117px; white-space: normal; text-align: center;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Insere linha equivalente</div></div></foreignObject><text x="59" y="19" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(607,145)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="21" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Sim</div></div></foreignObject><text x="11" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(502,225)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="22" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Não</div></div></foreignObject><text x="11" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><path d="M 721.47 867.29 L 526.66 867.29" fill="none" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><path d="M 521.41 867.29 L 528.41 863.79 L 526.66 867.29 L 528.41 870.79 Z" fill="#000000" stroke="#000000" stroke-miterlimit="10" pointer-events="none"/><ellipse cx="741" cy="867" rx="20" ry="20" fill="#ffffff" stroke="#000000" stroke-width="2" pointer-events="none"/><g transform="translate(607,280)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="21" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Sim</div></div></foreignObject><text x="11" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(502,335)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="22" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Não</div></div></foreignObject><text x="11" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(370,510)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="21" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Sim</div></div></foreignObject><text x="11" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g><g transform="translate(502,570)"><switch><foreignObject style="overflow:visible;" pointer-events="all" width="22" height="12" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; vertical-align: top; white-space: nowrap;"><div xmlns="http://www.w3.org/1999/xhtml" style="display:inline-block;text-align:inherit;text-decoration:inherit;">Não</div></div></foreignObject><text x="11" y="12" fill="#000000" text-anchor="middle" font-size="12px" font-family="Helvetica">[Not supported by viewer]</text></switch></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="707.44189"
+   height="912"
+   version="1.1"
+   content="%3CmxGraphModel%20dx%3D%221434%22%20dy%3D%22901%22%20grid%3D%221%22%20gridSize%3D%2210%22%20guides%3D%221%22%20tooltips%3D%221%22%20connect%3D%221%22%20arrows%3D%221%22%20fold%3D%221%22%20page%3D%221%22%20pageScale%3D%221%22%20pageWidth%3D%22826%22%20pageHeight%3D%221169%22%20background%3D%22%23ffffff%22%20math%3D%220%22%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%2211%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BentryX%3D0%3BentryY%3D0.5%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3Bdashed%3D1%3BexitX%3D1%3BexitY%3D0.5%3BexitPerimeter%3D0%3B%22%20parent%3D%221%22%20source%3D%2289%22%20target%3D%2210%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22281%22%20y%3D%22165%22%2F%3E%3CmxPoint%20x%3D%22281%22%20y%3D%2255%22%2F%3E%3C%2FArray%3E%3CmxPoint%20x%3D%22190%22%20y%3D%22170%22%20as%3D%22sourcePoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2293%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%225%22%20target%3D%2292%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%225%22%20value%3D%22Redu%C3%A7%C3%A3o%26%23xa%3Bde%20Barras%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.start_1%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%2289%22%20y%3D%2225%22%20width%3D%2290%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%226%22%20value%3D%22Fim%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.terminator%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%2299%22%20y%3D%22215%22%20width%3D%2270%22%20height%3D%2230%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2268%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3B%22%20parent%3D%221%22%20source%3D%2210%22%20target%3D%2217%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2210%22%20value%3D%22Processa%26%23xa%3BBarra%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.start_1%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22351%22%20y%3D%2235%22%20width%3D%2280%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2216%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%2213%22%20target%3D%2215%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22112%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D1%3BexitY%3D0.5%3BexitPerimeter%3D0%3BentryX%3D0%3BentryY%3D0.5%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%2213%22%20target%3D%2295%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2213%22%20value%3D%22N%C3%BAmero%20de%20linhas%20%3D%201%3F%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.decision%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22311%22%20y%3D%22245%22%20width%3D%22160%22%20height%3D%2280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2255%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3B%22%20parent%3D%221%22%20source%3D%2215%22%20target%3D%2244%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2278%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0%3BexitY%3D0.5%3BexitPerimeter%3D0%3BentryX%3D1%3BentryY%3D0.5%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3BentryPerimeter%3D0%3B%22%20parent%3D%221%22%20source%3D%2215%22%20target%3D%22100%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22369%22%20y%3D%22660%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2215%22%20value%3D%22N%C3%BAmero%20de%20linhas%20%3D%202%3F%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.decision%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22311%22%20y%3D%22365%22%20width%3D%22160%22%20height%3D%2280%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2269%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3B%22%20parent%3D%221%22%20source%3D%2217%22%20target%3D%2213%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2271%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BentryX%3D1%3BentryY%3D0.5%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3BexitX%3D1%3BexitY%3D0.5%3BexitPerimeter%3D0%3B%22%20parent%3D%221%22%20source%3D%2217%22%20target%3D%2264%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22740%22%20y%3D%22152%22%2F%3E%3CmxPoint%20x%3D%22740%22%20y%3D%22685%22%2F%3E%3C%2FArray%3E%3CmxPoint%20x%3D%22491%22%20y%3D%22195%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22805.9801980198022%22%20y%3D%221061.5841584158416%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2217%22%20value%3D%22Possu%C3%AD%20cargas%2C%26%23xa%3Bgeradores%20ou%26%23xa%3Belementos%20shunt%3F%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.decision%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22301%22%20y%3D%22102%22%20width%3D%22180%22%20height%3D%22100%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2243%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D1%3BexitY%3D0.5%3BexitPerimeter%3D0%3BentryX%3D0%3BentryY%3D0.5%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%2220%22%20target%3D%2230%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22108%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%2220%22%20target%3D%2298%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2220%22%20value%3D%22Para%20cada%20barra%26%23xa%3Bconectada%20a%20barra%20atual%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.loop_limit%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22321%22%20y%3D%22755%22%20width%3D%22140%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2272%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0%3BexitY%3D0.5%3BentryX%3D0%3BentryY%3D0.5%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3BexitPerimeter%3D0%3B%22%20parent%3D%221%22%20source%3D%2299%22%20target%3D%2220%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22231%22%20y%3D%22915%22%2F%3E%3CmxPoint%20x%3D%22231%22%20y%3D%22775%22%2F%3E%3C%2FArray%3E%3CmxPoint%20x%3D%22488%22%20y%3D%221395%22%20as%3D%22sourcePoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2283%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D1%3BexitY%3D0.5%3BexitPerimeter%3D0%3BentryX%3D1%3BentryY%3D0.5%3BentryPerimeter%3D0%3Bdashed%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3B%22%20parent%3D%221%22%20source%3D%2299%22%20target%3D%2210%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22760%22%20y%3D%22915%22%2F%3E%3CmxPoint%20x%3D%22760%22%20y%3D%2255%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2230%22%20value%3D%22Retorna%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.terminator%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22514%22%20y%3D%22755%22%20width%3D%2267%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2239%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.905%3BexitY%3D0.5%3BexitPerimeter%3D0%3BentryX%3D0%3BentryY%3D0.5%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3Bdashed%3D1%3B%22%20parent%3D%221%22%20source%3D%2237%22%20target%3D%2238%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2265%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3B%22%20parent%3D%221%22%20source%3D%2237%22%20target%3D%2264%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2237%22%20value%3D%22Salva%20barra%20na%26%23xa%3Bmem%C3%B3ria%20LIFO%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.data%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22514%22%20y%3D%22405%22%20width%3D%22136%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2238%22%20value%3D%22LIFO%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.stored_data%3Bdashed%3D1%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22670%22%20y%3D%22405%22%20width%3D%2255%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2246%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%2244%22%20target%3D%2220%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2244%22%20value%3D%22%22%20style%3D%22verticalLabelPosition%3Dbottom%3BverticalAlign%3Dtop%3Bhtml%3D1%3BstrokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.on-page_reference%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22371%22%20y%3D%22665%22%20width%3D%2240%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2248%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3B%22%20parent%3D%221%22%20source%3D%22100%22%20target%3D%22101%22%20edge%3D%221%22%3E%3CmxGeometry%20x%3D%22305.95121951219517%22%20y%3D%22724.7804878048782%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22317%22%20y%3D%22690%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22199%22%20y%3D%22615%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%3E%3CmxPoint%20x%3D%22199%22%20y%3D%22455%22%2F%3E%3CmxPoint%20x%3D%22199%22%20y%3D%22455%22%2F%3E%3C%2FArray%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2284%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.095%3BexitY%3D0.5%3BexitPerimeter%3D0%3BentryX%3D0%3BentryY%3D0.5%3BentryPerimeter%3D0%3Bdashed%3D1%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3B%22%20parent%3D%221%22%20source%3D%2253%22%20target%3D%2254%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2287%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.905%3BexitY%3D0.5%3BexitPerimeter%3D0%3BentryX%3D0%3BentryY%3D0.5%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3B%22%20parent%3D%221%22%20source%3D%2253%22%20target%3D%2244%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2253%22%20value%3D%22Salva%20barra%20na%26%23xa%3Bmem%C3%B3ria%20LIFO%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.data%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22131%22%20y%3D%22665%22%20width%3D%22136%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2254%22%20value%3D%22LIFO%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.stored_data%3BflipH%3D1%3Bdashed%3D1%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%2254%22%20y%3D%22665%22%20width%3D%2255%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2262%22%20value%3D%22Sim%22%20style%3D%22text%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingTop%3D-4%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22474%22%20y%3D%22135%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2263%22%20value%3D%22N%C3%A3o%22%20style%3D%22text%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingTop%3D-4%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22394%22%20y%3D%22202%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2288%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0%3BexitY%3D0.5%3BexitPerimeter%3D0%3BentryX%3D1%3BentryY%3D0.5%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BfontSize%3D12%3B%22%20parent%3D%221%22%20source%3D%2264%22%20target%3D%2244%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2264%22%20value%3D%22%22%20style%3D%22verticalLabelPosition%3Dbottom%3BverticalAlign%3Dtop%3Bhtml%3D1%3BstrokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.on-page_reference%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22562%22%20y%3D%22665%22%20width%3D%2240%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2274%22%20value%3D%22Sim%22%20style%3D%22text%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingTop%3D-4%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22471%22%20y%3D%22265%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2275%22%20value%3D%22N%C3%A3o%22%20style%3D%22text%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingTop%3D-4%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22394%22%20y%3D%22325%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2279%22%20value%3D%22Sim%22%20style%3D%22text%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingTop%3D-4%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22291%22%20y%3D%22385%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2280%22%20value%3D%22N%C3%A3o%22%20style%3D%22text%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3Balign%3Dleft%3BverticalAlign%3Dtop%3BspacingTop%3D-4%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22394%22%20y%3D%22445%22%20width%3D%2240%22%20height%3D%2220%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2291%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%2289%22%20target%3D%226%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2289%22%20value%3D%22Processa%20Barra%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.predefined_process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%2269%22%20y%3D%22145%22%20width%3D%22130%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2294%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%2292%22%20target%3D%2289%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2292%22%20value%3D%22Barra%20Atual%20%3D%C2%A0%26%23xa%3BBarra%20de%20refer%C3%AAncia%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%2264%22%20y%3D%2285%22%20width%3D%22135%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22113%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3B%22%20parent%3D%221%22%20source%3D%2295%22%20target%3D%22116%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22606%22%20y%3D%22330%22%20as%3D%22targetPoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2295%22%20value%3D%22Remove%26%23xa%3Bbarra%20do%20sistema%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22527%22%20y%3D%22265%22%20width%3D%22110%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2296%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0%3BexitY%3D0.5%3BexitPerimeter%3D0%3BentryX%3D0%3BentryY%3D0.5%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%2295%22%20target%3D%2295%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22114%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%22116%22%20target%3D%2237%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22582.1724137931035%22%20y%3D%22374.8620689655173%22%20as%3D%22sourcePoint%22%2F%3E%3CArray%20as%3D%22points%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22109%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%2298%22%20target%3D%2299%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2298%22%20value%3D%22Barra%20Atual%20%3D%26%23xa%3BPr%C3%B3xima%20Barra%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22336%22%20y%3D%22825%22%20width%3D%22110%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%2299%22%20value%3D%22Processa%20Barra%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.predefined_process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22326%22%20y%3D%22895%22%20width%3D%22130%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22100%22%20value%3D%22Remove%20barra%26%23xa%3Bdo%20sistema%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22144%22%20y%3D%22385%22%20width%3D%22110%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22105%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%22101%22%20target%3D%22102%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22101%22%20value%3D%22Remove%20linhas%26%23xa%3Bconectada%20a%20barra%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22144%22%20y%3D%22455%22%20width%3D%22110%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22106%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%22102%22%20target%3D%22103%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22102%22%20value%3D%22Calcula%20linha%26%23xa%3Bequivalente%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22144%22%20y%3D%22525%22%20width%3D%22110%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22107%22%20style%3D%22edgeStyle%3DorthogonalEdgeStyle%3Brounded%3D0%3Bhtml%3D1%3BexitX%3D0.5%3BexitY%3D1%3BexitPerimeter%3D0%3BentryX%3D0.5%3BentryY%3D0%3BentryPerimeter%3D0%3BjettySize%3Dauto%3BorthogonalLoop%3D1%3B%22%20parent%3D%221%22%20source%3D%22103%22%20target%3D%2253%22%20edge%3D%221%22%3E%3CmxGeometry%20relative%3D%221%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22103%22%20value%3D%22Insere%20linha%26%23xa%3Bequivalente%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22144%22%20y%3D%22595%22%20width%3D%22110%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3CmxCell%20id%3D%22116%22%20value%3D%22Remove%26%23xa%3Blinha%20do%20sistema%22%20style%3D%22strokeWidth%3D2%3Bshape%3Dmxgraph.flowchart.process%3BfillColor%3D%23ffffff%3BfontSize%3D13%3B%22%20parent%3D%221%22%20vertex%3D%221%22%3E%3CmxGeometry%20x%3D%22527%22%20y%3D%22335%22%20width%3D%22110%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="reduct.svg">
+  <metadata
+     id="metadata324">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview322"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.25820569"
+     inkscape:cx="289.66646"
+     inkscape:cy="456.5"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4" />
+  <g
+     transform="translate(-1.0581113,-1)"
+     id="g6">
+    <path
+       d="m 147,142 82,0 0,-110 63.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path8"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3, 3" />
+    <path
+       d="m 297.88,32 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path10"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 82,42 -2,0 0,13.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path12"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 80,60.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path14"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <ellipse
+       cx="82"
+       cy="22"
+       rx="45"
+       ry="20"
+       pointer-events="none"
+       id="ellipse16"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g18"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="81.5"
+         y="18"
+         id="text20">Redução</text>
+      <text
+         x="81.5"
+         y="34"
+         id="text22">de Barras</text>
+    </g>
+    <path
+       d="m 68.43,192 27.14,0 c 11.84,0 21.43,6.72 21.43,15 0,8.28 -9.59,15 -21.43,15 l -27.14,0 C 56.59,222 47,215.28 47,207 c 0,-8.28 9.59,-15 21.43,-15 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path24"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g26"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="81.5"
+         y="211"
+         id="text28">Fim</text>
+    </g>
+    <path
+       d="m 339,52 0,20.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path30"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,77.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path32"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <ellipse
+       cx="339"
+       cy="32"
+       rx="40"
+       ry="20"
+       pointer-events="none"
+       id="ellipse34"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g36"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="338.5"
+         y="28"
+         id="text38">Processa</text>
+      <text
+         x="338.5"
+         y="44"
+         id="text40">Barra</text>
+    </g>
+    <path
+       d="m 339,302 0,33.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path42"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,340.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path44"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 419,262 49.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path46"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 473.88,262 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path48"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,222 80,40 -80,40 -80,-40 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path50"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g52"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="338.5"
+         y="266"
+         id="text54">Número de linhas = 1?</text>
+    </g>
+    <path
+       d="m 339,422 0,213.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path56"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,640.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path58"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 259,382 -50.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path60"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 203.12,382 7,-3.5 -1.75,3.5 1.75,3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path62"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,342 80,40 -80,40 -80,-40 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path64"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g66"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="338.5"
+         y="386"
+         id="text68">Número de linhas = 2?</text>
+    </g>
+    <path
+       d="m 339,179 0,36.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path70"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,220.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path72"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 429,129 259,0 0,533 -131.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path74"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 551.12,662 7,-3.5 -1.75,3.5 1.75,3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path76"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,79 90,50 -90,50 -90,-50 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path78"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g80"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="338.5"
+         y="117"
+         id="text82">Possuí cargas,</text>
+      <text
+         x="338.5"
+         y="133"
+         id="text84">geradores ou</text>
+      <text
+         x="338.5"
+         y="149"
+         id="text86">elementos shunt?</text>
+    </g>
+    <path
+       d="m 409,752 46.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path88"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 460.88,752 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path90"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,772 0,23.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path92"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,800.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path94"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 296.14,732 85.72,0 27.14,13.33 0,23.34 c 0,1.84 -3.2,3.33 -7.14,3.33 l -125.72,0 c -3.94,0 -7.14,-1.49 -7.14,-3.33 l 0,-23.34 27.14,-13.33 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path96"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g98"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="338.5"
+         y="748"
+         id="text100">Para cada barra</text>
+      <text
+         x="338.5"
+         y="764"
+         id="text102">conectada a barra atual</text>
+    </g>
+    <path
+       d="m 274,892 -95,0 0,-140 83.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path104"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 267.88,752 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path106"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 404,892 304,0 0,-860 -322.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path108"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3, 3" />
+    <path
+       d="m 380.12,32 7,-3.5 -1.75,3.5 1.75,3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path110"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 482.51,732 25.98,0 c 11.33,0 20.51,8.95 20.51,20 0,11.05 -9.18,20 -20.51,20 l -25.98,0 C 471.18,772 462,763.05 462,752 c 0,-11.05 9.18,-20 20.51,-20 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path112"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g114"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="495"
+         y="756"
+         id="text116">Retorna</text>
+    </g>
+    <path
+       d="m 585,402 26.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path118"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3, 3" />
+    <path
+       d="m 616.88,402 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path120"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 530,422 0,213.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path122"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 530,640.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path124"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 488.67,385.4 c 1.59,-2.13 4.16,-3.38 6.89,-3.32 l 95,0 c 2.17,-0.03 4.25,0.34 5.6,1 1.35,0.65 1.83,1.51 1.29,2.32 l -26.16,33.2 c -1.59,2.13 -4.17,3.38 -6.89,3.32 l -96.38,0 c -1.92,-0.12 -3.62,-0.56 -4.67,-1.19 -1.05,-0.63 -1.35,-1.41 -0.84,-2.13 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path126"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g128"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="529.5"
+         y="398"
+         id="text130">Salva barra na</text>
+      <text
+         x="529.5"
+         y="414"
+         id="text132">memória LIFO</text>
+    </g>
+    <path
+       d="m 623.7,382 49.01,0 c 0.29,0.38 0.29,0.95 0,1.33 -2.2,2.97 -3.65,10.39 -3.65,18.67 0,8.28 1.45,15.7 3.65,18.67 0.29,0.38 0.29,0.95 0,1.33 l -49.01,0 c -3.15,0 -5.7,-8.95 -5.7,-20 0,-11.05 2.55,-20 5.7,-20 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path134"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6, 6" />
+    <g
+       font-size="13px"
+       id="g136"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="645"
+         y="406"
+         id="text138">LIFO</text>
+    </g>
+    <path
+       d="m 339,682 0,43.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path140"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,730.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path142"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <circle
+       cx="339"
+       cy="662"
+       pointer-events="none"
+       id="ellipse144"
+       r="20"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <path
+       d="m 147,402 0,23.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path146"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 147,430.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path148"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 92,662 -28.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path150"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3, 3" />
+    <path
+       d="m 58.12,662 7,-3.5 -1.75,3.5 1.75,3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path152"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 202,662 110.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path154"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 317.88,662 -7,3.5 1.75,-3.5 -1.75,-3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path156"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 105.67,645.4 c 1.59,-2.13 4.16,-3.38 6.89,-3.32 l 95,0 c 2.17,-0.03 4.25,0.34 5.6,1 1.35,0.65 1.83,1.51 1.29,2.32 l -26.16,33.2 c -1.59,2.13 -4.17,3.38 -6.89,3.32 l -96.38,0 C 83.1,681.8 81.4,681.36 80.35,680.73 79.3,680.1 79,679.32 79.51,678.6 Z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path158"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g160"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="146.5"
+         y="658"
+         id="text162">Salva barra na</text>
+      <text
+         x="146.5"
+         y="674"
+         id="text164">memória LIFO</text>
+    </g>
+    <path
+       d="m 7.7,642 49.01,0 c 0.29,0.38 0.29,0.95 0,1.33 -2.2,2.97 -3.65,10.39 -3.65,18.67 0,8.28 1.45,15.7 3.65,18.67 0.29,0.38 0.29,0.95 0,1.33 L 7.7,682 C 4.55,682 2,673.05 2,662 2,650.95 4.55,642 7.7,642 Z"
+       stroke-miterlimit="10"
+       transform="matrix(-1,0,0,1,59,0)"
+       pointer-events="none"
+       id="path166"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-miterlimit:10;stroke-dasharray:6, 6" />
+    <g
+       font-size="13px"
+       id="g168"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="29"
+         y="666"
+         id="text170">LIFO</text>
+    </g>
+    <g
+       font-size="13px"
+       id="g172"
+       style="font-size:13px;font-family:Helvetica;fill:#000000">
+      <text
+         x="424"
+         y="127"
+         id="text174">Sim</text>
+    </g>
+    <g
+       font-size="13px"
+       id="g176"
+       style="font-size:13px;font-family:Helvetica;fill:#000000">
+      <text
+         x="344"
+         y="194"
+         id="text178">Não</text>
+    </g>
+    <path
+       d="m 510,662 -144.63,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path180"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 360.12,662 7,-3.5 -1.75,3.5 1.75,3.5 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path182"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <circle
+       cx="530"
+       cy="662"
+       pointer-events="none"
+       id="ellipse184"
+       r="20"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g186"
+       style="font-size:13px;font-family:Helvetica;fill:#000000">
+      <text
+         x="421"
+         y="257"
+         id="text188">Sim</text>
+    </g>
+    <g
+       font-size="13px"
+       id="g190"
+       style="font-size:13px;font-family:Helvetica;fill:#000000">
+      <text
+         x="344"
+         y="317"
+         id="text192">Não</text>
+    </g>
+    <g
+       font-size="13px"
+       id="g194"
+       style="font-size:13px;font-family:Helvetica;fill:#000000">
+      <text
+         x="241"
+         y="377"
+         id="text196">Sim</text>
+    </g>
+    <g
+       font-size="13px"
+       id="g198"
+       style="font-size:13px;font-family:Helvetica;fill:#000000">
+      <text
+         x="344"
+         y="437"
+         id="text200">Não</text>
+    </g>
+    <path
+       d="m 82,162 0,23.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path202"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 82,190.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path204"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <rect
+       x="17"
+       y="122"
+       width="130"
+       height="40"
+       rx="2.6900001"
+       ry="2.6900001"
+       pointer-events="none"
+       id="rect206"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <path
+       d="m 35.57,122 0,40"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path208"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <path
+       d="m 128.43,122 0,40"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path210"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g212"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="81.5"
+         y="146"
+         id="text214">Processa Barra</text>
+    </g>
+    <path
+       d="m 80,102 2,0 0,13.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path216"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 82,120.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path218"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <rect
+       x="12"
+       y="62"
+       width="135"
+       height="40"
+       rx="2.4000001"
+       ry="2.4000001"
+       pointer-events="none"
+       id="rect220"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g222"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="79"
+         y="78"
+         id="text224">Barra Atual = </text>
+      <text
+         x="79"
+         y="94"
+         id="text226">Barra de referência</text>
+    </g>
+    <path
+       d="m 530,282 0,23.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path228"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 530,310.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path230"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <rect
+       x="475"
+       y="242"
+       width="110"
+       height="40"
+       rx="2.4000001"
+       ry="2.4000001"
+       pointer-events="none"
+       id="rect232"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g234"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="529.5"
+         y="258"
+         id="text236">Remove</text>
+      <text
+         x="529.5"
+         y="274"
+         id="text238">barra do sistema</text>
+    </g>
+    <path
+       d="m 475,262 0,0"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path240"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 475,262 0,0 0,0 0,0 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path242"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 530,352 0,23.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path244"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 530,380.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path246"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,842 0,23.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path248"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 339,870.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path250"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <rect
+       x="284"
+       y="802"
+       width="110"
+       height="40"
+       rx="2.4000001"
+       ry="2.4000001"
+       pointer-events="none"
+       id="rect252"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g254"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="338.5"
+         y="818"
+         id="text256">Barra Atual =</text>
+      <text
+         x="338.5"
+         y="834"
+         id="text258">Próxima Barra</text>
+    </g>
+    <rect
+       x="274"
+       y="872"
+       width="130"
+       height="40"
+       rx="2.6900001"
+       ry="2.6900001"
+       pointer-events="none"
+       id="rect260"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <path
+       d="m 292.57,872 0,40"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path262"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <path
+       d="m 385.43,872 0,40"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path264"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10" />
+    <g
+       font-size="13px"
+       id="g266"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="338.5"
+         y="896"
+         id="text268">Processa Barra</text>
+    </g>
+    <rect
+       x="92"
+       y="362"
+       width="110"
+       height="40"
+       rx="2.4000001"
+       ry="2.4000001"
+       pointer-events="none"
+       id="rect270"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g272"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="146.5"
+         y="378"
+         id="text274">Remove barra</text>
+      <text
+         x="146.5"
+         y="394"
+         id="text276">do sistema</text>
+    </g>
+    <path
+       d="m 147,472 0,23.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path278"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 147,500.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path280"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <rect
+       x="92"
+       y="432"
+       width="110"
+       height="40"
+       rx="2.4000001"
+       ry="2.4000001"
+       pointer-events="none"
+       id="rect282"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g284"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="146.5"
+         y="448"
+         id="text286">Remove linhas</text>
+      <text
+         x="146.5"
+         y="464"
+         id="text288">conectada a barra</text>
+    </g>
+    <path
+       d="m 147,542 0,23.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path290"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 147,570.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path292"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <rect
+       x="92"
+       y="502"
+       width="110"
+       height="40"
+       rx="2.4000001"
+       ry="2.4000001"
+       pointer-events="none"
+       id="rect294"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g296"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="146.5"
+         y="518"
+         id="text298">Calcula linha</text>
+      <text
+         x="146.5"
+         y="534"
+         id="text300">equivalente</text>
+    </g>
+    <path
+       d="m 147,612 0,23.63"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path302"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    <path
+       d="m 147,640.88 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path304"
+       inkscape:connector-curvature="0"
+       style="fill:#000000;stroke:#000000;stroke-miterlimit:10" />
+    <rect
+       x="92"
+       y="572"
+       width="110"
+       height="40"
+       rx="2.4000001"
+       ry="2.4000001"
+       pointer-events="none"
+       id="rect306"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g308"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="146.5"
+         y="588"
+         id="text310">Insere linha</text>
+      <text
+         x="146.5"
+         y="604"
+         id="text312">equivalente</text>
+    </g>
+    <rect
+       x="475"
+       y="312"
+       width="110"
+       height="40"
+       rx="2.4000001"
+       ry="2.4000001"
+       pointer-events="none"
+       id="rect314"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2" />
+    <g
+       font-size="13px"
+       id="g316"
+       style="font-size:13px;font-family:Helvetica;text-anchor:middle;fill:#000000">
+      <text
+         x="529.5"
+         y="328"
+         id="text318">Remove</text>
+      <text
+         x="529.5"
+         y="344"
+         id="text320">linha do sistema</text>
+    </g>
+  </g>
+</svg>

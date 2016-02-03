@@ -1,4 +1,4 @@
-\chapter{Otimização por redução de barras}\label{chp:otimizacao}
+\chapter{Algorítimo para redução de barras}\label{chp:redução}
 
 \section{Teoria}
 Nos sistemas de distribuição, várias barras são utilizadas para representar elementos que não consomem e nem geram energia ou para ramificação de um ponto. Isso eleva a quantidade de barras no sistema, afetando diretamente o desempenho dos algoritmos de cálculo do fluxo de potência.
@@ -6,7 +6,7 @@ Nos sistemas de distribuição, várias barras são utilizadas para representar elem
 Muitas dessas barras não interferem no cálculo do fluxo de potência e podem ser desconsideradas durante a resolução do fluxo. Para não perder informações sobre o sistema, é possível reintroduzir as barras removidas após o cálculo do fluxo, determinando sua tensão complexa a partir da Lei de Ohm.
 
 \subsection{Sistemas monofásicos}
-Considerando o modelo de linha curta, a otimização se aplica em dois casos, descritos a seguir.
+Considerando o modelo de linha curta, a remoção da barra se aplica em dois casos, descritos a seguir.
 
 \begin{enumerate}
   \item \textbf{Barras de borda:} barras de borda são definidas como barras que encontram-se nas extremidades do sistema, possuindo somente uma ligação com outra barra.
@@ -131,11 +131,11 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
     Perda_{23} = Perda_{13}.\frac{Z_{23}}{Z_{12} + Z_{23}}
   \end{equation}
 
-  Após a redução de barras, o sistema fica conforme a figura \ref{fig:barreduc4}. O resultado do fluxo de potência será igual ao obtido para o sistema completo da figura \ref{fig:barreduc}, porém, o tempo necessário para o cálculo será menor, visto que o sistema otimizado possui somente 4 barras.
+  Após a redução de barras, o sistema fica conforme a figura \ref{fig:barreduc4}. O resultado do fluxo de potência será igual ao obtido para o sistema completo da figura \ref{fig:barreduc}, porém, o tempo necessário para o cálculo será menor, visto que o sistema reduzido possui somente 4 barras.
   
   \begin{figure}[h]
     \centering
-    \caption{Sistema otimizado.}
+    \caption{Sistema reduzido.}
     \includegraphics[width=\textwidth]{barreduc4}
     \label{fig:barreduc4}
     
@@ -288,7 +288,7 @@ A memória LIFO também está tracejada porque deve ser criada fora do escopo da fu
   
   
   
-\section{Desvantagem da otimização}
-  Devido ao custo computacional para realizar o otimização, é necessário que sejam removidas um número substancial de barras do sistema. Caso contrário, o tempo utilizado pelos algoritmos de redução e restauração fazem com que seja mais dispendioso o cálculo do fluxo de potência com otimização do que sem.
+\section{Desvantagem da redução}
+  Devido ao custo computacional para realizar o remoção de barras, é necessário que sejam retiradas um número substancial de barras do sistema. Caso contrário, o tempo utilizado pelos algoritmos de redução e restauração fazem com que seja mais dispendioso o cálculo do fluxo de potência com redução do que sem.
   
   Uma outra desvantagem é a introdução do erro na tensão das barras removidas para sistemas trifásicos, devido a característica desacoplada da restauração. Se a interferência entre linhas for muito grande, o erro resultante pode ser prejudicial para análise do sistema.

@@ -29,8 +29,7 @@
         
         \item  comparação de desempenho entre os métodos;
         
-        \item  desenvolvimento e análise do algoritmo de otimização do
-        fluxo de potência por redução de barras com compensação desacoplada.
+        \item  desenvolvimento e análise do algoritmo para remoção de barras.
     \end{itemize}
  
 
@@ -57,7 +56,7 @@
          
          \item implementação dos algoritmos do fluxo de potência;
          
-         \item implementação da otimização por redução de barras;
+         \item implementação do algoritmo para redução de barras;
          
          \item análise de performance para vários sistemas de distribuição.
      \end{enumerate}
@@ -70,21 +69,21 @@
     
     No Capítulo \ref{chp:brasil} são apresentadas informações gerais sobre a atual situação do setor de energia elétrica no Brasil. São analisadas as características do sistema elétrico, as fontes de energia e os fatores que influenciam no preço do kWh produzido. 
     
-    Esse capítulo também evidência as perdas no sistema elétrico, mostrando uma comparação em âmbito internacional da eficiência dos SEPs e investigando os tipos de perda predominante no sistema brasileiro.
+    Esse capítulo também evidência as perdas no sistema elétrico, mostrando uma comparação em âmbito internacional da eficiência dos sistemas elétricos de potência e investigando os tipos de perda predominante no sistema brasileiro.
     
-    É discutido como o fluxo de potência auxilia no melhoramento dos SDEs e a necessidade de algoritmos robustos e velozes. O capítulo termina apresentando outras ferramentas que utilizam o fluxo de potência para aprimorar o custo e a qualidade da energia nos SDEs, como o fluxo ótimo, algoritmos de detecção de furto de energia e os \textit{Smart Grids}.\\
+    É discutido como o fluxo de potência auxilia no melhoramento dos sistemas de distribuição de energia elétrica e a necessidade de algoritmos robustos e velozes. O capítulo termina apresentando outras ferramentas que utilizam o fluxo de potência para aprimorar o custo e a qualidade da energia nos sistemas de distribuição de energia elétrica, como o fluxo ótimo, algoritmos de detecção de furto de energia e os \textit{Smart Grids}.\\
     
-    O Capítulo \ref{chp:sde} explora as características e componentes do sistemas de distribuição de energia elétrica (SDE). São apresentados os componentes e as topologias de rede empregadas para levar a energia até os consumidores.
+    O Capítulo \ref{chp:sde} explora as características e componentes do sistemas de distribuição de energia elétrica. São apresentados os componentes e as topologias de rede empregadas para levar a energia até os consumidores.
     
     Faz-se uma menção aos métodos de Newton-Rahpson e de Gauss-Seidel, considerados os métodos clássicos na solução do fluxo de potência, de modo a evidenciar os motivos pelos quais os mesmos apresentam problemas de desempenho e convergência.\\
     
     No Capítulo \ref{chp:fluxo} é apresentado o modelo de linha de transmissão utilizado e são descritos os dois métodos de varredura (soma das potências e soma das correntes) empregados no cálculo do fluxo de potência para sistemas de distribuição, bem como suas limitações teóricas e práticas.  \\
     
-    No Capítulo \ref{chp:otimizacao} é apresentado o método de otimização proposto, junto com seu desenvolvimento matemático e as suas implicações. Para facilitar a compreensão, o capítulo explora um exemplo de aplicação a um sistema monofásico e um fluxograma dos algoritmos de redução e expansão, sendo uma sugestão de implementação.\\
+    No Capítulo \ref{chp:redução} é apresentado o método de redução proposto, junto com seu desenvolvimento matemático e as suas implicações. Para facilitar a compreensão, o capítulo explora um exemplo de aplicação a um sistema monofásico e um fluxograma dos algoritmos de redução e expansão, sendo uma sugestão de implementação.\\
     
-    O Capítulo \ref{chp:resultado} trata da apresentação quantitativa dos resultados obtidos com o uso da ferramenta computacional desenvolvida. São apresentados os resultados dos cálculos para os sistemas de 14 e 34 barras, sendo realizada uma verificação entre o resultado obtido por cada um dos métodos, com e sem otimização, de modo verificar a diferença numérica resultante. Também é analisado o tempo e o número de iterações utilizado por cada algoritmo para os sistemas de 14, 34, 70, 136, 793 e 3373 barras para determinar qual o método mais rápido e qual o impacto da otimização.\\
+    O Capítulo \ref{chp:resultado} trata da apresentação quantitativa dos resultados obtidos com o uso da ferramenta computacional desenvolvida. São apresentados os resultados dos cálculos para os sistemas de 14 e 34 barras, sendo realizada uma verificação entre o resultado obtido por cada um dos métodos, com e sem a remoção de barras, de modo verificar a diferença numérica resultante. Também é analisado o tempo e o número de iterações utilizado por cada algoritmo para os sistemas de 14, 34, 70, 136, 793 e 3373 barras para determinar qual o método mais rápido e qual o impacto da remoção das barras inertes.\\
     
-   Também é apresentado o programa computacional resultante deste trabalho, a sua organização em termos de software, a abordagem orientada a objetos utilizada para a implementação do fluxo de potência e modelagem dos elementos, suas funcionalidades e suas limitações.\\
+    Também é apresentado o programa computacional resultante deste trabalho, a sua organização em termos de software, a abordagem orientada a objetos utilizada para a implementação do fluxo de potência e modelagem dos elementos, suas funcionalidades e suas limitações.\\
         
     No Capítulo \ref{chp:conclusao} são apresentadas as conclusões referentes à metodologia utilizada e as técnicas empregadas para execução desta monografia. É feita uma análise qualitativa dos resultados obtidos e de sua importância. São discutidas as dificuldades encontradas durante a execução deste trabalho e os mecanismos utilizados para superar as mesmas. Por fim, são apresentadas algumas ideias para trabalhos futuros, de modo a desenvolver a área de sistemas elétricos de potência. 
     

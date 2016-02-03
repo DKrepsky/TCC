@@ -27,9 +27,9 @@ Z_{aa} & Z_{ab} & Z_{ac} \\
 Z_{ba} & Z_{bb} & Z_{bc} \\
 Z_{ca} & Z_{cb} & Z_{cc} \\
 \end{matrix} \right]
-\].
+\]
 
-Onde os elementos $Zaa$, $Zbb$ e $Zcc$ são a impedância própria das fases \textit{a}, \textit{b} e \textit{c}, respectivamente, e os outros elementos são a impedância do acoplamento entre as fases.
+onde os elementos $Zaa$, $Zbb$ e $Zcc$ são a impedância própria das fases \textit{a}, \textit{b} e \textit{c}, respectivamente, e os outros elementos são a impedância do acoplamento entre as fases.
 
 \subsection{Linha bifásica ou monofásica}
 
@@ -52,9 +52,9 @@ P_{ia} + jQ_{ia}\\
 P_{ib} + jQ_{ib}\\
 P_{ic} + jQ_{ic}\\
 \end{matrix} \right]
-\].
+\]
 
-Onde $P$ é a potência real e $Q$ é a potência reativa.
+onde $P$ é a potência real e $Q$ é a potência reativa.
 
 \subsection{Capacitores \textit{Shunt}}
 Os elementos \textit{shunt} também são considerados como tendo potência constante. A notação utilizada para descrever-los é a mesma para as cargas e geradores.
@@ -70,11 +70,11 @@ Na operação a montante, são calculadas as potências equivalentes em cada nó, i.e
 Assim, primeiro é calculada a potência na barra através da equação \ref{equ:scespedes}, até a barra inicial.
 
 \begin{equation}
-\mathbf{S}_{i}^{equivalente} = \mathbf{S}_i + \sum_{m \, \in \, M}(\mathbf{S}_m + \mathbf{L}_m).
+\mathbf{S}_{i}^{equivalente} = \mathbf{S}_i + \sum_{m \, \in \, M}(\mathbf{S}_m + \mathbf{L}_m)
 \label{equ:scespedes}
 \end{equation}
 
-Onde $\sum(\mathbf{S}_m + \mathbf{L}_m)$ é a soma das potência e perdas no conjunto de linhas M, que saem da barra \textit{i} para as barras à montante.
+onde $\sum(\mathbf{S}_m + \mathbf{L}_m)$ é a soma das potência e perdas no conjunto de linhas M, que saem da barra \textit{i} para as barras à montante.
 
 Na operação à jusante, partindo da barra inicial, é determinado o valor absoluto da tensão em cada barra com o uso da equação \ref{equ:vcespedes} ou \ref{equ:vcespedes2}.
 
@@ -99,13 +99,16 @@ Na operação à jusante, partindo da barra inicial, é determinado o valor absoluto
 |V_r|^4 + [2 \cdot (PR+QX) -  |V_s|^2] \cdot  |V_r|^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0.  
 \end{equation}
 
-Onde:
+onde:
 \begin{itemize}
-    \item \emph{s} é o nó fonte e \emph{r} é o nó à jusante;
-    \item \emph{$V_s$} é o módulo da tensão em \emph{s};
-    \item \emph{$V_r$} é o módulo da tensão em \emph{r};
-    \item \emph{P} e \emph{Q} são as potências ativa e reativa equivalentes da carga;
-    \item \emph{R} é a resistência e \emph{X} a reatância da linha de transmissão;
+    \item \emph{s}: nó fonte;
+    \item \emph{r}: nó à jusante;
+    \item \emph{$V_s$}: módulo da tensão em \emph{s};
+    \item \emph{$V_r$}: módulo da tensão em \emph{r};
+    \item \emph{P}: potência ativa equivalente da carga em \emph{r}; 
+    \item \emph{Q}: potência reativa equivalente da carga em \emph{r}; 
+    \item \emph{R}: resistência própria da linha;
+    \item \emph{X}: reatância própria da linha.
 \end{itemize}
 
 A equação \ref{equ:vcespedes} surge da aplicação direta da Lei de Ohm ao sistema da figura \ref{fig:cespedes}.
@@ -118,7 +121,7 @@ Ao final da operação a jusante, as perdas são atualizadas através da equação \re
  L_q = X \frac{(P^2 + Q^2)}{V_r^2}
  \end{eqnarray}
 
-Sendo \emph{$L_p$} e \emph{$L_q$} as perdas ativas e reativas, respectivamente.
+sendo \emph{$L_p$} e \emph{$L_q$} as perdas ativas e reativas, respectivamente.
 
 É dito que o algoritmo convergiu quando a variação das perdas totais, entre uma iteração e outra, é menor que um fator de tolerância $\epsilon$.
 
@@ -129,7 +132,7 @@ O ângulo das tensões pode ser calculado, com outra operação a jusante, a partir 
 \delta_s = \delta_r - cos^{-1} \left( \sqrt{1 - \left( \frac{XP + RQ}{|V_s||V_r|} \right)}\right)
 \end{equation}
 
-Sendo $\delta_s$ o ângulo da tensão na barra \textit{s} e $\delta_r$ o ângulo da tensão na barra \textit{r}.
+sendo $\delta_s$ o ângulo da tensão na barra \textit{s} e $\delta_r$ o ângulo da tensão na barra \textit{r}.
 
 Segundo \citeonline{Ochoa}, o método não considera o acoplamento entre as linhas, sendo aplicado em paralelo para cada uma das fases. Um método para compensação parcial é proposto por \cite{Ramos}, porém não foi explorado nesse trabalho.
 
@@ -173,17 +176,17 @@ A execução do algoritmo segue os passos a seguir:
   \end{matrix} \right]^{(k-1)}
   \end{equation}
   
-  Onde:
+  onde:
   \begin{itemize}
-    \item $I_{ia}$, $I_{ib}$ e $I_{ic}$ são as correntes injetadas na barra \textit{i};
+    \item $I_{ia}$, $I_{ib}$ e $I_{ic}$: correntes injetadas na barra \textit{i};
     
-    \item $S_{ia}$, $S_{ib}$ e $S_{ic}$ são as potências injetadas na barra \textit{i};
+    \item $S_{ia}$, $S_{ib}$ e $S_{ic}$: potências injetadas na barra \textit{i};
     
-    \item $V_{ia}$, $V_{ib}$ e $V_{ic}$ são as tensões na barra \textit{i};
+    \item $V_{ia}$, $V_{ib}$ e $V_{ic}$: tensões na barra \textit{i};
     
-    \item $Y_{ia}$, $Y_{ib}$ e $Y_{ic}$ é a admitância dos elementos \textit{shunt} conectados a barra \textit{i};
+    \item $Y_{ia}$, $Y_{ib}$ e $Y_{ic}$: admitância dos elementos \textit{shunt} conectados a barra \textit{i};
     
-    \item \textit{k} é a iteração.
+    \item \textit{k}: número da iteração.
   \end{itemize}
   
   \item Em seguida, é iniciada a operação à montante, onde, partindo dos nós finais até a barra inicial, é calculada a corrente nas linhas com a equação \ref{equ:ilshirm}.
@@ -208,7 +211,7 @@ A execução do algoritmo segue os passos a seguir:
   \end{matrix} \right]^{(k)}
   \end{equation}
   
-  Onde $ J_{la} $, $ J_{lb} $ e $ J_{lc} $ são as correntes na linha \textit{l} e  $ J_{ma} $, $ J_{mb} $ e $ J_{mc} $ as correntes na linha m, sendo m o conjunto de linha que emanam à jusante da barra \textit{i}.
+  onde $ J_{la} $, $ J_{lb} $ e $ J_{lc} $ são as correntes na linha \textit{l} e  $ J_{ma} $, $ J_{mb} $ e $ J_{mc} $ as correntes na linha m, sendo m o conjunto de linha que emanam à jusante da barra \textit{i}.
   
   \item Após o cálculo das correntes de linha, é executada a operação à jusante, utilizando a equação \ref{equ:vshirm} para aplicar a correção de tensão nas barras.
   
@@ -283,7 +286,7 @@ Dessa forma, não é necessário renumerar o sistema, pois a navegação é realizada 
 
 Para agilizar o acesso aleatório a uma barra, i.e. acessar uma barra sem a necessidade de percorrer toda a lista, é utilizada uma estrutura do tipo \textit{Hash Table} \cite{Cormen}, a qual permite buscar o endereço da barra, a partir do seu número, ou o endereço da linha, de acordo com seus nós inicial e final. 
 
-Na abordagem tradicional, a rede é representada usando vetores, dificultando a remoção e inserção de elementos, aumentando ainda mais o custo computacional para aplicação do algoritmo de otimização. A abordagem empregada facilita a utilização do algoritmo de redução de barras, visto que para remover ou inserir um elemento, é necessário somente alterar uma referência (ponteiro em C++), sem precisar movimentar uma grande quantidade de dados na memória. 
+Na abordagem tradicional, a rede é representada usando vetores, dificultando a remoção e inserção de elementos, aumentando ainda mais o custo computacional para aplicação do algoritmo de redução. A abordagem empregada facilita a utilização do algoritmo de redução de barras, visto que para remover ou inserir um elemento, é necessário somente alterar uma referência (ponteiro em C++), sem precisar movimentar uma grande quantidade de dados na memória. 
 
 
 
