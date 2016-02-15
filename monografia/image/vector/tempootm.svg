@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -43,9 +43,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="1.9018868"
-     inkscape:cx="368.67251"
-     inkscape:cy="169.39026"
+     inkscape:zoom="1.3448371"
+     inkscape:cx="615.53574"
+     inkscape:cy="195.14588"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -1144,7 +1144,7 @@
        style="stroke:none"
        y="4.5"
        xml:space="preserve"
-       x="0">Soma de correntes otimizado</text>
+       x="0">Soma de correntes com redução</text>
   </g>
   <g
      id="g394"
@@ -1178,7 +1178,7 @@
        style="stroke:none"
        y="4.5"
        xml:space="preserve"
-       x="0">Soma de potências otimizado</text>
+       x="0">Soma de potências com redução</text>
   </g>
   <g
      id="g406"
@@ -1206,7 +1206,7 @@
   <g
      id="g414"
      style="color-interpolation:linearRGB;fill:#262626;stroke:#262626;color-rendering:optimizeQuality;image-rendering:optimizeQuality;text-rendering:geometricPrecision"
-     transform="translate(-53.270216,-24.851562)">
+     transform="matrix(1.074521,0,0,0.99946597,-61.896499,-24.810441)">
     <path
        inkscape:connector-curvature="0"
        id="path416"

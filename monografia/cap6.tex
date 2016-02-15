@@ -1,104 +1,919 @@
 \chapter{Resultados}\label{chp:resultado}
 
+\section{Sistemas estudados}
+
+Para a determinar a diferença entre ambos os algoritmos, com e sem redução de barras, foram realizados testes com seis sistemas distintos, sendo três sistemas monofásicos (14, 70 e 136 barras) e três trifásicos (34, 793 e 3373 barras).
+
+Todos os sistemas estudados são radiais, compostos por barras do tipo PQ (potência ativa e reativa conhecidas) e uma barra de referência (tensão e fase conhecidas). As cargas e os elementos \textit{shunt} são considerados como tendo potência constante, ou seja, a potência não varia com a variação da tensão.
+
+Nas figuras \ref{fig:14b}, \ref{fig:34b}, \ref{fig:70b} e \ref{fig:136b}, que representam os sistemas, as barras do tipo PQ são representadas por círculos e a barra de referência por um quadrado.
+
+Todas as simulações foram realizadas com uma tolerância $\epsilon = 1\times10^{-6}$, com um número máximo de iterações $k_{max} = 1000$.
+
+Os critérios analisados foram:
+
+\begin{itemize}
+  \item divergência nos valores numéricos: a variação no resultado de um método para outro;
+  
+  \item tempo de cálculo: o tempo que o método leva para solucionar o fluxo de potência;
+  
+  \item número de iterações: quantidade de varreduras necessárias até atingir a convergência;
+  
+  \item convergência: verifica se o algoritmo apresenta dificuldades de convergência em decorrência das diferentes características dos sistemas utilizados.
+ \end{itemize}
+  
+\subsection{Sistema monofásico com 14 barras}\label{ssec:14b}
+A figura \ref{fig:14b} mostra uma representação do sistema de 14 barras. A tensão de fase na subestação (barra de referência) é de 23,0kV ($V_{linha} \approx 13,279\,kV$).
+
+\begin{figure}[h!]
+  \centering
+  \caption{Sistema monofásico com 14 barras.}
+  \includegraphics[scale=0.5]{14b}
+  \label{fig:14b}
+  
+  \small Fonte: Autoria própria.
+\end{figure}
+
+A tabela \ref{tab:14b_bar_ini} (apêndice \ref{ape:14b}) apresenta as condições de carga do sistema, sendo as potências ativas dadas em kilo Watt e as reativas em kilo VAR. A potência dos elementos \textit{shunt} é dada em kilo VAR, visto que tais elementos são capacitores, representados através de sua potência reativa.
+
+A tabela \ref{tab:14b_linha_ini} (apêndice \ref{ape:14b}) apresenta a impedância das linhas, em ohms. Como o sistema é monofásico, a impedância de acoplamento entre as linhas é considerada 0, conforme discutido na seção \ref{subsec:linha}.
+
+\subsection{Sistema monofásico com 70 barras}\label{ssec:70b}
+
+A figura \ref{fig:70b} mostra uma representação do sistema de 70 barras. A tensão de fase na subestação é de 21,93kV ($V_{linha} \approx 12,661\,kV$).
+\begin{figure}[h!]
+  \centering
+  \caption{Sistema monofásico com 70 barras.}
+  \includegraphics[width=\textwidth]{70b}
+  \label{fig:70b}
+  
+  \small Fonte: Autoria própria.
+\end{figure}
+
+As tabelas \ref{tab:70b_bar_ini} e \ref{tab:70b_linha_ini} (apêndice \ref{ape:70b}) apresentam as condições de carga do sistema e as características das linhas, respectivamente. O sistema de 70 barras não possui elementos \textit{shunt}.
+
+\subsection{Sistema monofásico com 136 barras}\label{ssec:136b}
+
+A figura \ref{fig:136b} mostra uma representação do sistema de 136 barras. A tensão de fase na subestação é de 23,9kV ($V_{linha} \approx 13,800\,kV$).
+
+\begin{figure}[h!]
+  \centering
+  \caption{Sistema monofásico com 136 barras.}
+  \includegraphics[scale=0.4]{136b}
+  \label{fig:136b}
+  
+  \small Fonte: Autoria própria.
+\end{figure}
+
+As tabelas \ref{tab:136b_bar_ini} e \ref{tab:136b_linha_ini} (apêndice \ref{ape:136b}) apresentam as condições de carga do sistema e as características das linhas, respectivamente. O sistema de 136 barras não possui elementos \textit{shunt}.
+
+\subsection{Sistema trifásico com 34 barras}\label{ssec:34b}
+A figura \ref{fig:34b} mostra uma representação do sistema de 34 barras. A tensão de fase na barra de referência é de 24,9kV ($V_{linha} \approx 14,376\,kV$).
+
+\begin{figure}[h!]
+  \centering
+  \caption{Sistema trifásico com 34 barras.}
+  \includegraphics[width=\textwidth]{34b}
+  \label{fig:34b}
+  
+  \small Fonte: Autoria própria.
+\end{figure}
+
+As tabelas \ref{tab:34b_bara_ini}, \ref{tab:34b_barb_ini} e \ref{tab:34b_barc_ini} (apêndice \ref{ape:34b}) apresentam as condições de carga do sistema para as fases $a$, $b$ e $c$, de modo semelhante ao apresentado para o sistema de 14 barras.
+
+Aa tabelas \ref{tab:34b_linhaa_ini}, \ref{tab:34b_linhab_ini} e \ref{tab:34b_linhac_ini} (apêndice \ref{ape:34b}) apresentam as impedâncias das linhas e as impedâncias de acoplamento.
+
+\subsection{Sistema trifásico com 793 barras}\label{ssec:793b}
+O sistema com 793 barras opera com tensão de fase de 13,8kV ($V_{linha} \approx 7,967\,kV$).
+
+Devido ao grande número de barras do sistema, a representação gráfica e os parâmetros foram omitidos.
+
+\subsection{Sistema trifásico com 3373 barras}\label{ssec:3373b}
+O sistema com 3373 barras opera com tensão de fase de 13,8kV ($V_{linha} \approx 7,967\,kV$).
+
+Devido ao grande número de barras do sistema, a representação gráfica e os parâmetros foram omitidos.
+
 \section{Métodos soma de potências e soma de correntes}
+O primeiro estudo realizado é uma comparação entre os métodos MSC e MSP, de modo a levantar as característica de cada um.
 
-\subsection{Diferença numérica dos resultados}
+\subsection{Diferença numérica}
+A seguir são abordadas as diferenças numéricas nos valores obtidos com os métodos MSC e MSP para os sistemas monofásicos e trifásicos.
 
-\subsection{Convergência}
+\subsubsection{Monofásico}
+A tabela \ref{tab:14b_v} mostra o módulo da tensão nas barras, resultante do fluxo de potência com os métodos da soma de correntes e soma de potências, para o sistema de 14 barras, junto com a diferença numérica ($\Delta V$) entre os dois. 
 
-\subsection{Tempo de execução}
+Nota-se que não há diferença no módulo da tensão ($\Delta V = 0$) em todas as barras, evidenciando que tanto o algoritmo MSC quanto o MSP convergiram para a mesma solução. 
 
-  \begin{table}[h]
-    \centering
-    \caption{Tempo de execução.}
-    \begin{tabular}{ccc}
-      \toprule
-      \multirow{ 2}{*}{\textbf{Número de barras}} & \multicolumn{ 2}{c}{\textbf{tempo [ms]}} \\
-       & Soma de correntes & Soma de potências \\
-      \midrule
-      14		& 0   & 0  \\
-      34		& 0   & 0  \\
-      70		& 0   & 1  \\
-      136		& 1   & 3  \\
-      794		& 18  & 20 \\
-      3373  & 198 & 99 \\
-      \bottomrule
-    \end{tabular}
-    \label{tab:tempo}
-    
-    \small Fonte: Autoria própria.
-  \end{table}
+\begin{longtable}{lllr}
+  \caption{Módulo da tensão de linha nas barras do sistema de 14 barras.}\label{tab:14b_v}\\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
 
+  0&13279.0562&13279.0562&0\\
+  3&13155.1064&13155.1064&0\\
+  4&13116.8665&13116.8665&0\\
+  5&13093.0194&13093.0194&0\\
+  6&13078.4579&13078.4579&0\\
+  7&13000.9878&13000.9878&0\\
+  8&12894.9325&12894.9325&0\\
+  9&12972.5789&12972.5789&0\\
+  10&12893.4175&12893.4175&0\\
+  11&12870.9415&12870.9415&0\\
+  12&13204.9898&13204.9898&0\\
+  13&13210.5635&13210.5635&0\\
+  14&13170.1851&13170.1851&0\\
+  15&13163.2101&13163.2101&0\\
+\end{longtable}
+
+A fase da tensão nas barras, apresentada na tabela \ref{tab:14b_pha}, também não possui variações de um método para outro. Apesar do método da soma de potências não fornecer a fase diretamente, a mesma foi calculada utilizando a equação \ref{equ:thcespedes}.
+
+\begin{longtable}{lllr}
+  \caption{Fase da tensão de linha nas barras do sistema de 14 barras.}\label{tab:14b_pha}\\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{$\mathbf{\theta\,[Graus]}$}&\multirow{2}{*}{\textbf{$\mathbf{\Delta \theta}$ [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{$\mathbf{\theta\,[Graus]}$}&\multirow{2}{*}{\textbf{$\mathbf{\Delta \theta}$ [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+
+  0&0.00000&0.00000&0\\
+  3&-0.36981&-0.36981&0\\
+  4&-0.54430&-0.54430&0\\
+  5&-0.69720&-0.69720&0\\
+  6&-0.70428&-0.70428&0\\
+  7&-0.76349&-0.76349&0\\
+  8&-1.45230&-1.45230&0\\
+  9&-0.77008&-0.77008&0\\
+  10&-1.52590&-1.52590&0\\
+  11&-1.83650&-1.83650&0\\
+  12&-0.32934&-0.32934&0\\
+  13&-0.45618&-0.45618&0\\
+  14&-0.52283&-0.52283&0\\
+  15&-0.59043&-0.59043&0\\
+\end{longtable}
+
+A perda nas linhas também não apresentaram diferença nos resultados entre os métodos, conforme mostra a tabela \ref{tab:14b_l}.
+
+\begin{longtable}{llllr}
+  \caption{Comparação entre as perdas nas linhas do sistema de 14 barras.}\label{tab:14b_l}\\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [kVA]}$}&\multirow{2}{*}{$\mathbf{\Delta S_{perda} [kVA]}$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{5}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [kVA]}$}&\multirow{2}{*}{$\mathbf{\Delta}S_{perda} [\%]$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{5}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{5}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+
+  0&3&61.63154 + 82.17539i&61.63154 + 82.17539i&0\\
+  0&7&278.3385 + 278.3385i&278.3385 + 278.3385i&0\\
+  0&12&29.07600 + 29.07600i&29.07600 + 29.07600i&0\\
+  3&4&7.510340 + 10.32670i&7.510340 + 10.32670i&0\\
+  3&5&11.94510 + 23.89030i&11.94510 + 23.89030i&0\\
+  5&6&1.521600 + 1.521600i&1.521600 + 1.521600i&0\\
+  7&8&87.01017 + 119.6390i&87.01017 + 119.6390i&0\\
+  7&9&2.086200 + 2.086200i&2.086200 + 2.086200i&0\\
+  8&10&0.711740 + 0.711740i&0.711740 + 0.711740i&0\\
+  8&11&19.70460 + 27.09380i&19.70460 + 27.09380i&0\\
+  12&13&2.009700 + 2.679600i&2.009700 + 2.679600i&0\\
+  12&14&7.834470 + 10.77240i&7.834470 + 10.77240i&0\\
+  14&15&2.055700 + 2.055700i&2.055700 + 2.055700i&0\\
+\end{longtable}
+
+Os sistemas com 70 e 136 barras também não apresentaram variações numéricas nos resultados em decorrência do método utilizado. Esse fato era esperado, porque, em sistemas monofásicos, não é considerado o efeito do acoplamento entre linhas. Sendo assim, os dois métodos devem convergir para a mesma solução .
+ 
+\subsubsection{Trifásico}
+
+Para sistemas trifásicos, é esperada uma pequena variação nos resultados, visto que o método da soma das correntes considera o acoplamento entre as linhas e o método da soma de potências não.
+
+As tabelas \ref{tab:34b_va}, \ref{tab:34b_vb} e \ref{tab:34b_vc} mostram o módulo da tensão nas barras do sistema para as fases $a$, $b$ e $c$, respectivamente.
+
+Note que, ao contrário dos sistemas monofásicos, existe uma diferença na solução obtida com o método das correntes em relação ao método das potências, chegando a $6.6 \, \%$ na fase $b$.
+
+\begin{longtable}{lllr}
+  \caption{Módulo da tensão de linha nas barras do sistema de 34 barras (fase $a$).}\label{tab:34b_va}\\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&14376.0217&14376.0217&0\\
+  2&14328.2494&14317.0068&-0.078465\\
+  6&14296.1153&14277.4644&-0.13046\\
+  8&13696.3155&13545.2221&-1.1032\\
+  10&13696.3155&13545.2221&-1.1032\\
+  12&13004.399&12705.208&-2.3007\\
+  14&12457.9993&12050.077&-3.2744\\
+  15&12457.9993&12050.077&-3.2744\\
+  16&12452.3121&12043.3017&-3.2846\\
+  18&12445.6473&12036.3999&-3.2883\\
+  20&12276.9203&11861.698&-3.3821\\
+  22&12255.5631&11839.5894&-3.3942\\
+  24&12335.2499&11893.1292&-3.5842\\
+  26&12335.2499&11893.1292&-3.5842\\
+  28&12325.8382&11880.8203&-3.6104\\
+  30&12099.3038&11586.2499&-4.2404\\
+  31&12093.691&11579.1058&-4.255\\
+  32&11698.3139&11080.3959&-5.2821\\
+  33&11698.3139&11080.3959&-5.2821\\
+  34&11671.7313&11048.7036&-5.3379\\
+  35&11641.4763&11013.1504&-5.3973\\
+  36&11636.3841&11004.9876&-5.4261\\
+  37&11631.5302&10999.7625&-5.4315\\
+  38&11631.4746&10999.7625&-5.4311\\
+  39&11631.4746&10999.7625&-5.4311\\
+  40&11630.8397&10999.0096&-5.4324\\
+  42&11640.6269&11012.7064&-5.3942\\
+  44&11636.7975&11010.8526&-5.379\\
+  46&11640.8909&11022.2402&-5.3145\\
+  48&11641.5&11023.9&-5.3052\\
+  56&12093.691&11579.1058&-4.255\\
+  64&11671.7313&11048.7036&-5.3379\\
+  88&11698.3139&11080.3959&-5.2821\\
+  90&11658.4819&11025.2575&-5.4314\\
+\end{longtable}
+
+\begin{longtable}{lllr}
+  \caption{Módulo da tensão de linha nas barras do sistema de 34 barras (fase $b$).}\label{tab:34b_vb}\\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&14376.0217&14376.0217&0\\
+  2&14335.786&14320.2529&-0.10835\\
+  6&14309.7979&14283.7781&-0.18183\\
+  8&13844.7644&13624.9811&-1.5875\\
+  10&13843.8366&13624.0383&-1.5877\\
+  12&13326.8153&12890.7666&-3.272\\
+  14&12917.6505&12317.9666&-4.6424\\
+  15&12917.6505&12317.9666&-4.6424\\
+  16&12913.3909&12312.041&-4.6568\\
+  18&12913.3909&12312.041&-4.6568\\
+  20&12913.3909&12312.041&-4.6568\\
+  22&12913.3909&12312.041&-4.6568\\
+  24&12748.5494&12118.4442&-4.9426\\
+  26&12747.2343&12117.0607&-4.9436\\
+  28&12736.3785&12104.0141&-4.965\\
+  30&12439.6604&11755.1477&-5.5027\\
+  31&12432.3025&11746.5496&-5.5159\\
+  32&11918.0186&11151.7078&-6.4299\\
+  33&11918.0186&11151.7078&-6.4299\\
+  34&11873.0989&11106.6181&-6.4556\\
+  35&11821.4365&11055.4917&-6.4793\\
+  36&11814.0314&11046.0397&-6.5007\\
+  37&11808.0536&11038.1653&-6.52\\
+  38&11807.7269&11037.8158&-6.5204\\
+  39&11804.8899&11034.7808&-6.5236\\
+  40&11807.505&11037.3383&-6.5227\\
+  42&11820.246&11054.5748&-6.4776\\
+  44&11814.4097&11050.1593&-6.4688\\
+  46&11813.2777&11055.8329&-6.4118\\
+  48&11813.6662&11057.2201&-6.4031\\
+  56&12431.2641&11745.4506&-5.5168\\
+  64&11873.0989&11106.6181&-6.4556\\
+  88&11918.0186&11151.7078&-6.4299\\
+  90&11882.2571&11096.926&-6.6093\\
+\end{longtable}
+
+\begin{longtable}{lllr}
+  \caption{Módulo da tensão de linha nas barras do sistema de 34 barras (fase $c$).}\label{tab:34b_vc}\\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&14376.0217&14376.0217&0\\
+  2&14328.2494&14317.0068&-0.078465\\
+  6&14296.1153&14277.4644&-0.13046\\
+  8&13696.3155&13545.2221&-1.1032\\
+  10&13696.3155&13545.2221&-1.1032\\
+  12&13004.399&12705.208&-2.3007\\
+  14&12457.9993&12050.077&-3.2744\\
+  15&12457.9993&12050.077&-3.2744\\
+  16&12452.3121&12043.3017&-3.2846\\
+  18&12445.6473&12036.3999&-3.2883\\
+  20&12276.9203&11861.698&-3.3821\\
+  22&12255.5631&11839.5894&-3.3942\\
+  24&12335.2499&11893.1292&-3.5842\\
+  26&12335.2499&11893.1292&-3.5842\\
+  28&12325.8382&11880.8203&-3.6104\\
+  30&12099.3038&11586.2499&-4.2404\\
+  31&12093.691&11579.1058&-4.255\\
+  32&11698.3139&11080.3959&-5.2821\\
+  33&11698.3139&11080.3959&-5.2821\\
+  34&11671.7313&11048.7036&-5.3379\\
+  35&11641.4763&11013.1504&-5.3973\\
+  36&11636.3841&11004.9876&-5.4261\\
+  37&11631.5302&10999.7625&-5.4315\\
+  38&11631.4746&10999.7625&-5.4311\\
+  39&11631.4746&10999.7625&-5.4311\\
+  40&11630.8397&10999.0096&-5.4324\\
+  42&11640.6269&11012.7064&-5.3942\\
+  44&11636.7975&11010.8526&-5.379\\
+  46&11640.8909&11022.2402&-5.3145\\
+  48&11641.5&11023.9&-5.3052\\
+  56&12093.691&11579.1058&-4.255\\
+  64&11671.7313&11048.7036&-5.3379\\
+  88&11698.3139&11080.3959&-5.2821\\
+  90&11658.4819&11025.2575&-5.4314\\
+\end{longtable}
+
+A diferença nos resultados também aparece na fase das tensões, chegando a uma variação de $ \approx 4 \times$, como mostram as tabelas \ref{tab:34b_phaa}, \ref{tab:34b_phab} e \ref{tab:34b_phac}.
+
+\begin{longtable}{lllr}
+  \caption{Fase da tensão de linha nas barras do sistema de 34 barras (fase $a$).}\label{tab:34b_phaa}\\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{$\mathbf{\theta\,[Graus]}$}&\multirow{2}{*}{\textbf{$\mathbf{\Delta \theta}$ [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{$\mathbf{\theta\,[Graus]}$}&\multirow{2}{*}{\textbf{$\mathbf{\Delta \theta}$ [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&0&0&0\\
+  2&-0.044616&-0.22232&398.3126\\
+  6&-0.075759&-0.37108&389.8129\\
+  8&-0.70342&-2.8363&303.2123\\
+  10&-0.70342&-2.8363&303.2123\\
+  12&-1.5371&-5.4419&254.0357\\
+  14&-2.2638&-7.384&226.1849\\
+  15&-2.2638&-7.384&226.1849\\
+  16&-2.2717&-7.4053&225.9872\\
+  18&-2.2958&-7.4345&223.8322\\
+  20&-2.9152&-8.1553&179.7511\\
+  22&-2.9948&-8.2478&175.403\\
+  24&-2.4522&-7.8576&220.4329\\
+  26&-2.4522&-7.8576&220.4329\\
+  28&-2.4693&-7.8952&219.7375\\
+  30&-2.8885&-8.7424&202.6652\\
+  31&-2.8993&-8.7636&202.2666\\
+  32&-3.7002&-10.0884&172.6457\\
+  33&-3.7002&-10.0884&172.6457\\
+  34&-3.8117&-10.1715&166.8509\\
+  35&-3.9452&-10.2636&160.152\\
+  36&-3.941&-10.2879&161.049\\
+  37&-3.9356&-10.3034&161.798\\
+  38&-3.9351&-10.3034&161.833\\
+  39&-3.9351&-10.3034&161.833\\
+  40&-3.9351&-10.3057&161.8881\\
+  42&-3.9523&-10.2643&159.7031\\
+  44&-3.9862&-10.2667&157.5575\\
+  46&-4.0495&-10.3062&154.5038\\
+  48&-4.0596&-10.312&154.0178\\
+  56&-2.8993&-8.7636&202.2666\\
+  64&-3.8117&-10.1715&166.8509\\
+  88&-3.7002&-10.0884&172.6457\\
+  90&-3.7309&-10.2728&175.3404\\
+\end{longtable}
+
+\begin{longtable}{lllr}
+  \caption{Fase da tensão de linha nas barras do sistema de 34 barras (fase $b$).}\label{tab:34b_phab}\\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{$\mathbf{\theta\,[Graus]}$}&\multirow{2}{*}{\textbf{$\mathbf{\Delta \theta}$ [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{$\mathbf{\theta\,[Graus]}$}&\multirow{2}{*}{\textbf{$\mathbf{\Delta \theta}$ [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&-120&-120&0\\
+  2&-120.0444&-120.2098&0.13778\\
+  6&-120.0741&-120.3467&0.22703\\
+  8&-120.6458&-122.583&1.6057\\
+  10&-120.649&-122.5876&1.6068\\
+  12&-121.3342&-124.9058&2.9436\\
+  14&-121.9191&-126.6495&3.8799\\
+  15&-121.9191&-126.6495&3.8799\\
+  16&-121.9254&-126.6685&3.8901\\
+  18&-121.9254&-126.6685&3.8901\\
+  20&-121.9254&-126.6685&3.8901\\
+  22&-121.9254&-126.6685&3.8901\\
+  24&-122.1247&-127.2677&4.2113\\
+  26&-122.1295&-127.2737&4.212\\
+  28&-122.1396&-127.3129&4.2356\\
+  30&-122.5142&-128.3365&4.7524\\
+  31&-122.5243&-128.3625&4.765\\
+  32&-123.2648&-129.9577&5.4297\\
+  33&-123.2648&-129.9577&5.4297\\
+  34&-123.3684&-130.081&5.4411\\
+  35&-123.4934&-130.2193&5.4464\\
+  36&-123.4874&-130.2476&5.4743\\
+  37&-123.4917&-130.271&5.4897\\
+  38&-123.4922&-130.272&5.4901\\
+  39&-123.4961&-130.281&5.4941\\
+  40&-123.492&-130.2735&5.4914\\
+  42&-123.501&-130.2214&5.4416\\
+  44&-123.5377&-130.2314&5.4183\\
+  46&-123.6081&-130.2541&5.3767\\
+  48&-123.6179&-130.2591&5.3723\\
+  56&-122.5282&-128.3672&4.7654\\
+  64&-123.3684&-130.081&5.4411\\
+  88&-123.2648&-129.9577&5.4297\\
+  90&-123.299&-130.142&5.5499\\
+\end{longtable}
+
+\begin{longtable}{lllr}
+  \caption{Fase da tensão de linha nas barras do sistema de 34 barras (fase $c$).}\label{tab:34b_phac}\\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{$\mathbf{\theta\,[Graus]}$}&\multirow{2}{*}{\textbf{$\mathbf{\Delta \theta}$ [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{$\mathbf{\theta\,[Graus]}$}&\multirow{2}{*}{\textbf{$\mathbf{\Delta \theta}$ [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&120&120&0\\
+  2&119.9552&119.7808&-0.14538\\
+  6&119.9258&119.6371&-0.24073\\
+  8&119.3683&117.2903&-1.7408\\
+  10&119.3683&117.2903&-1.7408\\
+  12&118.6574&114.7966&-3.2537\\
+  14&118.0374&112.9311&-4.326\\
+  15&118.0374&112.9311&-4.326\\
+  16&118.0307&112.9107&-4.3379\\
+  18&118.0307&112.9107&-4.3379\\
+  20&118.0307&112.9107&-4.3379\\
+  22&118.0307&112.9107&-4.3379\\
+  24&117.7053&112.2657&-4.6214\\
+  26&117.7053&112.2657&-4.6214\\
+  28&117.6783&112.2121&-4.645\\
+  30&116.9991&111.0192&-5.1111\\
+  31&116.9818&110.9895&-5.1225\\
+  32&115.689&109.1866&-5.6206\\
+  33&115.689&109.1866&-5.6206\\
+  34&115.5079&109.0336&-5.605\\
+  35&115.2909&108.8615&-5.5767\\
+  36&115.288&108.826&-5.6051\\
+  37&115.2908&108.8146&-5.6172\\
+  38&115.2908&108.8146&-5.6172\\
+  39&115.2908&108.8146&-5.6172\\
+  40&115.2916&108.8134&-5.619\\
+  42&115.2818&108.8604&-5.5702\\
+  44&115.2373&108.8551&-5.5383\\
+  46&115.1543&108.8205&-5.5002\\
+  48&115.1425&108.8148&-5.4956\\
+  56&116.9818&110.9895&-5.1225\\
+  64&115.5079&109.0336&-5.605\\
+  88&115.689&109.1866&-5.6206\\
+  90&115.6484&109.0023&-5.7468\\
+\end{longtable}
+
+As perdas nas linhas também apresentam variações, como mostra as tabelas \ref{tab:34b_la}, \ref{tab:34b_lb} e \ref{tab:34b_lc}.
+
+\begin{longtable}{llllr}
+  \caption{Comparação entre as perdas nas linhas do sistema de 34 barras(fase $a$).}\label{tab:34b_la}\\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [VA]}$}&\multirow{2}{*}{$\mathbf{\Delta S_{perda} [VA]}$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{5}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [kVA]}$}&\multirow{2}{*}{$\mathbf{\Delta}S_{perda} [\%]$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{5}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{5}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&2&2289.26+1137.07i&2635.29+2402.24i&346.02+1265.17i\\
+  2&6&1537.27+777.13i&1767.02+1610.76i&229.76+833.63i\\
+  6&8&28682.03+14752.38i&32919.99+30008.73i&4237.95+15256.35i\\
+  8&10&0&0&0\\
+  8&12&33110.33+17479.96i&38302.82+34915.54i&5192.49+17435.59i\\
+  12&14&26249.86+13858.10i&30366.46+27681.03i&4116.61+13822.93i\\
+  14&15&0&0&0\\
+  15&16&273.75+144.52i&316.68+288.67i&42.93+144.15i\\
+  16&18&53.29+119.90i&57.08+128.43i&3.79+8.53i\\
+  16&24&4282.51+1773.32i&5449.98+4968.01i&1167.46+3194.69i\\
+  18&20&1218.99+2742.80i&1305.97+2938.51i&86.98+195.71i\\
+  20&22&68.85+154.91i&73.77+165.99i&4.92+11.08i\\
+  24&26&0&0&0\\
+  24&28&343.17+162.10i&448.33+408.68i&105.16+246.58i\\
+  28&30&8218.83+3849.89i&10743.14+9793.08i&2524.32+5943.19i\\
+  30&31&198.81+91.57i&256.86+234.14i&58.05+142.57i\\
+  31&32&14041.78+6552.67i&18192.01+16583.22i&4150.23+10030.55i\\
+  31&56&0&0&0\\
+  32&33&0&0&0\\
+  33&34&733.84+376.70i&1029.69+938.63i&295.84+561.92i\\
+  33&88&0&0&0\\
+  34&35&831.89+429.96i&1168.42+1065.09i&336.53+635.14i\\
+  34&64&0&0&0\\
+  35&36&40.98+16.02i&55.44+50.54i&14.46+34.51i\\
+  35&42&27.30+11.27i&33.01+30.09i&5.71+18.82i\\
+  36&37&19.72+5.88i&17.35+15.81i&-2.37+9.93i\\
+  37&38&0&0&0\\
+  37&40&1.17+0.53i&1.10+1i&-0.07+0.47i\\
+  38&39&0&0&0\\
+  42&44&127.28+52.84i&156.11+142.30i&28.83+89.46i\\
+  44&46&141.07+69.33i&185.90+169.46i&44.84+100.13i\\
+  46&48&22.37+10.51i&27.06+24.67i&4.69+14.16i\\
+  88&90&472.10+336.95i&562.42+749.42i&90.31+412.46i\\
+\end{longtable}
+
+\begin{longtable}{llllr}
+  \caption{Comparação entre as perdas nas linhas do sistema de 34 barras(fase $b$).}\label{tab:34b_lb}\\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [VA]}$}&\multirow{2}{*}{$\mathbf{\Delta S_{perda} [VA]}$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{5}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [kVA]}$}&\multirow{2}{*}{$\mathbf{\Delta}S_{perda} [\%]$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{5}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{5}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&2&1821.02+937.94i&2391.44+2179.96i&570.42+1242.02i\\
+  2&6&1150.68+596.16i&1533.63+1398.01i&382.96+801.85i\\
+  6&8&20162.12+10516.10i&27296.91+24882.93i&7134.78+14366.83i\\
+  8&10&0.32+0.71i&0.33+0.73i&0.01+0.02i\\
+  8&12&22020.89+11291.96i&30150.37+27484.05i&8129.48+16192.09i\\
+  12&14&17458.15+8952.26i&23903.20+21789.34i&6445.05+12837.08i\\
+  14&15&0&0&0\\
+  15&16&182.06+93.36i&249.27+227.23i&67.21+133.87i\\
+  16&18&0&0&0\\
+  16&24&7093.70+3115.66i&8136.69+7417.13i&1042.99+4301.47i\\
+  18&20&0&0&0\\
+  20&22&0&0&0\\
+  24&26&1.21+2.73i&1.34+3.02i&0.13+0.29i\\
+  24&28&488.91+199.08i&569.80+519.41i&80.89+320.33i\\
+  28&30&11929.08+4868.37i&13866.77+12640.48i&1937.69+7772.11i\\
+  30&31&290.44+121.53i&338.73+308.77i&48.28+187.24i\\
+  31&32&20198.97+8382.48i&23598.23+21511.34i&3399.26+13128.86i\\
+  31&56&0.10+0.22i&0.11+0.25i&0.01+0.03i\\
+  32&33&0&0&0\\
+  33&34&1307.22+474.90i&1477.88+1347.18i&170.66+872.28i\\
+  33&88&0&0&0\\
+  34&35&1480.38+535.94i&1674.71+1526.61i&194.33+990.67i\\
+  34&64&0&0&0\\
+  35&36&68.20+26.73i&74.42+67.84i&6.23+41.12i\\
+  35&42&34.56+16.40i&40.67+37.08i&6.11+20.67i\\
+  36&37&29.78+22.51i&39.58+36.08i&9.80+13.57i\\
+  37&38&0.67+0.61i&0.76+0.69i&0.10+0.09i\\
+  37&40&0.86+0.69i&1.33+1.21i&0.47+0.52i\\
+  38&39&2.89+2.63i&3.31+3.01i&0.42+0.38i\\
+  42&44&168.32+78.09i&196.21+178.86i&27.90+100.77i\\
+  44&46&148.95+57.06i&168.83+153.90i&19.88+96.83i\\
+  46&48&20.98+9.62i&25.65+23.38i&4.67+13.76i\\
+  88&90&406.54+315.47i&555.17+739.77i&148.63+424.30i\\
+\end{longtable}
+
+\begin{longtable}{llllr}
+  \caption{Comparação entre as perdas nas linhas do sistema de 34 barras(fase $c$).}\label{tab:34b_lc}\\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [VA]}$}&\multirow{2}{*}{$\mathbf{\Delta S_{perda} [VA]}$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{5}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [kVA]}$}&\multirow{2}{*}{$\mathbf{\Delta}S_{perda} [\%]$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{5}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{5}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+
+  0&2&2346.72+1147.66i&2555.15+2329.19i&208.44+1181.53i\\
+  2&6&1526.42+731.45i&1651.77+1505.70i&125.35+774.25i\\
+  6&8&27570.04+12931.14i&29645.80+27024.10i&2075.76+14092.96i\\
+  8&10&0&0&0\\
+  8&12&32411.64+15091.74i&34493.27+31442.88i&2081.63+16351.14i\\
+  12&14&25695.94+11964.73i&27346.25+24927.91i&1650.31+12963.18i\\
+  14&15&0&0&0\\
+  15&16&267.97+124.77i&285.18+259.96i&17.21+135.19i\\
+  16&18&0&0&0\\
+  16&24&8156.27+5070.12i&9391.34+8560.83i&1235.07+3490.71i\\
+  18&20&0&0&0\\
+  20&22&0&0&0\\
+  24&26&0&0&0\\
+  24&28&687.38+415.90i&767.20+699.35i&79.82+283.45i\\
+  28&30&16573.93+10067.44i&18540.78+16901.14i&1966.85+6833.71i\\
+  30&31&383.49+232.01i&430.89+392.78i&47.40+160.77i\\
+  31&32&27247.58+16440.12i&30517.76+27818.95i&3270.18+11378.83i\\
+  31&56&0&0&0\\
+  32&33&0&0&0\\
+  33&34&1814.31+1152.04i&2012.39+1834.42i&198.07+682.38i\\
+  33&88&0&0&0\\
+  34&35&2054.65+1303.89i&2276.20+2074.90i&221.55+771.01i\\
+  34&64&0&0&0\\
+  35&36&110+71.87i&126.56+115.37i&16.56+43.50i\\
+  35&42&32.02+19.08i&36.92+33.65i&4.90+14.58i\\
+  36&37&6.72+2.04i&9.73+8.87i&3.01+6.83i\\
+  37&38&0&0&0\\
+  37&40&0.30+0.03i&0.33+0.30i&0.03+0.27i\\
+  38&39&0&0&0\\
+  42&44&154.74+93.69i&178.11+162.36i&23.36+68.67i\\
+  44&46&171.68+104.92i&187.17+170.62i&15.49+65.69i\\
+  46&48&25.95+14.34i&28.72+26.18i&2.77+11.84i\\
+  88&90&531.55+399.08i&590.76+787.19i&59.21+388.11i\\
+\end{longtable}
+
+Os sistemas de 793 e 3373 barras apresentaram diferenças ainda maiores que as do sistema de 34 barras.
+
+\subsection{Tempo de execução}\label{sec:tempo}
+
+  O segundo critério avaliado foi o tempo de execução de cada método, isto é, quanto tempo cada algoritmo utiliza para atingir a convergência.
+  
   \begin{figure}[h!]
     \centering
     \caption{Tempo de execução dos algoritmos do fluxo de potência.}
-    \includegraphics[width=\textwidth]{tempo}
+    \includegraphics[scale=0.6]{tempo}
     \label{fig:tempo}
     
     \small Fonte: Autoria própria.
   \end{figure}
     
+  É possível observar na figura \ref{fig:tempo} que, para sistemas pequenos (< 1000 barras), o tempo consumido pelos métodos da soma de potências é quase o mesmo que o do método da soma de correntes, diferindo por apenas alguns microssegundos. Porém, conforme o número de barras no sistema aumenta, o método da soma de potências mostra-se mais eficiente, em relação ao tempo de computação.
+  
+  Para o sistema de 3373 barras, a duração do MSC foi de 198 ms, enquanto que para o MSP a duração foi de 99 ms, ou seja, o MSP foi quase duas vezes mais rápido que o método da soma de correntes.
+  
 \subsection{Número de iterações}
 
+  O número de iterações necessário para atingir a convergência em cada método é mostrado na figura \ref{fig:itera}.
+  
   \begin{figure}[h!]
     \centering
     \caption{Número de iterações necessárias para convergência dos sistemas de teste.}
-    \includegraphics[width=\textwidth]{itera}
+    \includegraphics[scale=0.7]{itera}
     \label{fig:itera}
     
     \small Fonte: Autoria própria.
   \end{figure}
 
-\section{Otimização}
+  Apesar do número de iterações ser maior no método da soma de potências, o custo computacional por iteração é menor, levando a um tempo de computação inferior em relação ao método da soma de correntes, conforme constatado na seção \ref{sec:tempo}.
+  
+  Fica evidente também, que ambos os métodos não apresentaram problemas de convergência, dado o pequeno número de iterações utilizadas.
+  
+  O sistema de 3373 barras, geraria uma matriz esparsa de 3373x3373 elementos se utilizado com o método de Newton-Raphson, dificultando a solução do fluxo de potência. Contudo, o mesmo não apresentou problemas com os dois algoritmos utilizados.
+  
+  Um outro fator observado é que o número de iterações não depende diretamente do tamanho do sistema, e dos parâmetros das barras e linhas, dado que o sistema que necessitou de mais iterações foi o de 34 barras.
+  
+\section{Sistemas reduzidos}
+Ao aplicar o algoritmo de remoção de barras discutido na seção \ref{chp:redução} aos sistemas de teste, foi gerada a tabela \ref{tab:tempootm}, que mostra a quantidade de barras removidas dos sistemas e o tamanho dos sistemas reduzidos.
+
+\begin{table}[h]
+  \centering
+  \caption{Barras removidas.}
+  \begin{tabular}{cccc}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Sistema original}} & \multirow{ 2}{*}{\textbf{Barras removidas}} & \multicolumn{1}{c}{\textbf{Sistema reduzido}} & \multirow{ 2}{*}{\textbf{Redução [\%]}} \\
+    \multicolumn{1}{c}{\textbf{[barras]}}& & \multicolumn{1}{c}{\textbf{[barras]}} & \\
+    \midrule
+    14		& 0    & 14  & 0 \\
+    34		& 5    & 29  & 14,7 \\
+    70		& 18   & 52  & 25,7 \\
+    136		& 24   & 112 & 17,6 \\
+    793		& 428  & 365 & 54,0 \\
+    3373  & 2748 & 625 & 81,5 \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:tempootm}
+  
+  \small Fonte: Autoria própria.
+\end{table}
+
+A redução de barras se mostra eficiente em sistemas de grande e médio porte, resultando em uma simplificação significativa. Em sistemas de pequeno porte, a mesma se mostra irrelevante, uma vez que, remove poucas ou nenhuma barra.
 
 \subsection{Tempo de execução}
+Para os sistemas com poucas barras, o algoritmo de redução não apresentou uma melhoria significativa no tempo de cálculo do fluxo de potência, sendo que no sistema de 135 barras o desempenho foi pior do que sem a redução, conforme mostra a figura \ref{fig:tempootm}.
 
-  \begin{table}[h]
-    \centering
-    \caption{Tempo de execução com otimização.}
-    \begin{tabular}{cccc}
-      \toprule
-      \multirow{ 2}{*}{\textbf{Número de barras}} & \multicolumn{ 2}{c}{\textbf{tempo [ms]}} & \multirow{ 2}{*}{\textbf{Barras removidas}}\\
-      & Soma de correntes & Soma de potências \\
-      \midrule
-      14		& 0  & 0  & 0    \\
-      34		& 0  & 0  & 5    \\
-      70		& 0  & 1  & 18   \\
-      136		& 1  & 6  & 24   \\
-      794		& 6  & 10 & 428  \\
-      3373  & 13 & 26 & 2748 \\
-      \bottomrule
-    \end{tabular}
-    \label{tab:tempootm}
-    
-    \small Fonte: Autoria própria.
-  \end{table}
-  
+
   \begin{figure}[h!]
     \centering
     \caption{Tempo de execução dos algoritmos do fluxo de potência com otimização.}
-    \includegraphics[width=\textwidth]{tempootm}
+    \includegraphics[scale=0.7]{tempootm}
     \label{fig:tempootm}
     
     \small Fonte: Autoria própria.
   \end{figure}
-  
+
+Já nos sistemas de grande porte, foi constatado uma redução drástica no tempo de computação do fluxo de potência para ambos os métodos utilizados, resultando em uma redução de 198 ms para 13 ms, no método da soma de correntes.
+
+Uma fato interessante observado no gráfico da figura \ref{fig:tempootm} é que, com a redução de barras, o método da soma de correntes se mostrou mais rápido que o método da soma de potências. Esse comportamento é coerente, porque o número de barras do sistema reduzido (tabela \ref{tab:tempootm}) fica abaixo da quantidade de barras onde o método MSC é mais eficiente.  
+
 \subsection{Número de iterações}
+
+De acordo com os dados apresentados na figura \ref{fig:iteraotm}, é possível observar que a remoção das barras não alterou de forma significativa o número de iterações necessárias para a convergência, pois somete o sistema de 70 barras apresentou a redução de uma iteração. Isso mostra que as barras removidas não interferem de forma expressiva na convergência do sistema.
+  
   \begin{figure}[h!]
     \centering
     \caption{Número de iterações necessárias para convergência com otimização.}
-    \includegraphics[width=\textwidth]{iteraotm}
+    \includegraphics[scale=0.7]{iteraotm}
     \label{fig:iteraotm}
     
     \small Fonte: Autoria própria.
   \end{figure}
 
-\subsection{Erro introduzido pela otimização}
+\subsection{Erro introduzido pela expansão}
+Nenhuma divergência nos resultados do fluxo de potência foi encontrada para os sistemas monofásicos. Isso condiz com o que foi discutido no capitulo \ref{chp:redução}.
+
+Para os sistemas trifásicos, foi verificada a diferença entre o módulo da tensão nas barras, produzidas com e sem a redução de barras. Os dados obtidos para o sistema de 34 barras são mostrados na tabela \ref{tab:erro}. Os valores em relação a $\mathbf{V_{base}}$ correspondem a porcentagem do erro em relação a tensão de linha de operação do sistema (14376 kV).
+
+\begin{table}[h]
+  \centering
+  \caption{Erro devido a expansão do sistema reduzido (34 barras).}
+  \begin{tabular}{ccccc}
+    \toprule
+    \multirow{2}{*}{\textbf{Fase}} & \multirow{2}{*}{$ \mathbf{Erro_{máx}^{MSC}\,[V]} $} & \multirow{2}{*}{$ \mathbf{Erro_{máx}^{MSP}\,[V]} $} & $ \mathbf{Erro_{máx}^{MSC}} $ \textbf{em} & $ \mathbf{Erro_{máx}^{MSP}} $ \textbf{em}\\
+    &&& \textbf{relação a} $\mathbf{V_{base}}$ \textbf{[\%]}& \textbf{relação a} $\mathbf{V_{base}}$ \textbf{[\%]}\\
+    \midrule
+    $a$		& 127 & 362  & 0,88 & 2,52 \\
+    $b$		& 235 & 2760 & 1,63 & 19,19 \\
+    $c$		& 56  & 1.090& 0.39 & 7,58 \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:erro}
+  
+  \small Fonte: Autoria própria.
+\end{table}
+
+É possível observar que para o método da soma de corrente, o erro máximo introduzido é pequeno, podendo ser aceito em muitas aplicações do fluxo de potência. O mesmo não se aplica ao método MSP, onde foi encontrada uma variação de quase 20\% em relação a tensão de operação do sistema.
+
+Conforme discutido no desenvolvimento teórico, o erro só se aplica nas barras que foram removidas, mantendo as perdas totais e a tensão nas outras barras sem alteração. Assim, uma variação de pouco mais de 1\% (MSC) nos valores das barras inertes, torna a aplicação da técnica de redução de barras válida.
 
 \section{Descrição do programa desenvolvido}
 
-\subsection{Características}
+Para realização das simulações foi desenvolvido o programa denominado \textit{QuickFlow} (figura \ref{fig:quickflow}).
 
-\subsection{Estrutura}
+\begin{figure}[h!]
+ \centering
+ \caption{Programa \textit{QuickFlow}.}
+ \includegraphics[scale=0.35]{quickflow}
+ \label{fig:quickflow}
+ 
+ \small Fonte: Autoria própria.
+\end{figure}
 
-\subsection{Limitações}
+O software foi desenvolvido utilizando técnicas de programação orientada a objetos, em linguagem de programação C++, que permitiu a criação de classes modulares para representação dos elementos do sistema (barras e linhas), as estruturas de projeto e os algoritmos.
+
+A parte gráfica utiliza o \textit{framework} Qt para renderizar, em forma de diagrama, a estrutura do sistema. Essa parte recebeu bastante atenção, pois devido a grande quantidade de elementos que compõem o sistema, foram necessários técnicas de bufferização para não comprometer a performance do programa.
+
+Outro fator construtivo que difere das técnicas tradicionais de implementação do fluxo de potência é a utilização de listas ligadas (\textit{linked lists}) para armazenar a estrutura do sistema. Nas técnicas tradicionais, os dados do sistema são armazenados em vetores na memória, dificultando a inserção, remoção e reorganização das barras e linhas. Com a abordagem por listas ligadas, a manipulação desses dados se torna mais simples e eficiente.
+
+
+
+\subsection{Funcionalidades}
+ A ferramenta possui as seguintes características:
+
+\begin{itemize}
+  \item permite a criação, importação e modificação de sistemas de distribuição energia elétrica trifásicos;
+  
+  \item importa e exporta os dados do sistema.
+  
+  \item possibilita o trabalho com várias unidades (metro, kilometro, pés, milhas e etc.);
+  
+  \item permite trabalhar com múltiplos alimentadores;
+  
+  \item pealiza o cálculo do fluxo de potência utilizando os métodos da soma de correntes e da soma de potências;
+  
+  \item aplica a redução de barras para agilizar os cálculos;
+  
+  \item possui código fonte aberto.  
+\end{itemize}
+

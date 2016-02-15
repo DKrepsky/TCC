@@ -21,7 +21,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,7 +39,7 @@
      id="namedview22"
      showgrid="false"
      inkscape:zoom="0.85947996"
-     inkscape:cx="266.95268"
+     inkscape:cx="246.59153"
      inkscape:cy="235.00722"
      inkscape:window-x="0"
      inkscape:window-y="24"
@@ -97,7 +97,7 @@
        sodipodi:role="line"
        id="tspan4166"
        x="34.130859"
-       y="21.870117">Vs</tspan></text>
+       y="21.870117">Vi</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -108,7 +108,7 @@
        sodipodi:role="line"
        id="tspan4170"
        x="315.04639"
-       y="22.08252">Vr</tspan></text>
+       y="22.08252">Vj</tspan></text>
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:30px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -165,9 +165,9 @@
        sodipodi:role="line"
        id="tspan4192"
        x="-2.9443359"
-       y="224.25793">Barra <tspan
+       y="224.25793">Barra i<tspan
    style="font-style:italic"
-   id="tspan4194">s</tspan></tspan></text>
+   id="tspan4194" /></tspan></text>
   <text
      sodipodi:linespacing="125%"
      id="text4196"
@@ -178,7 +178,7 @@
        y="224.25793"
        x="277.6123"
        id="tspan4198"
-       sodipodi:role="line">Barra <tspan
+       sodipodi:role="line">Barra j<tspan
    id="tspan4200"
-   style="font-style:italic">r</tspan></tspan></text>
+   style="font-style:italic" /></tspan></text>
 </svg>

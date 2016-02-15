@@ -61,7 +61,7 @@ Os elementos \textit{shunt} também são considerados como tendo potência constant
 
 \section{Método da soma das potências}
 
-O método da soma das potências, originalmente proposto por \cite{Cespedes}, se baseia na eliminação do ângulo de fase nas equações do fluxo de potência para simplificar a resolução do problema. Na maioria dos estudos relacionados ao fluxo de potência, o ângulo da tensão não é significante, sendo analisado somente o módulo da tensão que chega aos consumidores. Caso seja necessário, o ângulo pode ser determinado com a adição de mais uma etapa de varredura. 
+O método da soma das potências (MSP), originalmente proposto por \cite{Cespedes}, se baseia na eliminação do ângulo de fase nas equações do fluxo de potência para simplificar a resolução do problema. Na maioria dos estudos relacionados ao fluxo de potência, o ângulo da tensão não é significante, sendo analisado somente o módulo da tensão que chega aos consumidores. Caso seja necessário, o ângulo pode ser determinado com a adição de mais uma etapa de varredura. 
 
 O algoritmo consiste em duas operações, uma a montante, ou seja, a partir dos nós mais distantes da barra de referência, e uma operação a jusante, partindo da barra de referência até as barras finais.
 
@@ -90,23 +90,23 @@ Na operação à jusante, partindo da barra inicial, é determinado o valor absoluto
 
 \begin{equation}
 \label{equ:vcespedes}
-|V_{r}|^4 + (2\mathfrak{Re} \{S^* \cdot Z\} - |V_{s}|^2)|V_{r}|^2 + \mathfrak{Re} \{S^* \cdot Z\}^2 + 
+|V_{j}|^4 + (2\mathfrak{Re} \{S^* \cdot Z\} - |V_{i}|^2)|V_{j}|^2 + \mathfrak{Re} \{S^* \cdot Z\}^2 + 
 \mathfrak{Im} \{S^* \cdot Z\}^2 = 0    
 \end{equation}
 
 \begin{equation}
 \label{equ:vcespedes2}
-|V_r|^4 + [2 \cdot (PR+QX) -  |V_s|^2] \cdot  |V_r|^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0.  
+|V_j|^4 + [2 \cdot (PR+QX) -  |V_i|^2] \cdot  |V_j|^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0.  
 \end{equation}
 
 onde:
 \begin{itemize}
-    \item \emph{s}: nó fonte;
-    \item \emph{r}: nó à jusante;
-    \item \emph{$V_s$}: módulo da tensão em \emph{s};
-    \item \emph{$V_r$}: módulo da tensão em \emph{r};
-    \item \emph{P}: potência ativa equivalente da carga em \emph{r}; 
-    \item \emph{Q}: potência reativa equivalente da carga em \emph{r}; 
+    \item \emph{i}: nó fonte;
+    \item \emph{j}: nó à jusante;
+    \item \emph{$V_i$}: módulo da tensão em \emph{i};
+    \item \emph{$V_j$}: módulo da tensão em \emph{j};
+    \item \emph{P}: potência ativa equivalente da carga em \emph{j}; 
+    \item \emph{Q}: potência reativa equivalente da carga em \emph{j}; 
     \item \emph{R}: resistência própria da linha;
     \item \emph{X}: reatância própria da linha.
 \end{itemize}
@@ -117,8 +117,8 @@ Ao final da operação a jusante, as perdas são atualizadas através da equação \re
 
  \begin{eqnarray}
  \label{equ:lcespedes}
- L_p = R \frac{(P^2 + Q^2)}{V_r^2} \\
- L_q = X \frac{(P^2 + Q^2)}{V_r^2}
+ L_p = R \frac{(P^2 + Q^2)}{V_j^2} \\
+ L_q = X \frac{(P^2 + Q^2)}{V_j^2}
  \end{eqnarray}
 
 sendo \emph{$L_p$} e \emph{$L_q$} as perdas ativas e reativas, respectivamente.
@@ -129,10 +129,10 @@ O ângulo das tensões pode ser calculado, com outra operação a jusante, a partir 
 
 \begin{equation}
 \label{equ:thcespedes}
-\delta_s = \delta_r - cos^{-1} \left( \sqrt{1 - \left( \frac{XP + RQ}{|V_s||V_r|} \right)}\right)
+\delta_j = \delta_i - cos^{-1} \left( \sqrt{1 - \left( \frac{XP + RQ}{|V_i||V_j|} \right)}\right)
 \end{equation}
 
-sendo $\delta_s$ o ângulo da tensão na barra \textit{s} e $\delta_r$ o ângulo da tensão na barra \textit{r}.
+sendo $\delta_j$ o ângulo da tensão na barra \textit{j} e $\delta_i$ o ângulo da tensão na barra \textit{i}.
 
 Segundo \citeonline{Ochoa}, o método não considera o acoplamento entre as linhas, sendo aplicado em paralelo para cada uma das fases. Um método para compensação parcial é proposto por \cite{Ramos}, porém não foi explorado nesse trabalho.
 
@@ -143,7 +143,7 @@ Outro problema apresentado pelo método é que ele não pode ser executado em redes
 Esse método, proposto originalmente para redes monofásicas \cite{Shirmohammad} e depois adaptado para redes trifásicas \cite{Shirmohammad3F}, utiliza a soma das correntes nas linhas para determinar o fluxo de potência.
 Semelhante ao método da soma das potências, o algoritmo consiste em duas varreduras, denominadas \textit{backward sweep} e \textit{forward sweep}, sendo uma à montante e outra à jusante.
 
-Uma das vantagens do método da soma das correntes é que o mesmo pode ser aplicado a redes fracamente malhadas. Outra vantagem é que o algoritmo possui compensação para o acoplamento entre as linhas, levando a resultados mais precisos.
+Uma das vantagens do método da soma das correntes (MSC) é que o mesmo pode ser aplicado a redes fracamente malhadas. Outra vantagem é que o algoritmo possui compensação para o acoplamento entre as linhas, levando a resultados mais precisos.
 
 A execução do algoritmo segue os passos a seguir:
 

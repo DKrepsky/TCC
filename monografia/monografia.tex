@@ -32,6 +32,8 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \usepgfplotslibrary{dateplot}
+\usepackage{appendix}
+\usepackage{longtable}
 
 \data{2016}        
 \curso{Engenharia Elétrica}
@@ -82,7 +84,7 @@
 
 \DEELresumo{Devido ao aumento no consumo de energia elétrica nos últimos anos, os sistemas de distribuição estão maiores e mais complexos. Assim, torna-se cada vez mais comum o uso do fluxo de potência para melhorar a qualidade e o desempenho das redes de distribuição. Os métodos tradicionais de cálculo do fluxo de potência, como os métodos de Newton-Raphson e Gauss-Seidel, apresentam problemas de desempenho e convergência devido as características peculiares dos sistemas de distribuição, sendo necessário um algoritmo rápido e robusto para possibilitar sua aplicação nesses sistemas. Este trabalho apresenta uma análise comparativa entre dois métodos de varredura populares na literatura, de modo a avaliar a velocidade e a convergência dos mesmos para sistemas radiais com 14, 34, 70, 135, 793 e 3373 barras. O primeiro método avaliado, originalmente proposto por \cite{Shirmohammad}, consiste na aplicação direta das leis de Kirchhoff. O segundo método, descrito por \cite{Cespedes}, utiliza a Lei de Ohm, eliminando a fase da tensão nas equações do fluxo de potência, possibilitando uma simplificação dos cálculos. De acordo com as simulações realizadas, os dois métodos se mostram robustos em relação a convergência, não apresentando problemas e utilizando poucas iterações nos sistemas analisados. Ambos os métodos possuem desempenho parecido, no quesito velocidade, para sistemas de poucas barras, porém, para sistemas grandes (793 e 3373 barras), a diferença se torna evidente, sendo o segundo método, aproximadamente, duas vezes mais rápido que o primeiro. É proposto um algoritmo para remoção de barras redundantes, que se mostrou capaz de reduzir drasticamente o tempo computacional utilizado. Devido a característica desacoplada da reintrodução das barras, isto é, sem considerar a interferência entre fases, é introduzido uma pequena variação no resultado para as barras que foram retiradas. Com a redução no número de barras utilizadas na elaboração do fluxo de potência, ambos os métodos possuem tempo computacional semelhante, diferenciando apenas por alguns milissegundos. } 
 
-\DEELabstract{....} 
+\DEELabstract{Due to the increase in electricity consumption in recent years, distribution systems are getting larger and complex. Thus, it's becomming common to use the power flow to improve the quality and performance of distribution networks. Traditional methods of calculating the power flow, like the Newton-Raphson and Gauss-Seidel methods, have problems of performance and convergence due to the peculiar characteristics of the distribution systems, requiring a fast and robust algorithm to allow its application in those systems . This paper presents a comparison between two sweep methods that are popular in the literature, in order to valuate the speed and convergence of this methods for radial systems with 14, 34, 70, 135, 793 and 3373 bars. The first reported method, originally proposed by \cite {Shirmohammad} , is the direct application of Kirchhoff's laws. The second method, described by \cite {Cespedes}, uses the Ohm's Law, eliminating the phase voltage in the power flow equations, enabling a simplification of the calculations. According to the simulations, the two methods proved to be robust with regard to convergence, showing no problems and using few iterations in the analyzed systems. Both methods have similar performance, in terms of speed, to a few bars systems, however, for larger systems (793 and 3373 bars), the difference becomes evident, the second method is approximately two times faster than the first. An algorithm for removing redundant bar, which has been shown to dramatically reduce the computing time used is proposed. Due uncoupled characteristic of the reintroduction of bars, this is, without considering the interference between phases, a small variation in the results is introduced for the bars that were removed. With the reduction in the number of bars used, both methods have similar computational time, differing by only a few milliseconds.} 
 
 % Elementos Pré-Textuais -------------------------------------------------------
 \ElementosPreTextuais
@@ -114,6 +116,6 @@
 % Elementos Pós-Textuais -------------------------------------------------------
 \bibliography{bibliografia} % arquivo bibtex com as referências (modelo.bib)
 
-\include{apendice_1}
+\include{apendice}
 
 \end{document}

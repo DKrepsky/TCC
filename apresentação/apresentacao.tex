@@ -13,8 +13,8 @@
 \usepackage{pgfplots}
 \usepgfplotslibrary{dateplot}
 
-\title{Cálculo do fluxo de potência em sistemas de distribuição de energia elétrica}
-\subtitle{Com otimização por redução de barras}
+\title{Fluxo de potência para sistemas de distribuição}
+\subtitle{Considerando redução de barras}
 \date{\today}
 \author{David Maykon Krepsky Silva}
 \institute{Departamento de Engenharia Elétrica}
@@ -27,6 +27,8 @@
 \usepackage[authoryear]{natbib}
 
 \usepackage{multirow}
+\usepackage{subfig}
+\usepackage{longtable}
 
 \begin{document}
 
@@ -46,7 +48,7 @@
         
         \item Comparação de desempenho entre os métodos.
         
-        \item Desenvolvimento e implementação do algoritmo de otimização do fluxo de potência por redução de barras.
+        \item Desenvolvimento e implementação do algoritmo de redução de barras.
     \end{itemize}
     
     Objetivo secundário:
@@ -64,9 +66,9 @@
         
         \item Desenvolvimento com o \textit{framework} Qt.
         
-        \item Validação dos resultados através da comparação com resultados de outro programa.
+        \item Validação dos resultados com seis sistemas diferentes.
         
-        \item Teste de performance dos algoritmos implementados, com e sem a otimização.
+        \item Teste de performance dos algoritmos implementados, com e sem a redução.
     \end{itemize}
 \end{frame}
 
@@ -108,6 +110,18 @@
       
       \item As maiores perdas técnicas se encontram no sistema de distribuição.
     \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Perdas em outros países}
+  \begin{figure}
+    \centering
+    \caption{Perdas elétricas de transmissão e distribuição em \%}
+    \includegraphics[width=\textwidth]{img/perdas_mundo}
+    \\
+    \small Fonte: Autoria própria (dados de \textit{World Development Indicators, 2015}).
+    \label{fig:mundo}
+  \end{figure}
 \end{frame}
 
 \section{O fluxo de potência}
@@ -163,8 +177,8 @@
 \begin{figure}[H]
    \centering
    \caption{Sistema radial.}
-   \includegraphics[scale=0.2]{img/69b}
-   \label{fig:69b}
+   \includegraphics[scale=0.2]{img/70b}
+   \label{fig:70b}
 \end{figure}
 \end{frame}
 
@@ -177,7 +191,7 @@
     \end{figure}
 \end{frame}
 
-\begin{frame}{Método Soma de Potências}
+\begin{frame}{Método Soma de Potências (MSP)}
     Este método, proposto em \citep{Cespedes}, consiste em duas operações, uma a montante e outra a jusante. 
     
     \begin{itemize}
@@ -192,37 +206,42 @@
 \begin{frame}{Método Soma de Potências}
     Equação para o cálculo das tensões:
     \begin{equation}
-    \label{equ:cespedes}
-    V_r^4 + [2 \cdot (PR+QX) -V_s^2] \cdot V_r^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0.
+      \label{equ:vcespedes2}
+      |V_j|^4 + [2 \cdot (PR+QX) -  |V_i|^2] \cdot  |V_j|^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0.  
     \end{equation}
-    
+  
+  onde:
+  \begin{itemize}
+    \item \emph{i}: nó fonte;
+    \item \emph{j}: nó à jusante;
+    \item \emph{$V_i$}: módulo da tensão em \emph{i};
+    \item \emph{$V_j$}: módulo da tensão em \emph{j};
+    \item \emph{P}: potência ativa equivalente da carga em \emph{j}; 
+    \item \emph{Q}: potência reativa equivalente da carga em \emph{j}; 
+    \item \emph{R}: resistência própria da linha;
+    \item \emph{X}: reatância própria da linha.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Método Soma de Potências}
     Perdas nas linhas:
     \begin{eqnarray}
     \label{equ:cespedesL}
-    L_p = R \frac{(P^2 + Q^2)}{V_r^2} \\
-    L_q = X \frac{(P^2 + Q^2)}{V_r^2}
+    L_p = R \frac{(P^2 + Q^2)}{V_j^2} \\
+    L_q = X \frac{(P^2 + Q^2)}{V_j^2}
     \end{eqnarray}
-    Onde:
-    \begin{itemize}
-        \item \emph{s} é o nó fonte e \emph{r} é o nó à jusante;
-        \item \emph{$V_s$} é o módulo da tensão em \emph{s};
-        \item \emph{$V_r$} é o módulo da tensão em \emph{r};
-        \item \emph{P} e \emph{Q} são as potências ativa e reativa equivalentes da carga;
-        \item \emph{R} é a resistência e \emph{X} a reatância da linha de transmissão;
-        \item \emph{$L_p$} e \emph{$L_q$} são as perdas ativas e reativas, respectivamente.
-    \end{itemize}
-    
 \end{frame}
 
 \begin{frame}{Desvantagens}
 Desvantagens:
     \begin{itemize}
-        \item Não calcula o ângulo das tensões.
-        \item Aplicável somente a sistemas radiais.
+        \item aplicável somente a sistemas radiais;
+        \item não considera o acoplamento entre linhas.
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Método Soma de Correntes}
+\begin{frame}{Método Soma de Correntes (MSC)}
     Proposto em \cite{ShirmohammadiMono, Shirmohammadi3F}, também consiste em duas operações, chamadas de varredura para trás (\textit{backward sweep}) e varredura para frente (\textit{forward sweep}). 
     
     \begin{itemize}
@@ -326,105 +345,307 @@ Desvantagens:
     
 \end{frame}
 
-\begin{frame}{Otimização por redução de barras}
-    Em andamento...
+\begin{frame}{Algoritmo de redução de barras}
+    Parte do princípio de que barras inertes podem ser removidas do sistema sem causar divergência no fluxo de potência.
 \end{frame}
 
+\begin{frame}{Algoritmo de redução de barras}
+    \begin{figure}[h]
+      \centering
+      \caption{Sistema radial monofásico com 6 barras.}
+      \includegraphics[width=\textwidth]{img/barreduc}
+      \label{fig:barreduc}
+      
+      \small Fonte: Autoria própria.
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Algoritmo de redução de barras}
+ \begin{figure}[h]
+   \centering
+   \caption{Conexão entre as barras 3 e 5 para o sistema da figura \ref{fig:barreduc}.}
+   \includegraphics[scale=0.7]{img/barreduc1}
+   \label{fig:barreduc1}
+   
+   \small Fonte: Autoria própria.
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Algoritmo de redução de barras}
+    \begin{figure}[h]
+      \centering
+      \caption{Conexão entre as barras \textit{1} e \textit{3} da figura \ref{fig:barreduc}.}
+      \label{fig:barreduc2}
+      
+      \subfloat[Com a barra 2.]{%
+        \label{fig:barreduc2a}
+        \includegraphics[scale=0.35]{img/barreduc2}
+      }
+      
+      \subfloat[Sem a barra 2.]{%
+        \label{fig:barreduc2b}
+        \includegraphics[scale=0.35]{img/barreduc3}
+      }
+      
+      \small Fonte: Autoria própria.
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Algoritmo de redução de barras}
+  \begin{figure}[h]
+    \centering
+    \caption{Sistema reduzido.}
+    \includegraphics[width=\textwidth]{img/barreduc4}
+    \label{fig:barreduc4}
+    
+    \small Fonte: Autoria própria.
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Comparação entre os algoritmos - Tensão monofásica}
+  Reinsere as barras removidas no sistema, calculando sua tensão.
+  
+  Para sistemas monofásicos, não há divergência nos resultados.
+  
+  Para sistemas trifásicos, há uma variação nos valores das barras reinseridas.
+  
+\end{frame}
 \section{Resultados}
 
-\begin{frame}{Validação dos algoritmos - Tensão}
-    \begin{table}
-        \caption{Tesões no sistema de 69 barras\footnote{Margem de erro 1\%}. Valores em volts.}
-        \begin{tabular}{cccc}
-            \toprule
-            Barra & Soma de potências & Soma de correntes & Diferença \\
-            \midrule
-            0 & 12.661,3 & 12.661,3 & 0.00 \\
-            1 & 12.660,9 & 12.660,9 & 0.00 \\
-            2 & 12.660,4 & 12.660,4 & 0.00 \\
-            3 & 12.660,4 & 12.660,4 & 0.00 \\
-            4 & 12.659,2 & 12.659,2 & 0.00 \\
-            5 & 12.648,8 & 12.648,8 & 0.00 \\
-            6 & 12.535,7 & 12.535,7 & 0.00 \\
-            7 & 12.418,1 & 12.418,1 & 0.00 \\
-            8 & 12.390,0 & 12.390,0 & 0.00 \\
-            9 & 12.375,7 & 12.375,7 & 0.00 \\
-            \bottomrule
-        \end{tabular}
-    \end{table}
+\begin{frame}{Comparação entre os algoritmos - Tensão monofásica}
+    \begin{longtable}{lllr}
+      \caption{Módulo da tensão de linha nas barras do sistema de 14 barras.}\label{tab:14b_v}\\
+      \toprule
+      \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+      & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+      \midrule
+      \endfirsthead
+      
+      \multicolumn{4}{c}%
+      {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+      \toprule
+      \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+      & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+      \midrule
+      \endhead
+      
+      \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+      \endfoot
+      
+      \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+      \endlastfoot
+      
+      0&13279.0562&13279.0562&0\\
+      3&13155.1064&13155.1064&0\\
+      4&13116.8665&13116.8665&0\\
+      5&13093.0194&13093.0194&0\\
+      6&13078.4579&13078.4579&0\\
+      7&13000.9878&13000.9878&0\\
+      8&12894.9325&12894.9325&0\\
+      9&12972.5789&12972.5789&0\\
+      10&12893.4175&12893.4175&0\\
+      11&12870.9415&12870.9415&0\\
+
+    \end{longtable}
     
 \end{frame}
 
-\begin{frame}{Validação dos algoritmos - Perdas}
-    \begin{table}
-        \caption{Perdas no sistema de 69 barras\footnote{Margem de erro 1\%}. Valores em VA.}
-        \begin{tabular}{ccccc}
-            \toprule
-            Nó inicial & Nó final & Soma de potências & Soma de correntes\\
-            \midrule
-            0 & 1 & 0.07498 + 0.17995j & 0.07498 + 0.17995j \\
-            1 & 2 & 0.07498 + 0.17995j & 0.07498 + 0.17995j \\
-            2 & 3 & 0.01431 + 0.01431j & 0.01431 + 0.01431j \\
-            3 & 4 & 0.19493 + 0.46785j & 0.19493 + 0.46785j \\
-            4 & 5 & 1.93656 + 2.26832j & 1.93656 + 2.26832j \\
-            5 & 6 & 28.2383 + 14.3815j & 28.2383 + 14.3815j \\
-            6 & 7 & 29.3461 + 14.9464j & 29.3461 + 14.9464j \\
-            7 & 8 & 6.89402 + 3.51431j & 6.89402 + 3.51431j \\
-            8 & 9 & 3.37479 + 1.71820j & 3.37479 + 1.71820j \\
-            9 & 10 & 4.77740 + 1.57905j & 4.77740 + 1.57905j \\
-            \bottomrule
-        \end{tabular}
+\begin{frame}{Validação dos algoritmos - Perdas monofásicas}
+\begin{longtable}{llllr}
+  \caption{Comparação entre as perdas nas linhas do sistema de 14 barras.}\label{tab:14b_l}\\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [kVA]}$}&\multirow{2}{*}{$\mathbf{\Delta S_{perda} [kVA]}$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{5}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{$\mathbf{Barra_i}$}&\multirow{2}{*}{$\mathbf{Barra_f}$}&\multicolumn{2}{c}{$\mathbf{S_{perda} [kVA]}$}&\multirow{2}{*}{$\mathbf{\Delta}S_{perda} [\%]$}\\
+  && \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{5}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{5}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&3&61.63 + 82.17i&61.63 + 82.17i&0\\
+  0&7&278.33 + 278.33i&278.33 + 278.33i&0\\
+  0&12&29.07 + 29.07i&29.07 + 29.07i&0\\
+  3&4&7.51 + 10.32i&7.51 + 10.32i&0\\
+  3&5&11.94 + 23.89i&11.94 + 23.89i&0\\
+  5&6&1.52 + 1.52i&1.52 + 1.52i&0\\
+  7&8&87.01 + 119.63i&87.01 + 119.63i&0\\
+  7&9&2.08 + 2.080i&2.08 + 2.08i&0\\
+  8&10&0.71 + 0.710i&0.71 + 0.710i&0\\
+
+\end{longtable}
+\end{frame}
+
+\begin{frame}{Comparação entre os algoritmos - Tensão trifásica}
+  \begin{longtable}{lllr}
+    \caption{Módulo da tensão de linha nas barras do sistema de 34 barras (fase $a$).}\label{tab:34b_va}\\
+    \toprule
+    \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+    & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+    \midrule
+    \endfirsthead
+    
+    \multicolumn{4}{c}%
+    {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+    \toprule
+    \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+    & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+    \midrule
+    \endhead
+    
+    \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+    \endfoot
+    
+    \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+    \endlastfoot
+    
+    0&14376.0217&14376.0217&0\\
+    2&14328.2494&14317.0068&-0.078465\\
+    6&14296.1153&14277.4644&-0.13046\\
+    8&13696.3155&13545.2221&-1.1032\\
+    10&13696.3155&13545.2221&-1.1032\\
+    12&13004.399&12705.208&-2.3007\\
+    56&12093.691&11579.1058&-4.255\\
+    64&11671.7313&11048.7036&-5.3379\\
+    88&11698.3139&11080.3959&-5.2821\\
+    90&11658.4819&11025.2575&-5.4314\\
+  \end{longtable}
+\end{frame}
+
+\begin{frame}{Validação dos algoritmos - Perdas trifásicas}
+\begin{longtable}{lllr}
+  \caption{Módulo da tensão de linha nas barras do sistema de 34 barras (fase $b$).}\label{tab:34b_vb}\\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endfirsthead
+  
+  \multicolumn{4}{c}%
+  {{\bfseries \tablename\ \thetable{} -- continuação da página anterior}} \\
+  \toprule
+  \multirow{2}{*}{\textbf{Barra}}& \multicolumn{2}{c}{\textbf{Tensão [V]}}&\multirow{2}{*}{\textbf{$\mathbf{\Delta}$V [\%]}}\\
+  & \multicolumn{1}{c}{MSC} & \multicolumn{1}{c}{MSP} & \\
+  \midrule
+  \endhead
+  
+  \midrule \multicolumn{4}{r}{{Continua na próxima página}} \\
+  \endfoot
+  
+  \bottomrule \multicolumn{4}{c}{\small Fonte: Autoria própria.}
+  \endlastfoot
+  
+  0&14376.0217&14376.0217&0\\
+  2&14335.786&14320.2529&-0.10835\\
+  6&14309.7979&14283.7781&-0.18183\\
+  8&13844.7644&13624.9811&-1.5875\\
+  64&11873.0989&11106.6181&-6.4556\\
+  88&11918.0186&11151.7078&-6.4299\\
+  90&11882.2571&11096.926&-6.6093\\
+\end{longtable}
+\end{frame}
+
+\begin{frame}{Comparação de desempenho - Tempo}
+  \begin{figure}[h!]
+    \centering
+    \caption{Tempo de execução dos algoritmos do fluxo de potência.}
+    \includegraphics[scale=0.5]{img/tempo}
+    \label{fig:tempo}
+    
+    \small Fonte: Autoria própria.
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Comparação de desempenho - Iterações}
+  \begin{figure}[h!]
+    \centering
+    \caption{Número de iterações necessárias para convergência dos sistemas de teste.}
+    \includegraphics[scale=0.5]{img/itera}
+    \label{fig:itera}
+    
+    \small Fonte: Autoria própria.
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Sistemas reduzidos}
+    \begin{table}[h]
+      \centering
+      \caption{Barras removidas.}
+      \begin{tabular}{cccc}
+        \toprule
+        \multicolumn{1}{c}{\textbf{Sistema original}} & \textbf{Barras} & \multicolumn{1}{c}{\textbf{Sistema reduzido}} & \multirow{ 2}{*}{\textbf{Redução [\%]}} \\
+        \multicolumn{1}{c}{\textbf{[barras]}}& \textbf{removidas} & \multicolumn{1}{c}{\textbf{[barras]}} & \\
+        \midrule
+        14		& 0    & 14  & 0 \\
+        34		& 5    & 29  & 14,7 \\
+        70		& 18   & 52  & 25,7 \\
+        136		& 24   & 112 & 17,6 \\
+        793		& 428  & 365 & 54,0 \\
+        3373  & 2748 & 625 & 81,5 \\
+        \bottomrule
+      \end{tabular}
+      \label{tab:tempootm}
+      
+      \small Fonte: Autoria própria.
     \end{table}
 \end{frame}
 
-\begin{frame}{Comparação de desempenho sem otimização - Tempo}
-    \begin{figure}
-        \centering
-        \caption{Tempo de convergência para os sistemas de teste.}
-        \begin{tikzpicture}
-        \begin{axis}[
-        legend pos=north west,
-        xlabel={Barras},
-        ylabel={Duração [ms]},
-        width=0.9\textwidth,
-        height=6cm,
-        ]
-        
-        \addplot plot coordinates {(14, 0) (69, 3) (136, 7) (794, 43) (3375, 204)};
-        \addplot plot coordinates {(14, 0) (69, 2) (136, 4) (794, 65) (3375, 605)};
-        
-        \legend{Soma das potências, Soma das correntes}
-        
-        \end{axis}
-        \end{tikzpicture}
-    \end{figure}
+\begin{frame}{Comparação de desempenho com redução - Tempo}
+  \begin{figure}[h!]
+    \centering
+    \caption{Tempo de execução dos algoritmos do fluxo de potência.}
+    \includegraphics[scale=0.5]{img/tempootm}
+    \label{fig:tempootm}
+    
+    \small Fonte: Autoria própria.
+  \end{figure}
 \end{frame}
 
-\begin{frame}{Comparação de desempenho sem otimização - Iterações}
-    \begin{figure}
-        \centering
-        \caption{Número de iterações necessárias para convergência dos sistemas de teste.}
-        \begin{tikzpicture}
-        \begin{axis}[
-        legend pos=north east,
-        xlabel={Barras},
-        ylabel={Número de iterações},
-        width=0.9\textwidth,
-        height=6cm,
-        ]
-        
-        \addplot plot coordinates {(14, 5) (69, 7) (136, 6) (794, 6) (3375, 7)};
-        \addplot plot coordinates {(14, 7) (69, 8) (136, 8) (794, 7) (3375, 7)};
-        
-        \legend{Soma das potências, Soma das correntes}
-        
-        \end{axis}
-        \end{tikzpicture}
-    \end{figure}
+\begin{frame}{Comparação de desempenho com redução - Iterações}
+  \begin{figure}[h!]
+    \centering
+    \caption{Número de iterações necessárias para convergência dos sistemas de teste.}
+    \includegraphics[scale=0.5]{img/iteraotm}
+    \label{fig:iteraotm}
+    
+    \small Fonte: Autoria própria.
+  \end{figure}
 \end{frame}
 
-\begin{frame}{Comparação de desempenho - com otimização}
-    Necessário implementar o algoritmo de otimização.
+\begin{frame}{Erro introduzido pela expansão - Monofásico}
+  Não há variação nos resultados para os sistemas monofásicos.
+\end{frame}
+
+\begin{frame}{Erro introduzido pela expansão - Trifásico}
+  \small
+\begin{table}[h]
+  \centering
+  \caption{Erro devido a expansão do sistema reduzido (34 barras).}
+  \begin{tabular}{ccccc}
+    \toprule
+    \multirow{2}{*}{\textbf{Fase}} & \multirow{2}{*}{$ \mathbf{Erro_{máx}^{MSC}\,[V]} $} & \multirow{2}{*}{$ \mathbf{Erro_{máx}^{MSP}\,[V]} $} & $ \mathbf{Erro_{máx}^{MSC}} $ \textbf{em} & $ \mathbf{Erro_{máx}^{MSP}} $ \textbf{em}\\
+    &&& \textbf{relação a} $\mathbf{V_{base}}$ \textbf{[\%]}& \textbf{relação a} $\mathbf{V_{base}}$ \textbf{[\%]}\\
+    \midrule
+    $a$		& 127 & 362  & 0,88 & 2,52 \\
+    $b$		& 235 & 2760 & 1,63 & 19,19 \\
+    $c$		& 56  & 1.090& 0.39 & 7,58 \\
+    \bottomrule
+  \end{tabular}
+  \label{tab:erro}
+  
+  \small Fonte: Autoria própria.
+\end{table}
+\normalsize
 \end{frame}
 
 \begin{frame}{\textit{QuickFlow}}
@@ -456,7 +677,12 @@ Desvantagens:
 \end{frame}
 
 \begin{frame}{Conclusão}
-    Até o presente momento, foi observado que os métodos de resolução do fluxo de potência, empregados no trabalho, se mostram bastante robustos em relação à convergência. O desempenho dos mesmos é satisfatório, sendo necessário poucos milissegundos, em um computador de uso pessoal, para o cálculo dos parâmetros em sistemas compostos por milhares de barras. Em relação a comparação entre os métodos, foi possível observar um melhor desempenho do método da soma das potências, porém, o mesmo não provê a informação sobre a fase das tensões na rede.
+    Foi observado que os métodos de resolução do fluxo de potência, empregados no trabalho, se mostram bastante robustos em relação à convergência. O desempenho dos mesmos é satisfatório, sendo necessário poucos milissegundos, em um computador de uso pessoal, para o cálculo dos parâmetros em sistemas compostos por milhares de barras. 
+    
+    Em relação a comparação entre os métodos, foi possível observar um melhor desempenho do método da soma das potências, porém, o mesmo não o acoplamento entre as linhas, nos sistemas trifásicos.
+    
+    A redução de barras demonstrou uma melhora considerável no desempenho dos algoritmos do fluxo de potência, porém, em sistemas trifásicos, foi produzido um erro significativo para o método MSP.
+    
     Quanto a \textit{interface} gráfica, a mesma se mostrou bastante útil na análise de sistemas de distribuição de energia elétrica, agilizando a avaliação dos resultados e o teste com sistemas diferentes.
 \end{frame}
 
@@ -473,6 +699,8 @@ Desvantagens:
   \bibliographystyle{plain}
 
 \end{frame}
+
+\plain{Muito Obrigado!}
 
 \plain{Perguntas?}
 
