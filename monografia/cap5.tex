@@ -1,4 +1,4 @@
-\chapter{Algorítimo para redução de barras}\label{chp:redução}
+\chapter{Algoritmo para redução de barras}\label{chp:redução}
 
 \section{Teoria}
 Nos sistemas de distribuição, várias barras são utilizadas para representar elementos que não consomem e nem geram energia ou para ramificação de um ponto. Isso eleva a quantidade de barras no sistema, afetando diretamente o desempenho dos algoritmos de cálculo do fluxo de potência.
@@ -33,8 +33,8 @@ Considerando o modelo de linha curta, a remoção da barra se aplica em dois casos
 
 Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo do fluxo de potência e sua remoção acarreta em erro nos resultados.
 
-\subsection{Exemplo de aplicação}
-  A figura \ref{fig:barreduc} apresenta o diagrama unifilar de um sistema monofásico radial, com duas cargas ($S_{l4}$ e $S_{l6}$) e um gerador ($G$). 
+\subsection{Análise de um sistema redutível}
+  A Figura \ref{fig:barreduc} apresenta o diagrama unifilar de um sistema monofásico radial, com duas cargas ($S_{l4}$ e $S_{l6}$) e um gerador ($G$). 
   
   \begin{figure}[h]
     \centering
@@ -49,14 +49,14 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
   
   \begin{figure}[h]
     \centering
-    \caption{Conexão entre as barras 3 e 5 para o sistema da figura \ref{fig:barreduc}.}
+    \caption{Conexão entre as barras 3 e 5 para o sistema da Figura \ref{fig:barreduc}.}
     \includegraphics[scale=0.7]{barreduc1}
     \label{fig:barreduc1}
     
     \small Fonte: Autoria própria.
   \end{figure}
     
-  A corrente de linha $I_{35}$ é zero, conforme mostra a figura \ref{fig:barreduc1}. Sendo assim, a tensão $V_5$ será sempre igual a $V_3$, pois:
+  A corrente de linha $I_{35}$ é zero, conforme mostra a Figura \ref{fig:barreduc1}. Sendo assim, a tensão $V_5$ será sempre igual a $V_3$, pois:
   \[
   V_5 = V_3 - Z_{35}I_{35},
   \]
@@ -70,11 +70,11 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
   
   Após o cálculo do fluxo de potência, a barra 5 pode ser reinserida no sistema, sendo sua tensão igual a $V_3$ e as perdas na linha, que a conecta à barra 3, iguais a zero.
   
-  A única barra intermediaria elegível para remoção é a barra 2. A figura \ref{fig:barreduc2a} mostra a conexão que realiza a transferência de potência da barra 1 para a barra 3 e a figura \ref{fig:barreduc2b} mostra a mesma transferência, porém, sem a barra 2.
+  A única barra intermediaria elegível para remoção é a barra 2. A Figura \ref{fig:barreduc2a} mostra a conexão que realiza a transferência de potência da barra 1 para a barra 3 e a Figura \ref{fig:barreduc2b} mostra a mesma transferência, porém, sem a barra 2.
   
   \begin{figure}[h]
     \centering
-    \caption{Conexão entre as barras \textit{1} e \textit{3} da figura \ref{fig:barreduc}.}
+    \caption{Conexão entre as barras \textit{1} e \textit{3} da Figura \ref{fig:barreduc}.}
     \label{fig:barreduc2}
     
     \subfloat[Com a barra 2.]{%
@@ -98,7 +98,7 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
   
   Parte da energia é transferida à barra 3 e outra parte é perdida nas linhas. Nota-se que a barra 2 é inerte, ou seja, não insere nem remove energia no sistema.
   
-  Ao remover a barra 2 e substituir as linhas por uma linha equivalente (figura \ref{fig:barreduc2b}), a quantidade de energia que chega na barra 3 continua sendo a mesma, ou seja, a tensão e a corrente nas barras 1 e 3 serão as mesmas, independente da presença da barra 2.
+  Ao remover a barra 2 e substituir as linhas por uma linha equivalente (Figura \ref{fig:barreduc2b}), a quantidade de energia que chega na barra 3 continua sendo a mesma, ou seja, a tensão e a corrente nas barras 1 e 3 serão as mesmas, independente da presença da barra 2.
   
   A corrente na linha que conecta 1 e 3 é: 
   \[
@@ -112,26 +112,26 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
   Z_{13}^{eq.} = Z_{12} + Z_{23} = (R_{12} + R_{23}) + j(X_{12} + X_{23}).
   \end{equation}
 
-  Para a reintrodução da barra 2, após o cálculo do fluxo de potência, a tensão $V_2$ é determinada a partir da equação \ref{equ:vintermed}, que surge a partir da aplicação direta da Lei de Ohm.
+  Para a reintrodução da barra 2, após o cálculo do fluxo de potência, a tensão $V_2$ é determinada a partir da equação \ref{equ:vintermed}, que surge a partir da aplicação direta da Lei de Ohm,
   
   \begin{equation}
   \label{equ:vintermed}
-  V_2 = V_1 - Z_{12}I_{12}
+  V_2 = V_1 - Z_{12}I_{12}.
   \end{equation}
   
   As perdas nos trechos 1 para 2 e 2 para 3 são proporcionais a impedância, sendo calculadas com as equações \ref{equ:comperdaa} e \ref{equ:comperdab}, respectivamente.
   
   \begin{equation}
     \label{equ:comperdaa}
-    Perda_{12} = Perda_{13}.\frac{Z_{12}}{Z_{12} + Z_{23}}
+    Perda_{12} = Perda_{13}.\frac{Z_{12}}{Z_{12} + Z_{23}},
   \end{equation}
   
   \begin{equation}
   \label{equ:comperdab}
-    Perda_{23} = Perda_{13}.\frac{Z_{23}}{Z_{12} + Z_{23}}
+    Perda_{23} = Perda_{13}.\frac{Z_{23}}{Z_{12} + Z_{23}}.
   \end{equation}
 
-  Após a redução de barras, o sistema fica conforme a figura \ref{fig:barreduc4}. O resultado do fluxo de potência será igual ao obtido para o sistema completo da figura \ref{fig:barreduc}, porém, o tempo necessário para o cálculo será menor, visto que o sistema reduzido possui somente 4 barras.
+  Após a redução de barras, o sistema fica conforme a Figura \ref{fig:barreduc4}. O resultado do fluxo de potência será igual ao obtido para o sistema completo da Figura \ref{fig:barreduc}, porém, o tempo necessário para o cálculo será menor, visto que o sistema reduzido possui somente 4 barras.
   
   \begin{figure}[h]
     \centering
@@ -147,7 +147,7 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
   
   Para a representação da linha equivalente no modelo da seção \ref{subsec:linha}, as impedâncias próprias das fases são somadas, enquanto que as impedâncias de acoplamento são consideradas em paralelo. Esse método é válido pois as impedâncias de acoplamento se estendem por todo o comprimento da linha.
   
-  Como exemplo, a impedância equivalente ($\mathbf{Z}_{ik}^{eq.}$) para duas linhas, que conectam as barras \textit{i}, \textit{j} e \textit{k,}  de impedâncias $\mathbf{Z}_{ij}$ e $\mathbf{Z}_{jk}$ é determinada na equação \ref{equ:ztri}.
+  Como exemplo, a impedância equivalente ($\mathbf{Z}_{ik}^{eq.}$) para duas linhas, que conectam as barras \textit{i}, \textit{j} e \textit{k,}  de impedâncias $\mathbf{Z}_{ij}$ e $\mathbf{Z}_{jk}$ é determinada na equação \ref{equ:ztri},
   
   \begin{equation}
     \label{equ:ztri}
@@ -159,7 +159,7 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
     \end{matrix} \right].
   \end{equation}
   
-  Para a reintrodução das barras no sistema, os cálculos são feitos de forma desacoplada (equações \ref{equ:vtri}, \ref{equ:losstriij} e \ref{equ:losstrijk}), i.e., desprezado o efeito das impedâncias de acoplamento entre as linhas. Isso introduz um pequeno erro no valor da tensão nas barras e nas perdas das linhas.
+  Para a reintrodução das barras no sistema, os cálculos são feitos de forma desacoplada (equações \ref{equ:vtri}, \ref{equ:losstriij} e \ref{equ:losstrijk}), i.e., desprezado o efeito das impedâncias de acoplamento entre as linhas. Isso introduz uma pequena divergência no valor da tensão nas barras e, também, nas perdas das linhas.
   
   \begin{equation}
     \label{equ:vtri}
@@ -182,7 +182,7 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
       I_{a}^{ij} \\
       I_{b}^{ij} \\
       I_{c}^{ij} \\
-    \end{matrix} \right]
+    \end{matrix} \right],
   \end{equation}
   
   \begin{equation}
@@ -201,7 +201,7 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
       Perda_{a}^{ik} \\
       Perda_{b}^{ik} \\
       Perda_{c}^{ik} \\
-    \end{matrix} \right]
+    \end{matrix} \right],
   \end{equation}
   
     \begin{equation}
@@ -220,7 +220,7 @@ Barras fora das condições 1 e 2 não podem ser removidas porque afetam o cálculo 
     Perda_{a}^{ik} \\
     Perda_{b}^{ik} \\
     Perda_{c}^{ik} \\
-    \end{matrix} \right]
+    \end{matrix} \right].
     \end{equation}
     
 \section{Algoritmo de redução}
@@ -231,7 +231,7 @@ Quando uma barra removível é encontrada, a mesma é retirada do sistema, em conju
 
 A barra removida é então inserida em uma memória do tipo LIFO (\textit{Last In First Out}) \cite{Cormen}, para posteriormente ser reintroduzida no sistema. A memória LIFO é importante no caso de múltiplas barras removidas em sequência, garantindo que a restauração das mesmas ocorrerá na ordem em que foram removidas, evitando um embaralhamento do sistema.
 
-O algoritmo proposto, para realizar a remoção das barras, é apresentado na forma de fluxograma na figura \ref{fig:reducflux}. A linha tracejada no retorno da função ''Processa Barra'' indica a recursão do algoritmo.
+O algoritmo proposto, para realizar a remoção das barras, é apresentado na forma de fluxograma na Figura \ref{fig:reducflux}. A linha tracejada no retorno da função ''Processa Barra'' indica a recursão do algoritmo.
 
 A memória LIFO também está tracejada porque deve ser criada fora do escopo da função, visto que será utilizada pelo algoritmo de restauração.
 
@@ -245,14 +245,14 @@ A memória LIFO também está tracejada porque deve ser criada fora do escopo da fu
   \end{figure}
 
 \section{Algoritmo de restauração e compensação}
-  Para reintroduzir as barras removidas do sistema, é necessário utilizar a memória FIFO que foi preenchida durante a fase de redução.
+  Para reintroduzir as barras removidas do sistema, é necessário utilizar a memória LIFO que foi preenchida durante a fase de redução.
   
-  O algoritmo se dá de acordo com as etapas abaixo.
+  O algoritmo se dá de acordo com as seguintes etapas.
   
   \begin{enumerate}
     \item\label{enu:checkfifo} O primeiro passo é verificar se há barras para recuperação na memória FIFO. Caso não haja, a função retorna.
     
-    \item Em seguida, a barra a ser restaurada é retirada da memória FIFO.
+    \item Em seguida, a barra a ser restaurada é retirada da memória LIFO.
     
     \item A barra é reinserida na rede, i.e., o seu endereço é adicionado a estrutura que armazena as barras contidas no sistema.
     
@@ -260,7 +260,7 @@ A memória LIFO também está tracejada porque deve ser criada fora do escopo da fu
     
     \item Caso possua somente uma, a linha é reinserida no sistema.
     
-    \item É determinada a tensão na barra restaurada como sendo a tensão da barra na outra conexão da linha. A corrente e as perda na linha são igualadas a zero.
+    \item É determinada a tensão na barra restaurada como sendo a tensão da barra na outra conexão da linha. A corrente e as perdas na linha são igualadas a zero.
     
     \item A rotina retorna então ao passo \ref{enu:checkfifo}.
     
@@ -275,7 +275,7 @@ A memória LIFO também está tracejada porque deve ser criada fora do escopo da fu
     \item A rotina retorna ao passo \ref{enu:checkfifo}.
   \end{enumerate}
   
-  O algoritmo é apresentado na forma de fluxograma na figura \ref{fig:expand}. Novamente, a memória LIFO aparece em tracejado pois a mesma está declarada fora da rotina ''Recupera Barras''.
+  O algoritmo é apresentado na forma de fluxograma na Figura \ref{fig:expand}. Novamente, a memória LIFO aparece em tracejado pois a mesma está declarada fora da rotina ''Recupera Barras''.
   
   \begin{figure}[h!]
     \centering
@@ -291,4 +291,4 @@ A memória LIFO também está tracejada porque deve ser criada fora do escopo da fu
 \section{Desvantagem da redução}
   Devido ao custo computacional para realizar o remoção de barras, é necessário que sejam retiradas um número substancial de barras do sistema. Caso contrário, o tempo utilizado pelos algoritmos de redução e restauração fazem com que seja mais dispendioso o cálculo do fluxo de potência com redução do que sem.
   
-  Uma outra desvantagem é a introdução do erro na tensão das barras removidas para sistemas trifásicos, devido a característica desacoplada da restauração. Se a interferência entre linhas for muito grande, o erro resultante pode ser prejudicial para análise do sistema.
+  Uma outra desvantagem é a introdução do erro na tensão das barras removidas para sistemas trifásicos, devido à característica desacoplada da restauração. Se a interferência entre linhas for muito grande, o erro resultante pode ser prejudicial para análise do sistema.

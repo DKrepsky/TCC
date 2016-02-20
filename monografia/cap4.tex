@@ -7,7 +7,7 @@ Para o estudo do fluxo de potência, é preciso realizar a modelagem matemática do
 \subsection{Linhas trifásicas}\label{subsec:linha}
 As linhas nas redes de distribuição são, geralmente, modeladas utilizando o modelo de linha curta para as redes primárias e secundárias e o de linha média ($\pi$ nominal) para as redes de subtransmissão \cite{Kagan}.
 
-Neste trabalho é utilizado o modelo de linha curta a três fios, considerando o efeito do acoplamento entre as linha. Assim, a linha de transmissão pode ser representada graficamente conforme a figura \ref{fig:linha-tri}.
+Neste trabalho é utilizado o modelo de linha curta a três fios, considerando o efeito do acoplamento entre as linha. Assim, a linha de transmissão pode ser representada graficamente conforme a Figura \ref{fig:linha-tri}.
 
 \begin{figure}[h]
     \centering
@@ -26,7 +26,7 @@ O modelo matemático utilizado para descrever a linha que conecta as barras \text
 Z_{aa} & Z_{ab} & Z_{ac} \\
 Z_{ba} & Z_{bb} & Z_{bc} \\
 Z_{ca} & Z_{cb} & Z_{cc} \\
-\end{matrix} \right]
+\end{matrix} \right],
 \]
 
 onde os elementos $Zaa$, $Zbb$ e $Zcc$ são a impedância própria das fases \textit{a}, \textit{b} e \textit{c}, respectivamente, e os outros elementos são a impedância do acoplamento entre as fases.
@@ -51,13 +51,13 @@ S_{ic}\\
 P_{ia} + jQ_{ia}\\
 P_{ib} + jQ_{ib}\\
 P_{ic} + jQ_{ic}\\
-\end{matrix} \right]
+\end{matrix} \right],
 \]
 
 onde $P$ é a potência real e $Q$ é a potência reativa.
 
 \subsection{Capacitores \textit{Shunt}}
-Os elementos \textit{shunt} também são considerados como tendo potência constante. A notação utilizada para descrever-los é a mesma para as cargas e geradores.
+Os elementos \textit{shunt} também são considerados como tendo potência constante. A notação utilizada para descreve-los é a mesma para as cargas e geradores.
 
 \section{Método da soma das potências}
 
@@ -65,18 +65,18 @@ O método da soma das potências (MSP), originalmente proposto por \cite{Cespedes}
 
 O algoritmo consiste em duas operações, uma a montante, ou seja, a partir dos nós mais distantes da barra de referência, e uma operação a jusante, partindo da barra de referência até as barras finais.
 
-Na operação a montante, são calculadas as potências equivalentes em cada nó, i.e., somando somando todas as potências que são alimentadas através da barra, incluindo as perdas.
+Na operação a montante, são calculadas as potências equivalentes em cada nó, i.e., somando todas as potências que são alimentadas através da barra, incluindo as perdas.
 
 Assim, primeiro é calculada a potência na barra através da equação \ref{equ:scespedes}, até a barra inicial.
 
 \begin{equation}
-\mathbf{S}_{i}^{equivalente} = \mathbf{S}_i + \sum_{m \, \in \, M}(\mathbf{S}_m + \mathbf{L}_m)
+\mathbf{S}_{i}^{equivalente} = \mathbf{S}_i + \sum_{m \, \in \, M}(\mathbf{S}_m + \mathbf{L}_m),
 \label{equ:scespedes}
 \end{equation}
 
 onde $\sum(\mathbf{S}_m + \mathbf{L}_m)$ é a soma das potência e perdas no conjunto de linhas M, que saem da barra \textit{i} para as barras à montante.
 
-Na operação à jusante, partindo da barra inicial, é determinado o valor absoluto da tensão em cada barra com o uso da equação \ref{equ:vcespedes} ou \ref{equ:vcespedes2}.
+Na operação à jusante, partindo da barra inicial, é determinado o valor absoluto da tensão em cada barra com o uso da equação \ref{equ:vcespedes} ou \ref{equ:vcespedes2},
 
 
 \begin{figure}[h]
@@ -91,34 +91,25 @@ Na operação à jusante, partindo da barra inicial, é determinado o valor absoluto
 \begin{equation}
 \label{equ:vcespedes}
 |V_{j}|^4 + (2\mathfrak{Re} \{S^* \cdot Z\} - |V_{i}|^2)|V_{j}|^2 + \mathfrak{Re} \{S^* \cdot Z\}^2 + 
-\mathfrak{Im} \{S^* \cdot Z\}^2 = 0    
+\mathfrak{Im} \{S^* \cdot Z\}^2 = 0,
 \end{equation}
 
 \begin{equation}
 \label{equ:vcespedes2}
-|V_j|^4 + [2 \cdot (PR+QX) -  |V_i|^2] \cdot  |V_j|^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0.  
+|V_j|^4 + [2 \cdot (PR+QX) -  |V_i|^2] \cdot  |V_j|^2 + (P^2 + Q^2) \cdot (R^2 + X^2) = 0,
 \end{equation}
 
-onde:
-\begin{itemize}
-    \item \emph{i}: nó fonte;
-    \item \emph{j}: nó à jusante;
-    \item \emph{$V_i$}: módulo da tensão em \emph{i};
-    \item \emph{$V_j$}: módulo da tensão em \emph{j};
-    \item \emph{P}: potência ativa equivalente da carga em \emph{j}; 
-    \item \emph{Q}: potência reativa equivalente da carga em \emph{j}; 
-    \item \emph{R}: resistência própria da linha;
-    \item \emph{X}: reatância própria da linha.
-\end{itemize}
+sendo \emph{i} o nó fonte, \emph{j} o nó à jusante, \emph{$V_i$} o módulo da tensão em \emph{i}, \emph{$V_j$} o módulo da tensão em \emph{j}, \emph{P} a potência ativa equivalente da carga em \emph{j}, \emph{Q} a potência reativa equivalente da carga em \emph{j}, \emph{R} a resistência própria da linha, \emph{X} a reatância própria da linha.
 
-A equação \ref{equ:vcespedes} surge da aplicação direta da Lei de Ohm ao sistema da figura \ref{fig:cespedes}.
+A equação \ref{equ:vcespedes} surge da aplicação direta da Lei de Ohm ao sistema da Figura \ref{fig:cespedes}.
 
-Ao final da operação a jusante, as perdas são atualizadas através da equação \ref{equ:lcespedes}.
+Ao final da operação a jusante, as perdas são atualizadas através das equações \ref{equ:lcespedes} e \ref{equ:lcespedes2}.
 
  \begin{eqnarray}
  \label{equ:lcespedes}
- L_p = R \frac{(P^2 + Q^2)}{V_j^2} \\
- L_q = X \frac{(P^2 + Q^2)}{V_j^2}
+ L_p = R \frac{(P^2 + Q^2)}{V_j^2}, \\
+ \label{equ:lcespedes2}
+ L_q = X \frac{(P^2 + Q^2)}{V_j^2},
  \end{eqnarray}
 
 sendo \emph{$L_p$} e \emph{$L_q$} as perdas ativas e reativas, respectivamente.
@@ -129,7 +120,7 @@ O ângulo das tensões pode ser calculado, com outra operação a jusante, a partir 
 
 \begin{equation}
 \label{equ:thcespedes}
-\delta_j = \delta_i - cos^{-1} \left( \sqrt{1 - \left( \frac{XP + RQ}{|V_i||V_j|} \right)}\right)
+\delta_j = \delta_i - cos^{-1} \left( \sqrt{1 - \left( \frac{XP + RQ}{|V_i||V_j|} \right)}\right),
 \end{equation}
 
 sendo $\delta_j$ o ângulo da tensão na barra \textit{j} e $\delta_i$ o ângulo da tensão na barra \textit{i}.
@@ -150,7 +141,7 @@ A execução do algoritmo segue os passos a seguir:
 \begin{enumerate}
   \item Primeiro, é assumir um perfil de tensão inicial para as barras, geralmente 1 pu.
   
-  \item O próximo passo é determinar a corrente nas barras através da equação \ref{equ:ishirm}.
+  \item O próximo passo é determinar a corrente nas barras através da equação \ref{equ:ishirm}
   
   \begin{equation}
   \label{equ:ishirm}
@@ -173,23 +164,12 @@ A execução do algoritmo segue os passos a seguir:
   V_{ia} \\
   V_{ib} \\
   V_{ic} \\
-  \end{matrix} \right]^{(k-1)}
+  \end{matrix} \right]^{(k-1)},
   \end{equation}
   
-  onde:
-  \begin{itemize}
-    \item $I_{ia}$, $I_{ib}$ e $I_{ic}$: correntes injetadas na barra \textit{i};
-    
-    \item $S_{ia}$, $S_{ib}$ e $S_{ic}$: potências injetadas na barra \textit{i};
-    
-    \item $V_{ia}$, $V_{ib}$ e $V_{ic}$: tensões na barra \textit{i};
-    
-    \item $Y_{ia}$, $Y_{ib}$ e $Y_{ic}$: admitância dos elementos \textit{shunt} conectados a barra \textit{i};
-    
-    \item \textit{k}: número da iteração.
-  \end{itemize}
+  sendo $I_{ia}$, $I_{ib}$ e $I_{ic}$ as correntes injetadas na barra \textit{i}, $S_{ia}$, $S_{ib}$ e $S_{ic}$ as potências injetadas na barra \textit{i}, $V_{ia}$, $V_{ib}$ e $V_{ic}$ as tensões na barra \textit{i}, $Y_{ia}$, $Y_{ib}$ e $Y_{ic}$ as admitância dos elementos \textit{shunt} conectados a barra \textit{i} e \textit{k} o número da iteração.
   
-  \item Em seguida, é iniciada a operação à montante, onde, partindo dos nós finais até a barra inicial, é calculada a corrente nas linhas com a equação \ref{equ:ilshirm}.
+  \item Em seguida, é iniciada a operação à montante, onde, partindo dos nós finais até a barra inicial, é calculada a corrente nas linhas com a equação \ref{equ:ilshirm},
   
   \begin{equation}
   \label{equ:ilshirm}
@@ -211,9 +191,9 @@ A execução do algoritmo segue os passos a seguir:
   \end{matrix} \right]^{(k)}
   \end{equation}
   
-  onde $ J_{la} $, $ J_{lb} $ e $ J_{lc} $ são as correntes na linha \textit{l} e  $ J_{ma} $, $ J_{mb} $ e $ J_{mc} $ as correntes na linha m, sendo m o conjunto de linha que emanam à jusante da barra \textit{i}.
+  onde $ J_{la} $, $ J_{lb} $ e $ J_{lc} $ são as correntes na linha \textit{l} e  $ J_{ma} $, $ J_{mb} $ e $ J_{mc} $ as correntes na linha m, sendo m o conjunto de linhas que emanam à jusante da barra \textit{i}.
   
-  \item Após o cálculo das correntes de linha, é executada a operação à jusante, utilizando a equação \ref{equ:vshirm} para aplicar a correção de tensão nas barras.
+  \item Após o cálculo das correntes de linha, é executada a operação à jusante, utilizando a equação \ref{equ:vshirm} para aplicar a correção de tensão nas barras,
   
   \begin{equation}
   \label{equ:vshirm}
@@ -236,7 +216,7 @@ A execução do algoritmo segue os passos a seguir:
   J_{la} \\
   J_{lb} \\
   J_{lc} \\
-  \end{matrix} \right]^{(k)}
+  \end{matrix} \right]^{(k)}.
   \end{equation}
   
   \item O critério de convergência é determinado a partir da variação da potência nas barras (equação \ref{equ:cvshirm}). Se a parte real ($P$) ou a parte imaginária ($Q$) de qualquer uma das variações de potência ($\Delta \mathbf{S}_i$) na equação \ref{equ:cvshirm} for maior que o fator de tolerância $\epsilon$, os passos de 2, 3 e 4 são executados novamente, até que se obtenha a convergência ou que atinga um número máximo de iterações.

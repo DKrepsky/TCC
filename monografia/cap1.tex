@@ -5,15 +5,15 @@
 
     Desde a descoberta das cargas elétricas por Tales de Mileto na Grécia antiga, a energia elétrica vem promovendo mudanças radicais na sociedade e no meio ambiente, sendo esse fato mais evidente nas últimas décadas, com o advento dos computadores, equipamentos industriais, satélites de telecomunicações e etc. Sua importância é tão grande que muitas vezes é usada como índice de desenvolvimento dos países e sua disponibilidade implica diretamente na qualidade de vida do ser humano.
      
-    A expansão populacional dos últimos séculos e o desenvolvimento tecnológico acarretam na necessidade de uma produção cada vez maior de energia. Ampliar a capacidade de produção de energia elétrica gera impactos ambientais grandes, como na construção de uma nova usina termo-elétrica, que emite grandes quantidades de gás $CO_2$ na queima de gás natural, derivados do petróleo ou biomassa ou utiliza combustível nuclear, gerando lixo radioativo de difícil descarte, ou em uma hidrelétrica, que requer a inundação de uma vasta área e modifica todo o ecossistema local.
+    A expansão populacional dos últimos séculos e o desenvolvimento tecnológico acarretam na necessidade de uma produção cada vez maior de energia. Ampliar a capacidade de produção de energia elétrica gera impactos ambientais grandes, como, por exemplo, na construção de uma nova usina termo-elétrica, que emite grandes quantidades de gás $CO_2$ na queima de gás natural, derivados do petróleo ou biomassa ou utiliza combustível nuclear, gerando lixo radioativo de difícil descarte, ou em uma hidrelétrica, que requer a inundação de uma vasta área e modifica todo o ecossistema local.
      
     Deve-se aumentar a oferta de energia elétrica, gerando impactos ambientais minimizados e a um custo acessível, para viabilizar a sua utilização, de modo sustentável, por toda a sociedade. 
      
-    Nos últimos anos, o problema ambiental vem sendo abordado através da utilização cada vez maior de energias renováveis e limpas, como a energia solar e a eólica. Porém, tais fontes de energia ainda apresentam um custo elevado por kilowatt produzido.
+    Nos últimos anos, o problema ambiental vem sendo abordado através da utilização cada vez maior de energias renováveis e limpas, como a energia solar e a eólica. Porém, tais fontes de energia requerem um alto grau de investimento inicial, dificultando sua implementação em larga escala \cite{Shayani}.
      
     O viés utilizado para promover a acessibilidade à energia é o da melhora na eficiência dos sistemas de geração, transmissão e distribuição, com foco na redução das perdas e aprimoramento da qualidade e estabilidade da energia elétrica entregue ao consumidor. 
      
-    Muitos trabalhos tem sido desenvolvidos nas áreas de geração, transmissão e distribuição de energia elétrica, sendo dada uma atenção cada vez maior aos sistema de distribuição, pois é o setor que possui as maiores perdas (tanto técnicas quanto não-técnicas) e é a parte mais vulnerável a falhas. Outro motivo para o aumento no interesse em sistemas de distribuição é a possibilidade da inserção de geradores distribuídos, \textit{smart grids} e a capacidade de otimização da rede em tempo real.
+    Muitos trabalhos tem sido desenvolvidos nas áreas de geração, transmissão e distribuição de energia elétrica, sendo dada uma atenção cada vez maior aos sistema de distribuição, pois é o setor que possui as maiores perdas (tanto técnicas quanto não-técnicas) e é a parte mais vulnerável a falhas. Outro motivo para o aumento no interesse em sistemas de distribuição é a possibilidade da inserção de geradores distribuídos, \textit{smart grids} e a capacidade de otimização da rede em tempo real \cite{Brown}.
      
     Desta forma, este trabalho se justifica na necessidade de ferramentas que melhorem os sistemas de distribuição de energia elétrica, tornando-os mais eficientes e confiáveis.
     
@@ -33,11 +33,11 @@
     \end{itemize}
  
 
-    Para realizar as simulações, foi elaborado, como objetivo secundário, o desenvolvimento de um programa gráfico para análise de sistemas de distribuição utilizando os algoritmos acima citados.
+    Para realizar as simulações, foi elaborado, como objetivo secundário, um programa gráfico para análise de sistemas de distribuição utilizando os algoritmos acima citados.
 
 \section{Metodologia}
     
-     Tendo em vista à necessidade de desempenho e o gasto de recursos computacionais do fluxo de potência para sistemas de distribuição, foi adotada a linguagem de programação \textit{C++} para a implementação dos algorítimos, pois a mesma possui uma boa relação entre velocidade de execução e complexidade do código fonte.
+     Tendo em vista à necessidade de desempenho e o gasto de recursos computacionais do fluxo de potência para sistemas de distribuição, foi adotada a linguagem de programação \textit{C++} para a implementação dos algoritmos, pois a mesma possui uma boa relação entre velocidade de execução e complexidade do código fonte.
      De modo a facilitar o desenvolvimento da parte gráfica, foi utilizado o \textit{framework} Qt, o qual possui uma extensa biblioteca de classes e funções em C++ para o desenvolvimento de aplicações multiplataforma.
      
      O computador utilizado para realizar as simulações possui as seguintes configurações:
@@ -69,23 +69,23 @@
     
     No Capítulo \ref{chp:brasil} são apresentadas informações gerais sobre a atual situação do setor de energia elétrica no Brasil. São analisadas as características do sistema elétrico, as fontes de energia e os fatores que influenciam no preço do kWh produzido. 
     
-    Esse capítulo também evidência as perdas no sistema elétrico, mostrando uma comparação em âmbito internacional da eficiência dos sistemas elétricos de potência e investigando os tipos de perda predominante no sistema brasileiro.
+    Esse capítulo também evidência as perdas no sistema elétrico, mostrando uma comparação em âmbito internacional da eficiência dos sistemas elétricos de potência e investigando os tipos de perda predominantes no sistema brasileiro.
     
     É discutido como o fluxo de potência auxilia no melhoramento dos sistemas de distribuição de energia elétrica e a necessidade de algoritmos robustos e velozes. O capítulo termina apresentando outras ferramentas que utilizam o fluxo de potência para aprimorar o custo e a qualidade da energia nos sistemas de distribuição de energia elétrica, como o fluxo ótimo, algoritmos de detecção de furto de energia e os \textit{Smart Grids}.
     
     O Capítulo \ref{chp:sde} explora as características e componentes do sistemas de distribuição de energia elétrica. São apresentados os componentes e as topologias de rede empregadas para levar a energia até os consumidores.
     
-    Faz-se uma menção aos métodos de Newton-Rahpson e de Gauss-Seidel, considerados os métodos clássicos na solução do fluxo de potência, de modo a evidenciar os motivos pelos quais os mesmos apresentam problemas de desempenho e convergência.
+    Faz-se uma menção aos métodos de Newton-Raphson e de Gauss-Seidel, considerados os métodos clássicos na solução do fluxo de potência, de modo a evidenciar os motivos pelos quais os mesmos apresentam problemas de desempenho e convergência.
     
     No Capítulo \ref{chp:fluxo} é apresentado o modelo de linha de transmissão utilizado e são descritos os dois métodos de varredura (soma das potências e soma das correntes) empregados no cálculo do fluxo de potência para sistemas de distribuição, bem como suas limitações teóricas e práticas.  
     
     No Capítulo \ref{chp:redução} é apresentado o método de redução proposto, junto com seu desenvolvimento matemático e as suas implicações. Para facilitar a compreensão, o capítulo explora um exemplo de aplicação a um sistema monofásico e um fluxograma dos algoritmos de redução e expansão, sendo uma sugestão de implementação.
     
-    O Capítulo \ref{chp:resultado} trata da apresentação quantitativa dos resultados obtidos com o uso da ferramenta computacional desenvolvida. São apresentados os resultados dos cálculos para os sistemas de 14 e 34 barras, sendo realizada uma verificação entre o resultado obtido por cada um dos métodos, com e sem a remoção de barras, de modo verificar a diferença numérica resultante. Também é analisado o tempo e o número de iterações utilizado por cada algoritmo para os sistemas de 14, 34, 70, 136, 793 e 3373 barras para determinar qual o método mais rápido e qual o impacto da remoção das barras inertes.
+    O Capítulo \ref{chp:resultado} trata da apresentação quantitativa dos resultados obtidos com o uso da ferramenta computacional desenvolvida. São apresentados os resultados dos cálculos para os sistemas de 14 e 34 barras, sendo realizada uma verificação entre o resultado obtido através de cada um dos métodos, com e sem a remoção de barras, de modo a verificar a diferença numérica resultante. Também é analisado o tempo e o número de iterações utilizado pelos algoritmos para os sistemas de 14, 34, 70, 136, 793 e 3373 barras para determinar qual o método mais rápido e qual o impacto da remoção das barras.
     
     Também é apresentado o programa computacional resultante deste trabalho, a sua organização em termos de software, a abordagem orientada a objetos utilizada para a implementação do fluxo de potência e modelagem dos elementos, suas funcionalidades e suas limitações.
         
-    No Capítulo \ref{chp:conclusao} são apresentadas as conclusões referentes à metodologia utilizada e as técnicas empregadas para execução desta monografia. É feita uma análise qualitativa dos resultados obtidos e de sua importância. São discutidas as dificuldades encontradas durante a execução deste trabalho e os mecanismos utilizados para superar as mesmas. Por fim, são apresentadas algumas ideias para trabalhos futuros, de modo a desenvolver a área de sistemas elétricos de potência. 
+    No Capítulo \ref{chp:conclusao} são apresentadas as conclusões referentes à metodologia utilizada e as técnicas empregadas para a execução desta monografia. É feita uma análise qualitativa dos resultados obtidos e de sua importância. São discutidas as dificuldades encontradas durante a execução deste trabalho e os mecanismos utilizados para superar as mesmas. Por fim, são apresentadas algumas ideias para trabalhos futuros, de modo a desenvolver a área de sistemas elétricos de potência. 
     
     
     

@@ -2,11 +2,11 @@
 
 \section{Sistemas estudados}
 
-Para a determinar a diferença entre ambos os algoritmos, com e sem redução de barras, foram realizados testes com seis sistemas distintos, sendo três sistemas monofásicos (14, 70 e 136 barras) e três trifásicos (34, 793 e 3373 barras).
+Para determinar a diferença entre ambos os algoritmos, com e sem redução de barras, foram realizados testes com seis sistemas distintos, sendo três sistemas monofásicos (14, 70 e 136 barras) e três trifásicos (34, 793 e 3373 barras).
 
 Todos os sistemas estudados são radiais, compostos por barras do tipo PQ (potência ativa e reativa conhecidas) e uma barra de referência (tensão e fase conhecidas). As cargas e os elementos \textit{shunt} são considerados como tendo potência constante, ou seja, a potência não varia com a variação da tensão.
 
-Nas figuras \ref{fig:14b}, \ref{fig:34b}, \ref{fig:70b} e \ref{fig:136b}, que representam os sistemas, as barras do tipo PQ são representadas por círculos e a barra de referência por um quadrado.
+Nas figuras \ref{fig:14b}, \ref{fig:70b}, \ref{fig:136b} e \ref{fig:34b}, que representam os sistemas, as barras do tipo PQ são representadas por círculos e a barra de referência por um quadrado.
 
 Todas as simulações foram realizadas com uma tolerância $\epsilon = 1\times10^{-6}$, com um número máximo de iterações $k_{max} = 1000$.
 
@@ -23,7 +23,7 @@ Os critérios analisados foram:
  \end{itemize}
   
 \subsection{Sistema monofásico com 14 barras}\label{ssec:14b}
-A figura \ref{fig:14b} mostra uma representação do sistema de 14 barras. A tensão de fase na subestação (barra de referência) é de 23,0kV ($V_{linha} \approx 13,279\,kV$).
+A Figura \ref{fig:14b} mostra uma representação do sistema de 14 barras. A tensão de fase na subestação (barra de referência) é de 23,0kV ($V_{linha} \approx 13,279\,kV$).
 
 \begin{figure}[h!]
   \centering
@@ -40,7 +40,7 @@ A tabela \ref{tab:14b_linha_ini} (apêndice \ref{ape:14b}) apresenta a impedância
 
 \subsection{Sistema monofásico com 70 barras}\label{ssec:70b}
 
-A figura \ref{fig:70b} mostra uma representação do sistema de 70 barras. A tensão de fase na subestação é de 21,93kV ($V_{linha} \approx 12,661\,kV$).
+A Figura \ref{fig:70b} mostra uma representação do sistema de 70 barras. A tensão de fase na subestação é de 21,93kV ($V_{linha} \approx 12,661\,kV$).
 \begin{figure}[h!]
   \centering
   \caption{Sistema monofásico com 70 barras.}
@@ -54,7 +54,7 @@ As tabelas \ref{tab:70b_bar_ini} e \ref{tab:70b_linha_ini} (apêndice \ref{ape:70
 
 \subsection{Sistema monofásico com 136 barras}\label{ssec:136b}
 
-A figura \ref{fig:136b} mostra uma representação do sistema de 136 barras. A tensão de fase na subestação é de 23,9kV ($V_{linha} \approx 13,800\,kV$).
+A Figura \ref{fig:136b} mostra uma representação do sistema de 136 barras. A tensão de fase na subestação é de 23,9kV ($V_{linha} \approx 13,800\,kV$).
 
 \begin{figure}[h!]
   \centering
@@ -68,7 +68,7 @@ A figura \ref{fig:136b} mostra uma representação do sistema de 136 barras. A ten
 As tabelas \ref{tab:136b_bar_ini} e \ref{tab:136b_linha_ini} (apêndice \ref{ape:136b}) apresentam as condições de carga do sistema e as características das linhas, respectivamente. O sistema de 136 barras não possui elementos \textit{shunt}.
 
 \subsection{Sistema trifásico com 34 barras}\label{ssec:34b}
-A figura \ref{fig:34b} mostra uma representação do sistema de 34 barras. A tensão de fase na barra de referência é de 24,9kV ($V_{linha} \approx 14,376\,kV$).
+A Figura \ref{fig:34b} mostra uma representação do sistema de 34 barras. A tensão de fase na barra de referência é de 24,9kV ($V_{linha} \approx 14,376\,kV$).
 
 \begin{figure}[h!]
   \centering
@@ -769,13 +769,13 @@ Os sistemas de 793 e 3373 barras apresentaram diferenças ainda maiores que as do
     \small Fonte: Autoria própria.
   \end{figure}
     
-  É possível observar na figura \ref{fig:tempo} que, para sistemas pequenos (< 1000 barras), o tempo consumido pelos métodos da soma de potências é quase o mesmo que o do método da soma de correntes, diferindo por apenas alguns microssegundos. Porém, conforme o número de barras no sistema aumenta, o método da soma de potências mostra-se mais eficiente, em relação ao tempo de computação.
+  É possível observar na Figura \ref{fig:tempo} que, para sistemas pequenos (< 1000 barras), o tempo consumido pelos métodos da soma de potências é quase o mesmo que o do método da soma de correntes, diferindo por apenas alguns microssegundos. Porém, conforme o número de barras no sistema aumenta, o método da soma de potências mostra-se mais eficiente, em relação ao tempo de computação.
   
   Para o sistema de 3373 barras, a duração do MSC foi de 198 ms, enquanto que para o MSP a duração foi de 99 ms, ou seja, o MSP foi quase duas vezes mais rápido que o método da soma de correntes.
   
 \subsection{Número de iterações}
 
-  O número de iterações necessário para atingir a convergência em cada método é mostrado na figura \ref{fig:itera}.
+  O número de iterações necessário para atingir a convergência em cada método é mostrado na Figura \ref{fig:itera}.
   
   \begin{figure}[h!]
     \centering
@@ -821,7 +821,7 @@ Ao aplicar o algoritmo de remoção de barras discutido na seção \ref{chp:redução}
 A redução de barras se mostra eficiente em sistemas de grande e médio porte, resultando em uma simplificação significativa. Em sistemas de pequeno porte, a mesma se mostra irrelevante, uma vez que, remove poucas ou nenhuma barra.
 
 \subsection{Tempo de execução}
-Para os sistemas com poucas barras, o algoritmo de redução não apresentou uma melhoria significativa no tempo de cálculo do fluxo de potência, sendo que no sistema de 135 barras o desempenho foi pior do que sem a redução, conforme mostra a figura \ref{fig:tempootm}.
+Para os sistemas com poucas barras, o algoritmo de redução não apresentou uma melhoria significativa no tempo de cálculo do fluxo de potência, sendo que no sistema de 135 barras o desempenho foi pior do que sem a redução, conforme mostra a Figura \ref{fig:tempootm}.
 
 
   \begin{figure}[h!]
@@ -835,11 +835,11 @@ Para os sistemas com poucas barras, o algoritmo de redução não apresentou uma me
 
 Já nos sistemas de grande porte, foi constatado uma redução drástica no tempo de computação do fluxo de potência para ambos os métodos utilizados, resultando em uma redução de 198 ms para 13 ms, no método da soma de correntes.
 
-Uma fato interessante observado no gráfico da figura \ref{fig:tempootm} é que, com a redução de barras, o método da soma de correntes se mostrou mais rápido que o método da soma de potências. Esse comportamento é coerente, porque o número de barras do sistema reduzido (tabela \ref{tab:tempootm}) fica abaixo da quantidade de barras onde o método MSC é mais eficiente.  
+Uma fato interessante observado no gráfico da Figura \ref{fig:tempootm} é que, com a redução de barras, o método da soma de correntes se mostrou mais rápido que o método da soma de potências. Esse comportamento é coerente, porque o número de barras do sistema reduzido (tabela \ref{tab:tempootm}) fica abaixo da quantidade de barras onde o método MSC é mais eficiente.  
 
 \subsection{Número de iterações}
 
-De acordo com os dados apresentados na figura \ref{fig:iteraotm}, é possível observar que a remoção das barras não alterou de forma significativa o número de iterações necessárias para a convergência, pois somete o sistema de 70 barras apresentou a redução de uma iteração. Isso mostra que as barras removidas não interferem de forma expressiva na convergência do sistema.
+De acordo com os dados apresentados na Figura \ref{fig:iteraotm}, é possível observar que a remoção das barras não alterou de forma significativa o número de iterações necessárias para a convergência, pois somente o sistema de 70 barras apresentou a redução de uma iteração. Isso mostra que as barras removidas não interferem de forma expressiva na convergência do sistema.
   
   \begin{figure}[h!]
     \centering
@@ -879,7 +879,7 @@ Conforme discutido no desenvolvimento teórico, o erro só se aplica nas barras qu
 
 \section{Descrição do programa desenvolvido}
 
-Para realização das simulações foi desenvolvido o programa denominado \textit{QuickFlow} (figura \ref{fig:quickflow}).
+Para realização das simulações foi desenvolvido o programa denominado \textit{QuickFlow} (Figura \ref{fig:quickflow}).
 
 \begin{figure}[h!]
  \centering
@@ -910,7 +910,7 @@ Outro fator construtivo que difere das técnicas tradicionais de implementação do
   
   \item permite trabalhar com múltiplos alimentadores;
   
-  \item pealiza o cálculo do fluxo de potência utilizando os métodos da soma de correntes e da soma de potências;
+  \item realiza o cálculo do fluxo de potência utilizando os métodos da soma de correntes e da soma de potências;
   
   \item aplica a redução de barras para agilizar os cálculos;
   
